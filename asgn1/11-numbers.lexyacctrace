@@ -1,0 +1,1762 @@
+--cpp_pipe: popen ("/usr/bin/cpp -nostdinc 11-numbers.oc"): fileno = 4
+Starting parse
+Entering state 0
+Reducing stack by rule 2 (line 31):
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --(end of buffer or a NUL)
+--accepting rule at line 46 ("# 1 "11-numbers.oc"
+")
+--included # 1 "11-numbers.oc"
+--accepting rule at line 46 ("# 1 "<built-in>"
+")
+--included # 1 "<built-in>"
+--accepting rule at line 46 ("# 1 "<command-line>"
+")
+--included # 1 "<command-line>"
+--accepting rule at line 46 ("# 1 "11-numbers.oc"
+")
+--included # 1 "11-numbers.oc"
+--accepting rule at line 48 ("
+")
+--accepting rule at line 48 ("
+")
+--accepting rule at line 46 ("# 1 "oclib.h" 1
+")
+--included # 1 "oclib.h"
+--accepting rule at line 46 ("# 20 "oclib.h"
+")
+--included # 20 "oclib.h"
+--accepting rule at line 79 ("void")
+::astree: 0x1a45750->{TOK_VOID "void" oclib.h:20:15}
+Next token is token TOK_VOID ()
+Shifting token TOK_VOID ()
+Entering state 3
+Reducing stack by rule 20 (line 34):
+   $1 = token TOK_VOID ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("fail")
+::astree: 0x1a45800->{TOK_IDENT "fail" oclib.h:20:20}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: 0x1a45880->{'(' "(" oclib.h:20:25}
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 28
+Reducing stack by rule 3 (line 32):
+   $1 = token '(' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 81 ("string")
+::astree: 0x1a45900->{TOK_STRING "string" oclib.h:20:26}
+Next token is token TOK_STRING ()
+Shifting token TOK_STRING ()
+Entering state 5
+Reducing stack by rule 22 (line 34):
+   $1 = token TOK_STRING ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("expr")
+::astree: 0x1a459e0->{TOK_IDENT "expr" oclib.h:20:33}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 56 (",")
+::astree: 0x1a45a50->{',' "," oclib.h:20:37}
+Next token is token ',' ()
+Shifting token ',' ()
+Entering state 35
+Reducing stack by rule 10 (line 32):
+   $1 = token ',' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 81 ("string")
+::astree: 0x1a45af0->{TOK_STRING "string" oclib.h:20:39}
+Next token is token TOK_STRING ()
+Shifting token TOK_STRING ()
+Entering state 5
+Reducing stack by rule 22 (line 34):
+   $1 = token TOK_STRING ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("file")
+::astree: 0x1a45b90->{TOK_IDENT "file" oclib.h:20:46}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 56 (",")
+::astree: 0x1a45be0->{',' "," oclib.h:20:50}
+Next token is token ',' ()
+Shifting token ',' ()
+Entering state 35
+Reducing stack by rule 10 (line 32):
+   $1 = token ',' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 80 ("int")
+::astree: 0x1a45c80->{TOK_INT "int" oclib.h:20:52}
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 4
+Reducing stack by rule 21 (line 34):
+   $1 = token TOK_INT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("line")
+::astree: 0x1a45cd0->{TOK_IDENT "line" oclib.h:20:56}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 63 (")")
+::astree: 0x1a45d70->{')' ")" oclib.h:20:60}
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 29
+Reducing stack by rule 4 (line 32):
+   $1 = token ')' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a45ed0->{';' ";" oclib.h:20:61}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 48 ("
+")
+--accepting rule at line 79 ("void")
+::astree: 0x1a45f70->{TOK_VOID "void" oclib.h:22:1}
+Next token is token TOK_VOID ()
+Shifting token TOK_VOID ()
+Entering state 3
+Reducing stack by rule 20 (line 34):
+   $1 = token TOK_VOID ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("putchr")
+::astree: 0x1a46010->{TOK_IDENT "putchr" oclib.h:22:6}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: 0x1a46060->{'(' "(" oclib.h:22:13}
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 28
+Reducing stack by rule 3 (line 32):
+   $1 = token '(' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 80 ("int")
+::astree: 0x1a46100->{TOK_INT "int" oclib.h:22:14}
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 4
+Reducing stack by rule 21 (line 34):
+   $1 = token TOK_INT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("chr")
+::astree: 0x1a46150->{TOK_IDENT "chr" oclib.h:22:18}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 63 (")")
+::astree: 0x1a461a0->{')' ")" oclib.h:22:21}
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 29
+Reducing stack by rule 4 (line 32):
+   $1 = token ')' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a46240->{';' ";" oclib.h:22:22}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 79 ("void")
+::astree: 0x1a46290->{TOK_VOID "void" oclib.h:23:1}
+Next token is token TOK_VOID ()
+Shifting token TOK_VOID ()
+Entering state 3
+Reducing stack by rule 20 (line 34):
+   $1 = token TOK_VOID ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("putint")
+::astree: 0x1a462e0->{TOK_IDENT "putint" oclib.h:23:6}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: 0x1a46330->{'(' "(" oclib.h:23:13}
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 28
+Reducing stack by rule 3 (line 32):
+   $1 = token '(' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 80 ("int")
+::astree: 0x1a463d0->{TOK_INT "int" oclib.h:23:14}
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 4
+Reducing stack by rule 21 (line 34):
+   $1 = token TOK_INT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("num")
+::astree: 0x1a46420->{TOK_IDENT "num" oclib.h:23:18}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 63 (")")
+::astree: 0x1a46470->{')' ")" oclib.h:23:21}
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 29
+Reducing stack by rule 4 (line 32):
+   $1 = token ')' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a46510->{';' ";" oclib.h:23:22}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 79 ("void")
+::astree: 0x1a46560->{TOK_VOID "void" oclib.h:24:1}
+Next token is token TOK_VOID ()
+Shifting token TOK_VOID ()
+Entering state 3
+Reducing stack by rule 20 (line 34):
+   $1 = token TOK_VOID ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("putstr")
+::astree: 0x1a465b0->{TOK_IDENT "putstr" oclib.h:24:6}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: 0x1a46600->{'(' "(" oclib.h:24:13}
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 28
+Reducing stack by rule 3 (line 32):
+   $1 = token '(' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 81 ("string")
+::astree: 0x1a466a0->{TOK_STRING "string" oclib.h:24:14}
+Next token is token TOK_STRING ()
+Shifting token TOK_STRING ()
+Entering state 5
+Reducing stack by rule 22 (line 34):
+   $1 = token TOK_STRING ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("str")
+::astree: 0x1a466f0->{TOK_IDENT "str" oclib.h:24:21}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 63 (")")
+::astree: 0x1a46740->{')' ")" oclib.h:24:24}
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 29
+Reducing stack by rule 4 (line 32):
+   $1 = token ')' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a467e0->{';' ";" oclib.h:24:25}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 48 ("
+")
+--accepting rule at line 80 ("int")
+::astree: 0x1a46830->{TOK_INT "int" oclib.h:26:1}
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 4
+Reducing stack by rule 21 (line 34):
+   $1 = token TOK_INT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("getchr")
+::astree: 0x1a46880->{TOK_IDENT "getchr" oclib.h:26:5}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 62 ("(")
+::astree: 0x1a468d0->{'(' "(" oclib.h:26:11}
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 28
+Reducing stack by rule 3 (line 32):
+   $1 = token '(' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 63 (")")
+::astree: 0x1a46970->{')' ")" oclib.h:26:12}
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 29
+Reducing stack by rule 4 (line 32):
+   $1 = token ')' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a469c0->{';' ";" oclib.h:26:13}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 81 ("string")
+::astree: 0x1a46a10->{TOK_STRING "string" oclib.h:27:1}
+Next token is token TOK_STRING ()
+Shifting token TOK_STRING ()
+Entering state 5
+Reducing stack by rule 22 (line 34):
+   $1 = token TOK_STRING ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("getstr")
+::astree: 0x1a46a60->{TOK_IDENT "getstr" oclib.h:27:8}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 62 ("(")
+::astree: 0x1a46ab0->{'(' "(" oclib.h:27:14}
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 28
+Reducing stack by rule 3 (line 32):
+   $1 = token '(' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 63 (")")
+::astree: 0x1a46b50->{')' ")" oclib.h:27:15}
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 29
+Reducing stack by rule 4 (line 32):
+   $1 = token ')' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a46ba0->{';' ";" oclib.h:27:16}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 81 ("string")
+::astree: 0x1a46bf0->{TOK_STRING "string" oclib.h:28:1}
+Next token is token TOK_STRING ()
+Shifting token TOK_STRING ()
+Entering state 5
+Reducing stack by rule 22 (line 34):
+   $1 = token TOK_STRING ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("getln")
+::astree: 0x1a46c40->{TOK_IDENT "getln" oclib.h:28:8}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 62 ("(")
+::astree: 0x1a46c90->{'(' "(" oclib.h:28:13}
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 28
+Reducing stack by rule 3 (line 32):
+   $1 = token '(' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 63 (")")
+::astree: 0x1a46d30->{')' ")" oclib.h:28:14}
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 29
+Reducing stack by rule 4 (line 32):
+   $1 = token ')' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a46d80->{';' ";" oclib.h:28:15}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 46 ("# 4 "11-numbers.oc" 2
+")
+--included # 4 "11-numbers.oc"
+--accepting rule at line 48 ("
+")
+--accepting rule at line 80 ("int")
+::astree: 0x1a46dd0->{TOK_INT "int" 11-numbers.oc:5:1}
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 4
+Reducing stack by rule 21 (line 34):
+   $1 = token TOK_INT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("main")
+::astree: 0x1a46e50->{TOK_IDENT "main" 11-numbers.oc:5:5}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 62 ("(")
+::astree: 0x1a46ea0->{'(' "(" 11-numbers.oc:5:9}
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 28
+Reducing stack by rule 3 (line 32):
+   $1 = token '(' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 63 (")")
+::astree: 0x1a46f40->{')' ")" 11-numbers.oc:5:10}
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 29
+Reducing stack by rule 4 (line 32):
+   $1 = token ')' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 66 ("{")
+::astree: 0x1a46f90->{'{' "{" 11-numbers.oc:5:12}
+Next token is token '{' ()
+Shifting token '{' ()
+Entering state 32
+Reducing stack by rule 7 (line 32):
+   $1 = token '{' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("   ")
+--accepting rule at line 80 ("int")
+::astree: 0x1a45e10->{TOK_INT "int" 11-numbers.oc:6:4}
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 4
+Reducing stack by rule 21 (line 34):
+   $1 = token TOK_INT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("number")
+::astree: 0x1a47160->{TOK_IDENT "number" 11-numbers.oc:6:8}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 55 ("=")
+::astree: 0x1a471b0->{'=' "=" 11-numbers.oc:6:15}
+Next token is token '=' ()
+Shifting token '=' ()
+Entering state 36
+Reducing stack by rule 11 (line 33):
+   $1 = token '=' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 95 ("1")
+::astree: 0x1a47230->{TOK_INTCON "1" 11-numbers.oc:6:17}
+Next token is token TOK_INTCON ()
+Shifting token TOK_INTCON ()
+Entering state 24
+Reducing stack by rule 39 (line 38):
+   $1 = token TOK_INTCON ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a472d0->{';' ";" 11-numbers.oc:6:18}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("   ")
+--accepting rule at line 80 ("int")
+::astree: 0x1a47370->{TOK_INT "int" 11-numbers.oc:7:4}
+Next token is token TOK_INT ()
+Shifting token TOK_INT ()
+Entering state 4
+Reducing stack by rule 21 (line 34):
+   $1 = token TOK_INT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("done")
+::astree: 0x1a473c0->{TOK_IDENT "done" 11-numbers.oc:7:8}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 55 ("=")
+::astree: 0x1a47410->{'=' "=" 11-numbers.oc:7:13}
+Next token is token '=' ()
+Shifting token '=' ()
+Entering state 36
+Reducing stack by rule 11 (line 33):
+   $1 = token '=' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 95 ("0")
+::astree: 0x1a474b0->{TOK_INTCON "0" 11-numbers.oc:7:15}
+Next token is token TOK_INTCON ()
+Shifting token TOK_INTCON ()
+Entering state 24
+Reducing stack by rule 39 (line 38):
+   $1 = token TOK_INTCON ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a47500->{';' ";" 11-numbers.oc:7:16}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("   ")
+--accepting rule at line 84 ("while")
+::astree: 0x1a475a0->{TOK_WHILE "while" 11-numbers.oc:8:4}
+Next token is token TOK_WHILE ()
+Shifting token TOK_WHILE ()
+Entering state 8
+Reducing stack by rule 25 (line 35):
+   $1 = token TOK_WHILE ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: 0x1a475f0->{'(' "(" 11-numbers.oc:8:10}
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 28
+Reducing stack by rule 3 (line 32):
+   $1 = token '(' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 77 ("not")
+::astree: 0x1a47690->{TOK_NOT "not" 11-numbers.oc:8:11}
+Next token is token TOK_NOT ()
+Shifting token TOK_NOT ()
+Entering state 22
+Reducing stack by rule 17 (line 33):
+   $1 = token TOK_NOT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("done")
+::astree: 0x1a476e0->{TOK_IDENT "done" 11-numbers.oc:8:15}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 63 (")")
+::astree: 0x1a47780->{')' ")" 11-numbers.oc:8:19}
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 29
+Reducing stack by rule 4 (line 32):
+   $1 = token ')' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 66 ("{")
+::astree: 0x1a477d0->{'{' "{" 11-numbers.oc:8:21}
+Next token is token '{' ()
+Shifting token '{' ()
+Entering state 32
+Reducing stack by rule 7 (line 32):
+   $1 = token '{' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("      ")
+--accepting rule at line 96 ("putint")
+::astree: 0x1a47820->{TOK_IDENT "putint" 11-numbers.oc:9:7}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: 0x1a47870->{'(' "(" 11-numbers.oc:9:14}
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 28
+Reducing stack by rule 3 (line 32):
+   $1 = token '(' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 96 ("number")
+::astree: 0x1a478c0->{TOK_IDENT "number" 11-numbers.oc:9:15}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 63 (")")
+::astree: 0x1a47910->{')' ")" 11-numbers.oc:9:21}
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 29
+Reducing stack by rule 4 (line 32):
+   $1 = token ')' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a47960->{';' ";" 11-numbers.oc:9:22}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("      ")
+--accepting rule at line 96 ("putchr")
+::astree: 0x1a479b0->{TOK_IDENT "putchr" 11-numbers.oc:10:7}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: 0x1a47a00->{'(' "(" 11-numbers.oc:10:14}
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 28
+Reducing stack by rule 3 (line 32):
+   $1 = token '(' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 93 ("'\n'")
+::astree: 0x1a47a50->{TOK_CHARCON "'\n'" 11-numbers.oc:10:15}
+Next token is token TOK_CHARCON ()
+Shifting token TOK_CHARCON ()
+Entering state 25
+Reducing stack by rule 40 (line 38):
+   $1 = token TOK_CHARCON ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 63 (")")
+::astree: 0x1a47aa0->{')' ")" 11-numbers.oc:10:19}
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 29
+Reducing stack by rule 4 (line 32):
+   $1 = token ')' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a47b40->{';' ";" 11-numbers.oc:10:20}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("      ")
+--accepting rule at line 82 ("if")
+::astree: 0x1a47b90->{TOK_IF "if" 11-numbers.oc:11:7}
+Next token is token TOK_IF ()
+Shifting token TOK_IF ()
+Entering state 6
+Reducing stack by rule 23 (line 35):
+   $1 = token TOK_IF ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: 0x1a47be0->{'(' "(" 11-numbers.oc:11:10}
+Next token is token '(' ()
+Shifting token '(' ()
+Entering state 28
+Reducing stack by rule 3 (line 32):
+   $1 = token '(' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 96 ("number")
+::astree: 0x1a47c80->{TOK_IDENT "number" 11-numbers.oc:11:11}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 72 ("<=")
+::astree: 0x1a47cd0->{TOK_LE "<=" 11-numbers.oc:11:18}
+Next token is token TOK_LE ()
+Shifting token TOK_LE ()
+Entering state 19
+Reducing stack by rule 35 (line 37):
+   $1 = token TOK_LE ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 95 ("0")
+::astree: 0x1a47d20->{TOK_INTCON "0" 11-numbers.oc:11:21}
+Next token is token TOK_INTCON ()
+Shifting token TOK_INTCON ()
+Entering state 24
+Reducing stack by rule 39 (line 38):
+   $1 = token TOK_INTCON ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 63 (")")
+::astree: 0x1a47dc0->{')' ")" 11-numbers.oc:11:22}
+Next token is token ')' ()
+Shifting token ')' ()
+Entering state 29
+Reducing stack by rule 4 (line 32):
+   $1 = token ')' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("done")
+::astree: 0x1a47e10->{TOK_IDENT "done" 11-numbers.oc:11:24}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 55 ("=")
+::astree: 0x1a47e60->{'=' "=" 11-numbers.oc:11:29}
+Next token is token '=' ()
+Shifting token '=' ()
+Entering state 36
+Reducing stack by rule 11 (line 33):
+   $1 = token '=' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 95 ("1")
+::astree: 0x1a47eb0->{TOK_INTCON "1" 11-numbers.oc:11:31}
+Next token is token TOK_INTCON ()
+Shifting token TOK_INTCON ()
+Entering state 24
+Reducing stack by rule 39 (line 38):
+   $1 = token TOK_INTCON ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a47f00->{';' ";" 11-numbers.oc:11:32}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("      ")
+--accepting rule at line 96 ("number")
+::astree: 0x1a47f50->{TOK_IDENT "number" 11-numbers.oc:12:7}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 55 ("=")
+::astree: 0x1a47fa0->{'=' "=" 11-numbers.oc:12:14}
+Next token is token '=' ()
+Shifting token '=' ()
+Entering state 36
+Reducing stack by rule 11 (line 33):
+   $1 = token '=' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("number")
+::astree: 0x1a47ff0->{TOK_IDENT "number" 11-numbers.oc:12:16}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 50 ("+")
+::astree: 0x1a48040->{'+' "+" 11-numbers.oc:12:23}
+Next token is token '+' ()
+Shifting token '+' ()
+Entering state 37
+Reducing stack by rule 12 (line 33):
+   $1 = token '+' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("number")
+::astree: 0x1a48090->{TOK_IDENT "number" 11-numbers.oc:12:25}
+Next token is token TOK_IDENT ()
+Shifting token TOK_IDENT ()
+Entering state 23
+Reducing stack by rule 38 (line 38):
+   $1 = token TOK_IDENT ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a48130->{';' ";" 11-numbers.oc:12:31}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("   ")
+--accepting rule at line 67 ("}")
+::astree: 0x1a48180->{'}' "}" 11-numbers.oc:13:4}
+Next token is token '}' ()
+Shifting token '}' ()
+Entering state 33
+Reducing stack by rule 8 (line 32):
+   $1 = token '}' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("   ")
+--accepting rule at line 85 ("return")
+::astree: 0x1a481d0->{TOK_RETURN "return" 11-numbers.oc:14:4}
+Next token is token TOK_RETURN ()
+Shifting token TOK_RETURN ()
+Entering state 9
+Reducing stack by rule 26 (line 35):
+   $1 = token TOK_RETURN ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 95 ("0")
+::astree: 0x1a48270->{TOK_INTCON "0" 11-numbers.oc:14:11}
+Next token is token TOK_INTCON ()
+Shifting token TOK_INTCON ()
+Entering state 24
+Reducing stack by rule 39 (line 38):
+   $1 = token TOK_INTCON ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 57 (";")
+::astree: 0x1a48310->{';' ";" 11-numbers.oc:14:12}
+Next token is token ';' ()
+Shifting token ';' ()
+Entering state 34
+Reducing stack by rule 9 (line 32):
+   $1 = token ';' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 67 ("}")
+::astree: 0x1a48360->{'}' "}" 11-numbers.oc:15:1}
+Next token is token '}' ()
+Shifting token '}' ()
+Entering state 33
+Reducing stack by rule 8 (line 32):
+   $1 = token '}' ()
+-> $$ = nterm token ()
+Stack now 0 1
+Entering state 42
+Reducing stack by rule 1 (line 31):
+   $1 = nterm program ()
+   $2 = nterm token ()
+-> $$ = nterm program ()
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--(end of buffer or a NUL)
+--EOF (start condition 0)
+Now at end of input.
+Shifting token $end ()
+Entering state 2
+Stack now 0 1 2
+Cleanup: popping token $end ()
+Cleanup: popping nterm program ()
+::astree: 0x1a414a0->{TOK_ROOT "[ROOT]" /:0:0}
+::astree::cppfile[0]: "/"
+::astree::cppfile[1]: "11-numbers.oc"
+::astree::cppfile[2]: "<built-in>"
+::astree::cppfile[3]: "<command-line>"
+::astree::cppfile[4]: "11-numbers.oc"
+::astree::cppfile[5]: "oclib.h"
+::astree::cppfile[6]: "oclib.h"
+::astree::cppfile[7]: "11-numbers.oc"
+::~astree: 0x1a414a0->{TOK_ROOT "[ROOT]" /:0:0}
+--cpp_pipe: pclose ("/usr/bin/cpp -nostdinc 11-numbers.oc"): fileno = 4

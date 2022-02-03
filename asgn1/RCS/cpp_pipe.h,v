@@ -1,0 +1,73 @@
+head	1.2;
+access;
+symbols;
+locks;
+comment	@ * @;
+
+
+1.2
+date	2021.12.20.21.07.53;	author -;	state -;
+branches;
+next	1.1;
+
+1.1
+date	2021.12.08.20.07.42;	author -;	state -;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@-
+@
+text
+@// $Id: cpp_pipe.h,v 1.1 2021-12-08 12:07:42-08 - - $
+
+#ifndef CPP_PIPE_H
+#define CPP_PIPE_H
+
+#include <cstdio>
+#include <string>
+using namespace std;
+
+// Pipe to read output of C++ preprocessor cpp.
+
+class cpp_pipe {
+   private:
+      static constexpr const char* cpp_name {"/usr/bin/cpp -nostdinc"};
+      string cpp_command;
+      bool cpp_debug {false};
+      FILE* cpp_file {nullptr};
+      int cpp_errno {0};
+   public:
+      cpp_pipe (const cpp_pipe&) = delete;
+      cpp_pipe& operator= (const cpp_pipe&) = delete;
+      cpp_pipe (const char* filename, bool debug = false);
+      ~cpp_pipe();
+      operator bool() const;
+      FILE* get_pipe();
+      void close_pipe();
+};
+
+#endif
+
+@
+
+
+1.1
+log
+@-
+@
+text
+@d1 1
+a1 1
+// $Id: cpp_pipe.h,v 1.2 2021-10-29 14:34:33-07 - - $
+d3 2
+a4 2
+#ifndef __CPP_PIPE_H__
+#define __CPP_PIPE_H__
+@

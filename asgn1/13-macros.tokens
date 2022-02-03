@@ -1,0 +1,126 @@
+# 1 "13-macros.oc"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "13-macros.oc"
+# 1 "oclib.h"
+# 20 "oclib.h"
+  6 20.015  258  TOK_VOID       void
+  6 20.020  278  TOK_IDENT      fail
+  6 20.025   40  '('            (
+  6 20.026  260  TOK_STRING     string
+  6 20.033  278  TOK_IDENT      expr
+  6 20.037   44  ','            ,
+  6 20.039  260  TOK_STRING     string
+  6 20.046  278  TOK_IDENT      file
+  6 20.050   44  ','            ,
+  6 20.052  259  TOK_INT        int
+  6 20.056  278  TOK_IDENT      line
+  6 20.060   41  ')'            )
+  6 20.061   59  ';'            ;
+  6 22.001  258  TOK_VOID       void
+  6 22.006  278  TOK_IDENT      putchr
+  6 22.013   40  '('            (
+  6 22.014  259  TOK_INT        int
+  6 22.018  278  TOK_IDENT      chr
+  6 22.021   41  ')'            )
+  6 22.022   59  ';'            ;
+  6 23.001  258  TOK_VOID       void
+  6 23.006  278  TOK_IDENT      putint
+  6 23.013   40  '('            (
+  6 23.014  259  TOK_INT        int
+  6 23.018  278  TOK_IDENT      num
+  6 23.021   41  ')'            )
+  6 23.022   59  ';'            ;
+  6 24.001  258  TOK_VOID       void
+  6 24.006  278  TOK_IDENT      putstr
+  6 24.013   40  '('            (
+  6 24.014  260  TOK_STRING     string
+  6 24.021  278  TOK_IDENT      str
+  6 24.024   41  ')'            )
+  6 24.025   59  ';'            ;
+  6 26.001  259  TOK_INT        int
+  6 26.005  278  TOK_IDENT      getchr
+  6 26.011   40  '('            (
+  6 26.012   41  ')'            )
+  6 26.013   59  ';'            ;
+  6 27.001  260  TOK_STRING     string
+  6 27.008  278  TOK_IDENT      getstr
+  6 27.014   40  '('            (
+  6 27.015   41  ')'            )
+  6 27.016   59  ';'            ;
+  6 28.001  260  TOK_STRING     string
+  6 28.008  278  TOK_IDENT      getln
+  6 28.013   40  '('            (
+  6 28.014   41  ')'            )
+  6 28.015   59  ';'            ;
+# 4 "13-macros.oc"
+  7  5.001  259  TOK_INT        int
+  7  5.005  278  TOK_IDENT      main
+  7  5.010   40  '('            (
+  7  5.011  259  TOK_INT        int
+  7  5.015  278  TOK_IDENT      argc
+  7  5.019   44  ','            ,
+  7  5.021  267  TOK_ARRAY      array
+  7  5.026  273  TOK_LT         <
+  7  5.027  260  TOK_STRING     string
+  7  5.033  275  TOK_GT         >
+  7  5.035  278  TOK_IDENT      argv
+  7  5.039   41  ')'            )
+  7  5.041  123  '{'            {
+  7  6.004  278  TOK_IDENT      putstr
+  7  6.011   40  '('            (
+  7  6.012  278  TOK_IDENT      argv
+  7  6.016   91  '['            [
+  7  6.017  279  TOK_INTCON     0
+  7  6.018   93  ']'            ]
+  7  6.019   41  ')'            )
+  7  6.020   59  ';'            ;
+  7  7.004  278  TOK_IDENT      putstr
+  7  7.011   40  '('            (
+  7  7.012  281  TOK_STRINGCON  ": "
+  7  7.016   41  ')'            )
+  7  7.017   59  ';'            ;
+  7  8.004  278  TOK_IDENT      putstr
+  7  8.011   40  '('            (
+  7  8.012  281  TOK_STRINGCON  "13-macros.oc"
+  7  8.026   41  ')'            )
+  7  8.027   59  ';'            ;
+  7  9.004  278  TOK_IDENT      putchr
+  7  9.011   40  '('            (
+  7  9.012  280  TOK_CHARCON    '['
+  7  9.015   41  ')'            )
+  7  9.016   59  ';'            ;
+  7 10.004  278  TOK_IDENT      putint
+  7 10.011   40  '('            (
+  7 10.012  279  TOK_INTCON     10
+  7 10.014   41  ')'            )
+  7 10.015   59  ';'            ;
+  7 11.004  278  TOK_IDENT      putstr
+  7 11.011   40  '('            (
+  7 11.012  281  TOK_STRINGCON  "] compiled "
+  7 11.025   41  ')'            )
+  7 11.026   59  ';'            ;
+  7 12.004  278  TOK_IDENT      putstr
+  7 12.011   40  '('            (
+  7 12.012  281  TOK_STRINGCON  "Jan 20 2022"
+  7 12.025   41  ')'            )
+  7 12.026   59  ';'            ;
+  7 13.004  278  TOK_IDENT      putstr
+  7 13.011   40  '('            (
+  7 13.012  281  TOK_STRINGCON  " "
+  7 13.015   41  ')'            )
+  7 13.016   59  ';'            ;
+  7 14.004  278  TOK_IDENT      putstr
+  7 14.011   40  '('            (
+  7 14.012  281  TOK_STRINGCON  "18:53:40"
+  7 14.022   41  ')'            )
+  7 14.023   59  ';'            ;
+  7 15.004  278  TOK_IDENT      putstr
+  7 15.011   40  '('            (
+  7 15.012  281  TOK_STRINGCON  "\n"
+  7 15.016   41  ')'            )
+  7 15.017   59  ';'            ;
+  7 16.004  264  TOK_RETURN     return
+  7 16.011  279  TOK_INTCON     0
+  7 16.012   59  ';'            ;
+  7 17.001  125  '}'            }

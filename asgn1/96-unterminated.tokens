@@ -1,0 +1,37 @@
+# 1 "96-unterminated.oc"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "96-unterminated.oc"
+  4  4.001  259  TOK_INT        int
+  4  4.005  278  TOK_IDENT      main
+  4  4.009   40  '('            (
+  4  4.010   41  ')'            )
+  4  4.012  123  '{'            {
+  4  5.004  260  TOK_STRING     string
+  4  5.011  278  TOK_IDENT      t
+  4  5.013   61  '='            =
+  4  5.017   42  '*'            *
+  4  5.018   47  '/'            /
+  4  5.020   59  ';'            ;
+  4  6.004  260  TOK_STRING     string
+  4  6.011  278  TOK_IDENT      s
+  4  6.013   61  '='            =
+  4  6.016  278  TOK_IDENT      abc
+  4  6.019   59  ';'            ;
+  4  7.004  278  TOK_IDENT      char
+  4  7.009  278  TOK_IDENT      c
+  4  7.011   61  '='            =
+  4  7.014  278  TOK_IDENT      a
+  4  7.015   59  ';'            ;
+  4  8.004  278  TOK_IDENT      s
+  4  8.006   61  '='            =
+  4  8.009  278  TOK_IDENT      abcd
+  4  8.015   59  ';'            ;
+  4  9.004  278  TOK_IDENT      s
+  4  9.006   61  '='            =
+  4  9.009  278  TOK_IDENT      abc
+  4  9.016   59  ';'            ;
+  4 11.004  259  TOK_INT        int
+  4 11.008  278  TOK_IDENT      23foobar
+  4 11.016   59  ';'            ;
+  4 12.001  125  '}'            }

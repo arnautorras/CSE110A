@@ -1,0 +1,4 @@
+flex --outfile=yylex.cpp scanner.l
+[[ yylex.cpp == yy*.cpp ]] || cpplint.py.perl yylex.cpp
+g++ -std=gnu++2a -g -O0 -fdiagnostics-color=never -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -c yylex.cpp
+g++ -std=gnu++2a -g -O0 -fdiagnostics-color=never -Wall -Wextra -Wpedantic -Wshadow -Wold-style-cast -ooc astree.o auxlib.o cpp_pipe.o debug.o lyutils.o main.o yylex.o yyparse.o

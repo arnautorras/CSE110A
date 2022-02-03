@@ -1,0 +1,10 @@
+// $Id: 01-hello.oc,v 1.2 2021-12-08 10:14:36-08 - - $
+// Simple hello world program.
+
+#include "oclib.h"
+
+int main() {
+   putstr ("Hello, world!\n");
+   return 0;
+}
+
