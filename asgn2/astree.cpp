@@ -3,6 +3,8 @@
 #include <cassert>
 #include <iomanip>
 #include <iostream>
+#include <string.h>
+
 using namespace std;
 
 #include "astree.h"
@@ -12,8 +14,9 @@ unordered_set<string> astree::lextable;
 vector<string> astree::filenames {"/"};
 
 ostream& operator<< (ostream& out, const location& loc) {
-   return out << astree::filenames.at(loc.filenr)
-              << ":" << loc.linenr << ":" << loc.offset;
+   return out << loc.filenr
+              << "." << loc.linenr
+              << "." << loc.offset;
 }
 
 astree::astree (int symbol_, const location& loc_, const char* info):
@@ -25,12 +28,19 @@ astree::astree (int symbol_, const location& loc_, const char* info):
 
 astree::~astree() {
    if (yydebug) cerr << "::~astree: " << *this << endl;
-   for (astree_ptr child: children) erase (child);
+   for (astree_ptr child: children){
+      erase (child);
+   }
 }
 
-void astree::adopt (astree_ptr child1, astree_ptr child2) {
+void astree::adopt (astree_ptr child1,
+                    astree_ptr child2,
+                    astree_ptr child3,
+                    astree_ptr child4) {
    if (child1 != nullptr) children.push_back (child1);
    if (child2 != nullptr) children.push_back (child2);
+   if (child3 != nullptr) children.push_back (child3);
+   if (child4 != nullptr) children.push_back (child4);
 }
 
 void astree::adopt_as (astree_ptr child, int symbol_) {
@@ -38,13 +48,20 @@ void astree::adopt_as (astree_ptr child, int symbol_) {
    adopt (child);
 }
 
+void astree::define_as (int symbol_){
+   symbol = symbol_;
+}
+
+
 void astree::dump_tree (int depth) {
    cerr << "::astree: " << setw (depth * 3) << "" << *this << endl;
    for (astree_ptr child: children) child->dump_tree (depth + 1);
 }
 
 void astree::print_tree (ostream& out, int depth) {
-   out << "; astree: " << setw (depth * 3) << "" << *this << endl;
+
+   for (int i=0; i<depth; ++i) { out << "|\t";}
+   out <<  *this << endl;
    for (astree_ptr child: children) child->print_tree (out, depth + 1);
 }
 
@@ -61,9 +78,9 @@ void astree::print_symbol_value (astree_ptr tree) {
 }
 
 ostream& operator<< (ostream& out, const astree& tree) {
-   out << &tree << "->{" << get_parser_yytname (tree.symbol)
-       << " \"" << *tree.lexinfo << "\" " << tree.loc << "}";
-   for (astree_ptr child: tree.children) out << " " << child;
+   const char *tname = get_parser_yytname(tree.symbol);
+   if (strstr (tname, "TOK_") == tname) tname += 4;
+   out << tname << " \"" << *tree.lexinfo << "\" " << tree.loc;
    return out;
 }
 
@@ -72,6 +89,9 @@ astree_ptr astree::make (int symbol, const location& loc,
    return new astree (symbol, loc, lexinfo);
 }
 
+
+// To-do : ASGN2 : Determine whether this is causing memory issues.
+// (Should the tree's children be erased before the tree itself?)
 void astree::erase (astree_ptr& tree) {
    delete tree;
    tree = nullptr;

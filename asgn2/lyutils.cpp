@@ -106,16 +106,23 @@ ostream& lex_util::lex_error() {
    return exec::error() << loc << ": ";
 }
 
-void lex_util::open(const char* token_filename){
+void lex_util::open_token_file(const char* token_filename){
    token_file.open (token_filename, ofstream::out | ofstream::trunc);
    //token_file << "Opened...";
 }
 
-void lex_util::close(){
+void lex_util::close_token_file(){
    //token_file << "...Closing";
    token_file.close();
 }
 
+void lex_util::open_ast_file(const char* ast_filename){
+   ast_file.open (ast_filename, ofstream::out | ofstream::trunc);
+}
+
+void lex_util::close_ast_file(){
+   ast_file.close();
+}
 
 parse_util::parse_util (const char* oc_filename,
                         bool parse_debug, bool lex_debug):

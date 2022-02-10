@@ -44,8 +44,12 @@ class astree {
       static void erase (astree_ptr&);
 
    
-      void adopt (astree_ptr child1, astree_ptr child2 = nullptr);
+      void adopt (astree_ptr child1,
+                  astree_ptr child2 = nullptr,
+                  astree_ptr child3 = nullptr,
+                  astree_ptr child4 = nullptr);
       void adopt_as (astree_ptr child, int symbol);
+      void define_as (int symbol);
       void dump_tree (int depth = 0);
       void print_tree (ostream& out, int depth = 0);
 };

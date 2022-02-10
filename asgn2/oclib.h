@@ -1,4 +1,4 @@
-// $Id: oclib.h,v 1.15 2021-12-20 13:09:16-08 - - $
+// $Id: oclib.h,v 1.16 2022-01-26 19:57:29-08 - - $
 
 // Bilingual file useable as a header file for both oc and g++.
 
@@ -14,6 +14,8 @@ using string = char*;
 #define bool int
 #define true 1
 #define false 0
+#define EXIT_SUCCESS 0
+#define EXIT_FAILURE 1
 
 #define assert(expr) {if (not (expr)) fail (#expr, __FILE__, __LINE__);}
 

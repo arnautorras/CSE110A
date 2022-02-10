@@ -27,6 +27,8 @@ struct options {
 
    const char* oc_filename {nullptr};
    const char* token_filename {nullptr};
+   const char* ast_filename {nullptr};
+
    options (int argc, char** argv);
 };
 
@@ -48,6 +50,7 @@ options::options (int argc, char** argv) {
    if(optind == argc){
       oc_filename = "-";
       token_filename = "-";
+      ast_filename = "-";
    }else{
       oc_filename = argv[optind];
       int oc_filename_len = strlen(oc_filename);
@@ -57,11 +60,16 @@ options::options (int argc, char** argv) {
                         << &oc_filename[oc_filename_len-3]
                         << ")" << endl;
       }
-      char *strArray = new char[oc_filename_len+5];
-      strcpy(strArray,oc_filename);
-      strcpy(&strArray[oc_filename_len-3],".tokens");
-      strArray[oc_filename_len+4] = '\0';
-      token_filename = strArray;
+      char *strTokenArray = new char[oc_filename_len+5];
+      strcpy(strTokenArray,oc_filename);
+      strcpy(&strTokenArray[oc_filename_len-3],".tokens");
+      strTokenArray[oc_filename_len+4] = '\0';
+      token_filename = strTokenArray;
+      char *strASTArray = new char[oc_filename_len+2];
+      strcpy(strASTArray,oc_filename);
+      strcpy(&strASTArray[oc_filename_len-3],".ast");
+      strASTArray[oc_filename_len+1] = '\0';
+      ast_filename = strASTArray;
    }
 }
 
@@ -71,14 +79,18 @@ int main (int argc, char** argv) {
    exec::name (argv[0]);
    try {
       options opts (argc, argv);      
-      lexer.open(opts.token_filename);
+      lexer.open_token_file(opts.token_filename);
+      lexer.open_ast_file(opts.ast_filename);
       parse_util parser (opts.oc_filename,
                  opts.parse_debug, opts.lex_debug);
-      // To-do :Inclide string_degines and argument
-      //to pass it to cpp_pipe (asgn2)
+
       parser.parse();
+
+      parser.root()->print_tree(lexer.ast_file);
+
       // To-do : On asgn3, add code to handle symbol table
-      lexer.close();
+      lexer.close_token_file();
+      lexer.close_ast_file();
    }catch (usage_error&) {
       cerr << "Usage: " << exec::name() << " [-lyd@] [program]" << endl;
    }catch (fatal_error& reason) {

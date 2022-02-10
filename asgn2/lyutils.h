@@ -30,7 +30,7 @@ class lex_util {
       ofstream token_file;
       int index_filename_vector {0};
    public:
-      //To-do : Add file open and file close functions for token_file
+      ofstream ast_file; 
       ~lex_util();
       void advance();
       void newline();
@@ -39,10 +39,11 @@ class lex_util {
       int badtoken (int symbol);
       void badchar (unsigned char bad);
       void lex_fatal_error (const char* msg);
-      void open(const char* filename);
-      void close();
+      void open_token_file(const char* filename);
+      void close_token_file();
+      void open_ast_file(const char* filename);
+      void close_ast_file();
       ostream& lex_error();
-
 };
 
 extern lex_util lexer;
@@ -50,7 +51,7 @@ extern lex_util lexer;
 class parse_util {
    private:
       cpp_pipe oc_file;
-      astree_ptr astree_root = astree::make (TOK_ROOT, {}, "[ROOT]");
+      astree_ptr astree_root = astree::make (TOK_ROOT, {}, "ROOT");
    public:
       parse_util (const char* oc_filename,
                   bool parse_debug, bool lex_debug);
