@@ -1,0 +1,5 @@
+ROOT "ROOT" 0.0.0
+|	RETURN "return" 4.5.1
+|	IDENT "foo" 4.5.8
+|	')' ")" 4.7.20
+|	$end "}" 4.8.1

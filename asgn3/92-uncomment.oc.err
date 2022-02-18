@@ -1,0 +1,4 @@
+92-uncomment.oc:1:1: error: unterminated comment
+ /*
+ ^
+oc: pclose failed: /usr/bin/cpp -nostdinc 92-uncomment.oc: Exit 1

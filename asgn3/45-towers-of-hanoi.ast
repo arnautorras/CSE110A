@@ -1,0 +1,212 @@
+ROOT "ROOT" 0.0.0
+|	FUNCT "" 6.22.15
+|	|	TYPE_ID "" 6.22.15
+|	|	|	VOID "void" 6.22.15
+|	|	|	IDENT "fail" 6.22.20
+|	|	PARAM "(" 6.22.25
+|	|	|	TYPE_ID "" 6.22.26
+|	|	|	|	STRING "string" 6.22.26
+|	|	|	|	IDENT "expr" 6.22.33
+|	|	|	TYPE_ID "" 6.22.39
+|	|	|	|	STRING "string" 6.22.39
+|	|	|	|	IDENT "file" 6.22.46
+|	|	|	TYPE_ID "" 6.22.52
+|	|	|	|	INT "int" 6.22.52
+|	|	|	|	IDENT "line" 6.22.56
+|	|	BLOCK ";" 6.22.61
+|	FUNCT "" 6.24.1
+|	|	TYPE_ID "" 6.24.1
+|	|	|	VOID "void" 6.24.1
+|	|	|	IDENT "putchr" 6.24.6
+|	|	PARAM "(" 6.24.13
+|	|	|	TYPE_ID "" 6.24.14
+|	|	|	|	INT "int" 6.24.14
+|	|	|	|	IDENT "chr" 6.24.18
+|	|	BLOCK ";" 6.24.22
+|	FUNCT "" 6.25.1
+|	|	TYPE_ID "" 6.25.1
+|	|	|	VOID "void" 6.25.1
+|	|	|	IDENT "putint" 6.25.6
+|	|	PARAM "(" 6.25.13
+|	|	|	TYPE_ID "" 6.25.14
+|	|	|	|	INT "int" 6.25.14
+|	|	|	|	IDENT "num" 6.25.18
+|	|	BLOCK ";" 6.25.22
+|	FUNCT "" 6.26.1
+|	|	TYPE_ID "" 6.26.1
+|	|	|	VOID "void" 6.26.1
+|	|	|	IDENT "putstr" 6.26.6
+|	|	PARAM "(" 6.26.13
+|	|	|	TYPE_ID "" 6.26.14
+|	|	|	|	STRING "string" 6.26.14
+|	|	|	|	IDENT "str" 6.26.21
+|	|	BLOCK ";" 6.26.25
+|	FUNCT "" 6.28.1
+|	|	TYPE_ID "" 6.28.1
+|	|	|	INT "int" 6.28.1
+|	|	|	IDENT "getchr" 6.28.5
+|	|	PARAM "(" 6.28.11
+|	|	BLOCK ";" 6.28.13
+|	FUNCT "" 6.29.1
+|	|	TYPE_ID "" 6.29.1
+|	|	|	STRING "string" 6.29.1
+|	|	|	IDENT "getstr" 6.29.8
+|	|	PARAM "(" 6.29.14
+|	|	BLOCK ";" 6.29.16
+|	FUNCT "" 6.30.1
+|	|	TYPE_ID "" 6.30.1
+|	|	|	STRING "string" 6.30.1
+|	|	|	IDENT "getln" 6.30.8
+|	|	PARAM "(" 6.30.13
+|	|	BLOCK ";" 6.30.15
+|	FUNCT "" 7.5.1
+|	|	TYPE_ID "" 7.5.1
+|	|	|	VOID "void" 7.5.1
+|	|	|	IDENT "move" 7.5.6
+|	|	PARAM "(" 7.5.11
+|	|	|	TYPE_ID "" 7.5.12
+|	|	|	|	STRING "string" 7.5.12
+|	|	|	|	IDENT "src" 7.5.19
+|	|	|	TYPE_ID "" 7.5.24
+|	|	|	|	STRING "string" 7.5.24
+|	|	|	|	IDENT "dst" 7.5.31
+|	|	BLOCK "{" 7.5.36
+|	|	|	CALL "(" 7.6.11
+|	|	|	|	IDENT "putstr" 7.6.4
+|	|	|	|	STRINGCON ""Move a disk from the "" 7.6.12
+|	|	|	CALL "(" 7.7.11
+|	|	|	|	IDENT "putstr" 7.7.4
+|	|	|	|	IDENT "src" 7.7.12
+|	|	|	CALL "(" 7.8.11
+|	|	|	|	IDENT "putstr" 7.8.4
+|	|	|	|	STRINGCON "" to the "" 7.8.12
+|	|	|	CALL "(" 7.9.11
+|	|	|	|	IDENT "putstr" 7.9.4
+|	|	|	|	IDENT "dst" 7.9.12
+|	|	|	CALL "(" 7.10.11
+|	|	|	|	IDENT "putstr" 7.10.4
+|	|	|	|	STRINGCON "".\n"" 7.10.12
+|	FUNCT "" 7.13.1
+|	|	TYPE_ID "" 7.13.1
+|	|	|	VOID "void" 7.13.1
+|	|	|	IDENT "towers" 7.13.6
+|	|	PARAM "(" 7.13.13
+|	|	|	TYPE_ID "" 7.13.14
+|	|	|	|	INT "int" 7.13.14
+|	|	|	|	IDENT "ndisks" 7.13.18
+|	|	|	TYPE_ID "" 7.13.26
+|	|	|	|	STRING "string" 7.13.26
+|	|	|	|	IDENT "src" 7.13.33
+|	|	|	TYPE_ID "" 7.13.38
+|	|	|	|	STRING "string" 7.13.38
+|	|	|	|	IDENT "tmp" 7.13.45
+|	|	|	TYPE_ID "" 7.13.50
+|	|	|	|	STRING "string" 7.13.50
+|	|	|	|	IDENT "dst" 7.13.57
+|	|	BLOCK "{" 7.13.62
+|	|	|	IF "if" 7.14.4
+|	|	|	|	LT "<" 7.14.15
+|	|	|	|	|	IDENT "ndisks" 7.14.8
+|	|	|	|	|	INTCON "1" 7.14.17
+|	|	|	|	RETURN "return" 7.14.20
+|	|	|	CALL "(" 7.15.11
+|	|	|	|	IDENT "towers" 7.15.4
+|	|	|	|	'-' "-" 7.15.19
+|	|	|	|	|	IDENT "ndisks" 7.15.12
+|	|	|	|	|	INTCON "1" 7.15.21
+|	|	|	|	IDENT "src" 7.15.24
+|	|	|	|	IDENT "dst" 7.15.29
+|	|	|	|	IDENT "tmp" 7.15.34
+|	|	|	CALL "(" 7.16.9
+|	|	|	|	IDENT "move" 7.16.4
+|	|	|	|	IDENT "src" 7.16.10
+|	|	|	|	IDENT "dst" 7.16.15
+|	|	|	CALL "(" 7.17.11
+|	|	|	|	IDENT "towers" 7.17.4
+|	|	|	|	'-' "-" 7.17.19
+|	|	|	|	|	IDENT "ndisks" 7.17.12
+|	|	|	|	|	INTCON "1" 7.17.21
+|	|	|	|	IDENT "tmp" 7.17.24
+|	|	|	|	IDENT "src" 7.17.29
+|	|	|	|	IDENT "dst" 7.17.34
+|	FUNCT "" 7.20.1
+|	|	TYPE_ID "" 7.20.1
+|	|	|	INT "int" 7.20.1
+|	|	|	IDENT "main" 7.20.5
+|	|	PARAM "(" 7.20.10
+|	|	|	TYPE_ID "" 7.20.11
+|	|	|	|	INT "int" 7.20.11
+|	|	|	|	IDENT "argc" 7.20.15
+|	|	|	TYPE_ID "" 7.20.21
+|	|	|	|	ARRAY "array" 7.20.21
+|	|	|	|	|	STRING "string" 7.20.27
+|	|	|	|	IDENT "argv" 7.20.35
+|	|	BLOCK "{" 7.20.41
+|	|	|	BLOCK "{" 7.21.4
+|	|	|	|	IF "if" 7.21.5
+|	|	|	|	|	NOT "not" 7.21.9
+|	|	|	|	|	|	EQ "==" 7.21.19
+|	|	|	|	|	|	|	IDENT "argc" 7.21.14
+|	|	|	|	|	|	|	INTCON "2" 7.21.22
+|	|	|	|	|	CALL "(" 7.21.31
+|	|	|	|	|	|	IDENT "fail" 7.21.26
+|	|	|	|	|	|	STRINGCON ""argc == 2"" 7.21.32
+|	|	|	|	|	|	STRINGCON ""45-towers-of-hanoi.oc"" 7.21.45
+|	|	|	|	|	|	INTCON "21" 7.21.70
+|	|	|	BLOCK ";" 7.21.75
+|	|	|	TYPE_ID "TYPE_ID" 7.22.4
+|	|	|	|	INT "int" 7.22.4
+|	|	|	|	IDENT "count" 7.22.8
+|	|	|	|	'-' "-" 7.22.27
+|	|	|	|	|	'[' "[" 7.22.23
+|	|	|	|	|	|	'[' "[" 7.22.20
+|	|	|	|	|	|	|	IDENT "argv" 7.22.16
+|	|	|	|	|	|	|	INTCON "1" 7.22.21
+|	|	|	|	|	|	INTCON "0" 7.22.24
+|	|	|	|	|	CHARCON "'0'" 7.22.29
+|	|	|	BLOCK "{" 7.23.4
+|	|	|	|	IF "if" 7.23.5
+|	|	|	|	|	NOT "not" 7.23.9
+|	|	|	|	|	|	GT ">" 7.23.20
+|	|	|	|	|	|	|	IDENT "count" 7.23.14
+|	|	|	|	|	|	|	INTCON "0" 7.23.22
+|	|	|	|	|	CALL "(" 7.23.31
+|	|	|	|	|	|	IDENT "fail" 7.23.26
+|	|	|	|	|	|	STRINGCON ""count > 0"" 7.23.32
+|	|	|	|	|	|	STRINGCON ""45-towers-of-hanoi.oc"" 7.23.45
+|	|	|	|	|	|	INTCON "23" 7.23.70
+|	|	|	BLOCK ";" 7.23.75
+|	|	|	BLOCK "{" 7.24.4
+|	|	|	|	IF "if" 7.24.5
+|	|	|	|	|	NOT "not" 7.24.9
+|	|	|	|	|	|	LT "<" 7.24.20
+|	|	|	|	|	|	|	IDENT "count" 7.24.14
+|	|	|	|	|	|	|	INTCON "9" 7.24.22
+|	|	|	|	|	CALL "(" 7.24.31
+|	|	|	|	|	|	IDENT "fail" 7.24.26
+|	|	|	|	|	|	STRINGCON ""count < 9"" 7.24.32
+|	|	|	|	|	|	STRINGCON ""45-towers-of-hanoi.oc"" 7.24.45
+|	|	|	|	|	|	INTCON "24" 7.24.70
+|	|	|	BLOCK ";" 7.24.75
+|	|	|	CALL "(" 7.25.11
+|	|	|	|	IDENT "putstr" 7.25.4
+|	|	|	|	'[' "[" 7.25.16
+|	|	|	|	|	IDENT "argv" 7.25.12
+|	|	|	|	|	INTCON "0" 7.25.17
+|	|	|	CALL "(" 7.26.11
+|	|	|	|	IDENT "putstr" 7.26.4
+|	|	|	|	STRINGCON "": "" 7.26.12
+|	|	|	CALL "(" 7.27.11
+|	|	|	|	IDENT "putint" 7.27.4
+|	|	|	|	IDENT "count" 7.27.12
+|	|	|	CALL "(" 7.28.11
+|	|	|	|	IDENT "putstr" 7.28.4
+|	|	|	|	STRINGCON "" disks\n"" 7.28.12
+|	|	|	CALL "(" 7.29.11
+|	|	|	|	IDENT "towers" 7.29.4
+|	|	|	|	IDENT "count" 7.29.12
+|	|	|	|	STRINGCON ""source"" 7.29.19
+|	|	|	|	STRINGCON ""temporary"" 7.29.29
+|	|	|	|	STRINGCON ""distination"" 7.29.42
+|	|	|	RETURN "return" 7.30.4
+|	|	|	|	INTCON "0" 7.30.11

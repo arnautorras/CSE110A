@@ -1,0 +1,81 @@
+ROOT "ROOT" 0.0.0
+|	FUNCT "" 6.22.15
+|	|	TYPE_ID "" 6.22.15
+|	|	|	VOID "void" 6.22.15
+|	|	|	IDENT "fail" 6.22.20
+|	|	PARAM "(" 6.22.25
+|	|	|	TYPE_ID "" 6.22.26
+|	|	|	|	STRING "string" 6.22.26
+|	|	|	|	IDENT "expr" 6.22.33
+|	|	|	TYPE_ID "" 6.22.39
+|	|	|	|	STRING "string" 6.22.39
+|	|	|	|	IDENT "file" 6.22.46
+|	|	|	TYPE_ID "" 6.22.52
+|	|	|	|	INT "int" 6.22.52
+|	|	|	|	IDENT "line" 6.22.56
+|	|	BLOCK ";" 6.22.61
+|	FUNCT "" 6.24.1
+|	|	TYPE_ID "" 6.24.1
+|	|	|	VOID "void" 6.24.1
+|	|	|	IDENT "putchr" 6.24.6
+|	|	PARAM "(" 6.24.13
+|	|	|	TYPE_ID "" 6.24.14
+|	|	|	|	INT "int" 6.24.14
+|	|	|	|	IDENT "chr" 6.24.18
+|	|	BLOCK ";" 6.24.22
+|	FUNCT "" 6.25.1
+|	|	TYPE_ID "" 6.25.1
+|	|	|	VOID "void" 6.25.1
+|	|	|	IDENT "putint" 6.25.6
+|	|	PARAM "(" 6.25.13
+|	|	|	TYPE_ID "" 6.25.14
+|	|	|	|	INT "int" 6.25.14
+|	|	|	|	IDENT "num" 6.25.18
+|	|	BLOCK ";" 6.25.22
+|	FUNCT "" 6.26.1
+|	|	TYPE_ID "" 6.26.1
+|	|	|	VOID "void" 6.26.1
+|	|	|	IDENT "putstr" 6.26.6
+|	|	PARAM "(" 6.26.13
+|	|	|	TYPE_ID "" 6.26.14
+|	|	|	|	STRING "string" 6.26.14
+|	|	|	|	IDENT "str" 6.26.21
+|	|	BLOCK ";" 6.26.25
+|	FUNCT "" 6.28.1
+|	|	TYPE_ID "" 6.28.1
+|	|	|	INT "int" 6.28.1
+|	|	|	IDENT "getchr" 6.28.5
+|	|	PARAM "(" 6.28.11
+|	|	BLOCK ";" 6.28.13
+|	FUNCT "" 6.29.1
+|	|	TYPE_ID "" 6.29.1
+|	|	|	STRING "string" 6.29.1
+|	|	|	IDENT "getstr" 6.29.8
+|	|	PARAM "(" 6.29.14
+|	|	BLOCK ";" 6.29.16
+|	FUNCT "" 6.30.1
+|	|	TYPE_ID "" 6.30.1
+|	|	|	STRING "string" 6.30.1
+|	|	|	IDENT "getln" 6.30.8
+|	|	PARAM "(" 6.30.13
+|	|	BLOCK ";" 6.30.15
+|	FUNCT "" 7.5.1
+|	|	TYPE_ID "" 7.5.1
+|	|	|	INT "int" 7.5.1
+|	|	|	IDENT "main" 7.5.5
+|	|	PARAM "(" 7.5.9
+|	|	BLOCK "{" 7.5.12
+|	|	|	BLOCK "{" 7.6.4
+|	|	|	|	IF "if" 7.6.5
+|	|	|	|	|	NOT "not" 7.6.9
+|	|	|	|	|	|	EQ "==" 7.6.24
+|	|	|	|	|	|	|	STRINGCON ""nullptr"" 7.6.14
+|	|	|	|	|	|	|	NULLPTR "nullptr" 7.6.27
+|	|	|	|	|	CALL "(" 7.6.42
+|	|	|	|	|	|	IDENT "fail" 7.6.37
+|	|	|	|	|	|	STRINGCON ""\"nullptr\" == nullptr"" 7.6.43
+|	|	|	|	|	|	STRINGCON ""07-assert.oc"" 7.6.69
+|	|	|	|	|	|	INTCON "6" 7.6.85
+|	|	|	BLOCK ";" 7.6.89
+|	|	|	RETURN "return" 7.7.4
+|	|	|	|	INTCON "1" 7.7.11

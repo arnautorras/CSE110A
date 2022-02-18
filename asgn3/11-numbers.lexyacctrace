@@ -1,0 +1,1646 @@
+--cpp_pipe: popen ("/usr/bin/cpp -nostdinc 11-numbers.oc"): fileno = 5
+Starting parse
+Entering state 0
+Reducing stack by rule 6 (line 74):
+-> $$ = nterm program (ROOT "ROOT" 0.0.0)
+Stack now 0
+Entering state 1
+Reading a token: --(end of buffer or a NUL)
+--accepting rule at line 46 ("# 1 "11-numbers.oc"
+")
+--included # 1 "11-numbers.oc"
+--accepting rule at line 46 ("# 1 "<built-in>"
+")
+--included # 1 "<built-in>"
+--accepting rule at line 46 ("# 1 "<command-line>"
+")
+--included # 1 "<command-line>"
+--accepting rule at line 46 ("# 1 "11-numbers.oc"
+")
+--included # 1 "11-numbers.oc"
+--accepting rule at line 48 ("
+")
+--accepting rule at line 48 ("
+")
+--accepting rule at line 46 ("# 1 "oclib.h" 1
+")
+--included # 1 "oclib.h"
+--accepting rule at line 46 ("# 22 "oclib.h"
+")
+--included # 22 "oclib.h"
+--accepting rule at line 79 ("void")
+::astree: VOID "void" 6.22.15
+Next token is token TOK_VOID (VOID "void" 6.22.15)
+Shifting token TOK_VOID (VOID "void" 6.22.15)
+Entering state 4
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("fail")
+::astree: IDENT "fail" 6.22.20
+Next token is token TOK_IDENT (IDENT "fail" 6.22.20)
+Shifting token TOK_IDENT (IDENT "fail" 6.22.20)
+Entering state 20
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: '(' "(" 6.22.25
+Next token is token '(' ('(' "(" 6.22.25)
+Shifting token '(' ('(' "(" 6.22.25)
+Entering state 31
+Reading a token: --accepting rule at line 81 ("string")
+::astree: STRING "string" 6.22.26
+Next token is token TOK_STRING (STRING "string" 6.22.26)
+Shifting token TOK_STRING (STRING "string" 6.22.26)
+Entering state 6
+Reducing stack by rule 14 (line 110):
+   $1 = token TOK_STRING (STRING "string" 6.22.26)
+-> $$ = nterm plaintype (STRING "string" 6.22.26)
+Stack now 0 1 4 20 31
+Entering state 26
+Reducing stack by rule 10 (line 97):
+   $1 = nterm plaintype (STRING "string" 6.22.26)
+-> $$ = nterm type (STRING "string" 6.22.26)
+Stack now 0 1 4 20 31
+Entering state 57
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("expr")
+::astree: IDENT "expr" 6.22.33
+Next token is token TOK_IDENT (IDENT "expr" 6.22.33)
+Shifting token TOK_IDENT (IDENT "expr" 6.22.33)
+Entering state 91
+Reducing stack by rule 21 (line 166):
+   $1 = token '(' ('(' "(" 6.22.25)
+   $2 = nterm type (STRING "string" 6.22.26)
+   $3 = token TOK_IDENT (IDENT "expr" 6.22.33)
+::astree: TYPE_ID "" 6.22.26
+-> $$ = nterm paramhead (PARAM "(" 6.22.25)
+Stack now 0 1 4 20
+Entering state 33
+Reading a token: --accepting rule at line 56 (",")
+::astree: ',' "," 6.22.37
+Next token is token ',' (',' "," 6.22.37)
+Shifting token ',' (',' "," 6.22.37)
+Entering state 63
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 81 ("string")
+::astree: STRING "string" 6.22.39
+Next token is token TOK_STRING (STRING "string" 6.22.39)
+Shifting token TOK_STRING (STRING "string" 6.22.39)
+Entering state 6
+Reducing stack by rule 14 (line 110):
+   $1 = token TOK_STRING (STRING "string" 6.22.39)
+-> $$ = nterm plaintype (STRING "string" 6.22.39)
+Stack now 0 1 4 20 33 63
+Entering state 26
+Reducing stack by rule 10 (line 97):
+   $1 = nterm plaintype (STRING "string" 6.22.39)
+-> $$ = nterm type (STRING "string" 6.22.39)
+Stack now 0 1 4 20 33 63
+Entering state 104
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("file")
+::astree: IDENT "file" 6.22.46
+Next token is token TOK_IDENT (IDENT "file" 6.22.46)
+Shifting token TOK_IDENT (IDENT "file" 6.22.46)
+Entering state 134
+Reducing stack by rule 20 (line 157):
+   $1 = nterm paramhead (PARAM "(" 6.22.25)
+   $2 = token ',' (',' "," 6.22.37)
+   $3 = nterm type (STRING "string" 6.22.39)
+   $4 = token TOK_IDENT (IDENT "file" 6.22.46)
+::~astree: ',' "," 6.22.37
+::astree: TYPE_ID "" 6.22.39
+-> $$ = nterm paramhead (PARAM "(" 6.22.25)
+Stack now 0 1 4 20
+Entering state 33
+Reading a token: --accepting rule at line 56 (",")
+::astree: ',' "," 6.22.50
+Next token is token ',' (',' "," 6.22.50)
+Shifting token ',' (',' "," 6.22.50)
+Entering state 63
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 80 ("int")
+::astree: INT "int" 6.22.52
+Next token is token TOK_INT (INT "int" 6.22.52)
+Shifting token TOK_INT (INT "int" 6.22.52)
+Entering state 5
+Reducing stack by rule 13 (line 109):
+   $1 = token TOK_INT (INT "int" 6.22.52)
+-> $$ = nterm plaintype (INT "int" 6.22.52)
+Stack now 0 1 4 20 33 63
+Entering state 26
+Reducing stack by rule 10 (line 97):
+   $1 = nterm plaintype (INT "int" 6.22.52)
+-> $$ = nterm type (INT "int" 6.22.52)
+Stack now 0 1 4 20 33 63
+Entering state 104
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("line")
+::astree: IDENT "line" 6.22.56
+Next token is token TOK_IDENT (IDENT "line" 6.22.56)
+Shifting token TOK_IDENT (IDENT "line" 6.22.56)
+Entering state 134
+Reducing stack by rule 20 (line 157):
+   $1 = nterm paramhead (PARAM "(" 6.22.25)
+   $2 = token ',' (',' "," 6.22.50)
+   $3 = nterm type (INT "int" 6.22.52)
+   $4 = token TOK_IDENT (IDENT "line" 6.22.56)
+::~astree: ',' "," 6.22.50
+::astree: TYPE_ID "" 6.22.52
+-> $$ = nterm paramhead (PARAM "(" 6.22.25)
+Stack now 0 1 4 20
+Entering state 33
+Reading a token: --accepting rule at line 63 (")")
+::astree: ')' ")" 6.22.60
+Next token is token ')' (')' ")" 6.22.60)
+Shifting token ')' (')' ")" 6.22.60)
+Entering state 62
+Reducing stack by rule 18 (line 149):
+   $1 = nterm paramhead (PARAM "(" 6.22.25)
+   $2 = token ')' (')' ")" 6.22.60)
+::~astree: ')' ")" 6.22.60
+-> $$ = nterm parameters (PARAM "(" 6.22.25)
+Stack now 0 1 4 20
+Entering state 32
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 6.22.61
+Next token is token ';' (';' ";" 6.22.61)
+Shifting token ';' (';' ";" 6.22.61)
+Entering state 58
+Reducing stack by rule 23 (line 177):
+   $1 = token ';' (';' ";" 6.22.61)
+-> $$ = nterm block (BLOCK ";" 6.22.61)
+Stack now 0 1 4 20 32
+Entering state 60
+Reducing stack by rule 17 (line 130):
+   $1 = token TOK_VOID (VOID "void" 6.22.15)
+   $2 = token TOK_IDENT (IDENT "fail" 6.22.20)
+   $3 = nterm parameters (PARAM "(" 6.22.25)
+   $4 = nterm block (BLOCK ";" 6.22.61)
+::astree: TYPE_ID "" 6.22.15
+::astree: FUNCT "" 6.22.15
+-> $$ = nterm function (FUNCT "" 6.22.15)
+Stack now 0 1
+Entering state 15
+Reducing stack by rule 2 (line 60):
+   $1 = nterm program (ROOT "ROOT" 0.0.0)
+   $2 = nterm function (FUNCT "" 6.22.15)
+-> $$ = nterm program (ROOT "ROOT" 0.0.0)
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 48 ("
+")
+--accepting rule at line 79 ("void")
+::astree: VOID "void" 6.24.1
+Next token is token TOK_VOID (VOID "void" 6.24.1)
+Shifting token TOK_VOID (VOID "void" 6.24.1)
+Entering state 4
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("putchr")
+::astree: IDENT "putchr" 6.24.6
+Next token is token TOK_IDENT (IDENT "putchr" 6.24.6)
+Shifting token TOK_IDENT (IDENT "putchr" 6.24.6)
+Entering state 20
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: '(' "(" 6.24.13
+Next token is token '(' ('(' "(" 6.24.13)
+Shifting token '(' ('(' "(" 6.24.13)
+Entering state 31
+Reading a token: --accepting rule at line 80 ("int")
+::astree: INT "int" 6.24.14
+Next token is token TOK_INT (INT "int" 6.24.14)
+Shifting token TOK_INT (INT "int" 6.24.14)
+Entering state 5
+Reducing stack by rule 13 (line 109):
+   $1 = token TOK_INT (INT "int" 6.24.14)
+-> $$ = nterm plaintype (INT "int" 6.24.14)
+Stack now 0 1 4 20 31
+Entering state 26
+Reducing stack by rule 10 (line 97):
+   $1 = nterm plaintype (INT "int" 6.24.14)
+-> $$ = nterm type (INT "int" 6.24.14)
+Stack now 0 1 4 20 31
+Entering state 57
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("chr")
+::astree: IDENT "chr" 6.24.18
+Next token is token TOK_IDENT (IDENT "chr" 6.24.18)
+Shifting token TOK_IDENT (IDENT "chr" 6.24.18)
+Entering state 91
+Reducing stack by rule 21 (line 166):
+   $1 = token '(' ('(' "(" 6.24.13)
+   $2 = nterm type (INT "int" 6.24.14)
+   $3 = token TOK_IDENT (IDENT "chr" 6.24.18)
+::astree: TYPE_ID "" 6.24.14
+-> $$ = nterm paramhead (PARAM "(" 6.24.13)
+Stack now 0 1 4 20
+Entering state 33
+Reading a token: --accepting rule at line 63 (")")
+::astree: ')' ")" 6.24.21
+Next token is token ')' (')' ")" 6.24.21)
+Shifting token ')' (')' ")" 6.24.21)
+Entering state 62
+Reducing stack by rule 18 (line 149):
+   $1 = nterm paramhead (PARAM "(" 6.24.13)
+   $2 = token ')' (')' ")" 6.24.21)
+::~astree: ')' ")" 6.24.21
+-> $$ = nterm parameters (PARAM "(" 6.24.13)
+Stack now 0 1 4 20
+Entering state 32
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 6.24.22
+Next token is token ';' (';' ";" 6.24.22)
+Shifting token ';' (';' ";" 6.24.22)
+Entering state 58
+Reducing stack by rule 23 (line 177):
+   $1 = token ';' (';' ";" 6.24.22)
+-> $$ = nterm block (BLOCK ";" 6.24.22)
+Stack now 0 1 4 20 32
+Entering state 60
+Reducing stack by rule 17 (line 130):
+   $1 = token TOK_VOID (VOID "void" 6.24.1)
+   $2 = token TOK_IDENT (IDENT "putchr" 6.24.6)
+   $3 = nterm parameters (PARAM "(" 6.24.13)
+   $4 = nterm block (BLOCK ";" 6.24.22)
+::astree: TYPE_ID "" 6.24.1
+::astree: FUNCT "" 6.24.1
+-> $$ = nterm function (FUNCT "" 6.24.1)
+Stack now 0 1
+Entering state 15
+Reducing stack by rule 2 (line 60):
+   $1 = nterm program (ROOT "ROOT" 0.0.0)
+   $2 = nterm function (FUNCT "" 6.24.1)
+-> $$ = nterm program (ROOT "ROOT" 0.0.0)
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 79 ("void")
+::astree: VOID "void" 6.25.1
+Next token is token TOK_VOID (VOID "void" 6.25.1)
+Shifting token TOK_VOID (VOID "void" 6.25.1)
+Entering state 4
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("putint")
+::astree: IDENT "putint" 6.25.6
+Next token is token TOK_IDENT (IDENT "putint" 6.25.6)
+Shifting token TOK_IDENT (IDENT "putint" 6.25.6)
+Entering state 20
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: '(' "(" 6.25.13
+Next token is token '(' ('(' "(" 6.25.13)
+Shifting token '(' ('(' "(" 6.25.13)
+Entering state 31
+Reading a token: --accepting rule at line 80 ("int")
+::astree: INT "int" 6.25.14
+Next token is token TOK_INT (INT "int" 6.25.14)
+Shifting token TOK_INT (INT "int" 6.25.14)
+Entering state 5
+Reducing stack by rule 13 (line 109):
+   $1 = token TOK_INT (INT "int" 6.25.14)
+-> $$ = nterm plaintype (INT "int" 6.25.14)
+Stack now 0 1 4 20 31
+Entering state 26
+Reducing stack by rule 10 (line 97):
+   $1 = nterm plaintype (INT "int" 6.25.14)
+-> $$ = nterm type (INT "int" 6.25.14)
+Stack now 0 1 4 20 31
+Entering state 57
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("num")
+::astree: IDENT "num" 6.25.18
+Next token is token TOK_IDENT (IDENT "num" 6.25.18)
+Shifting token TOK_IDENT (IDENT "num" 6.25.18)
+Entering state 91
+Reducing stack by rule 21 (line 166):
+   $1 = token '(' ('(' "(" 6.25.13)
+   $2 = nterm type (INT "int" 6.25.14)
+   $3 = token TOK_IDENT (IDENT "num" 6.25.18)
+::astree: TYPE_ID "" 6.25.14
+-> $$ = nterm paramhead (PARAM "(" 6.25.13)
+Stack now 0 1 4 20
+Entering state 33
+Reading a token: --accepting rule at line 63 (")")
+::astree: ')' ")" 6.25.21
+Next token is token ')' (')' ")" 6.25.21)
+Shifting token ')' (')' ")" 6.25.21)
+Entering state 62
+Reducing stack by rule 18 (line 149):
+   $1 = nterm paramhead (PARAM "(" 6.25.13)
+   $2 = token ')' (')' ")" 6.25.21)
+::~astree: ')' ")" 6.25.21
+-> $$ = nterm parameters (PARAM "(" 6.25.13)
+Stack now 0 1 4 20
+Entering state 32
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 6.25.22
+Next token is token ';' (';' ";" 6.25.22)
+Shifting token ';' (';' ";" 6.25.22)
+Entering state 58
+Reducing stack by rule 23 (line 177):
+   $1 = token ';' (';' ";" 6.25.22)
+-> $$ = nterm block (BLOCK ";" 6.25.22)
+Stack now 0 1 4 20 32
+Entering state 60
+Reducing stack by rule 17 (line 130):
+   $1 = token TOK_VOID (VOID "void" 6.25.1)
+   $2 = token TOK_IDENT (IDENT "putint" 6.25.6)
+   $3 = nterm parameters (PARAM "(" 6.25.13)
+   $4 = nterm block (BLOCK ";" 6.25.22)
+::astree: TYPE_ID "" 6.25.1
+::astree: FUNCT "" 6.25.1
+-> $$ = nterm function (FUNCT "" 6.25.1)
+Stack now 0 1
+Entering state 15
+Reducing stack by rule 2 (line 60):
+   $1 = nterm program (ROOT "ROOT" 0.0.0)
+   $2 = nterm function (FUNCT "" 6.25.1)
+-> $$ = nterm program (ROOT "ROOT" 0.0.0)
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 79 ("void")
+::astree: VOID "void" 6.26.1
+Next token is token TOK_VOID (VOID "void" 6.26.1)
+Shifting token TOK_VOID (VOID "void" 6.26.1)
+Entering state 4
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("putstr")
+::astree: IDENT "putstr" 6.26.6
+Next token is token TOK_IDENT (IDENT "putstr" 6.26.6)
+Shifting token TOK_IDENT (IDENT "putstr" 6.26.6)
+Entering state 20
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: '(' "(" 6.26.13
+Next token is token '(' ('(' "(" 6.26.13)
+Shifting token '(' ('(' "(" 6.26.13)
+Entering state 31
+Reading a token: --accepting rule at line 81 ("string")
+::astree: STRING "string" 6.26.14
+Next token is token TOK_STRING (STRING "string" 6.26.14)
+Shifting token TOK_STRING (STRING "string" 6.26.14)
+Entering state 6
+Reducing stack by rule 14 (line 110):
+   $1 = token TOK_STRING (STRING "string" 6.26.14)
+-> $$ = nterm plaintype (STRING "string" 6.26.14)
+Stack now 0 1 4 20 31
+Entering state 26
+Reducing stack by rule 10 (line 97):
+   $1 = nterm plaintype (STRING "string" 6.26.14)
+-> $$ = nterm type (STRING "string" 6.26.14)
+Stack now 0 1 4 20 31
+Entering state 57
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("str")
+::astree: IDENT "str" 6.26.21
+Next token is token TOK_IDENT (IDENT "str" 6.26.21)
+Shifting token TOK_IDENT (IDENT "str" 6.26.21)
+Entering state 91
+Reducing stack by rule 21 (line 166):
+   $1 = token '(' ('(' "(" 6.26.13)
+   $2 = nterm type (STRING "string" 6.26.14)
+   $3 = token TOK_IDENT (IDENT "str" 6.26.21)
+::astree: TYPE_ID "" 6.26.14
+-> $$ = nterm paramhead (PARAM "(" 6.26.13)
+Stack now 0 1 4 20
+Entering state 33
+Reading a token: --accepting rule at line 63 (")")
+::astree: ')' ")" 6.26.24
+Next token is token ')' (')' ")" 6.26.24)
+Shifting token ')' (')' ")" 6.26.24)
+Entering state 62
+Reducing stack by rule 18 (line 149):
+   $1 = nterm paramhead (PARAM "(" 6.26.13)
+   $2 = token ')' (')' ")" 6.26.24)
+::~astree: ')' ")" 6.26.24
+-> $$ = nterm parameters (PARAM "(" 6.26.13)
+Stack now 0 1 4 20
+Entering state 32
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 6.26.25
+Next token is token ';' (';' ";" 6.26.25)
+Shifting token ';' (';' ";" 6.26.25)
+Entering state 58
+Reducing stack by rule 23 (line 177):
+   $1 = token ';' (';' ";" 6.26.25)
+-> $$ = nterm block (BLOCK ";" 6.26.25)
+Stack now 0 1 4 20 32
+Entering state 60
+Reducing stack by rule 17 (line 130):
+   $1 = token TOK_VOID (VOID "void" 6.26.1)
+   $2 = token TOK_IDENT (IDENT "putstr" 6.26.6)
+   $3 = nterm parameters (PARAM "(" 6.26.13)
+   $4 = nterm block (BLOCK ";" 6.26.25)
+::astree: TYPE_ID "" 6.26.1
+::astree: FUNCT "" 6.26.1
+-> $$ = nterm function (FUNCT "" 6.26.1)
+Stack now 0 1
+Entering state 15
+Reducing stack by rule 2 (line 60):
+   $1 = nterm program (ROOT "ROOT" 0.0.0)
+   $2 = nterm function (FUNCT "" 6.26.1)
+-> $$ = nterm program (ROOT "ROOT" 0.0.0)
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 48 ("
+")
+--accepting rule at line 80 ("int")
+::astree: INT "int" 6.28.1
+Next token is token TOK_INT (INT "int" 6.28.1)
+Shifting token TOK_INT (INT "int" 6.28.1)
+Entering state 5
+Reducing stack by rule 13 (line 109):
+   $1 = token TOK_INT (INT "int" 6.28.1)
+-> $$ = nterm plaintype (INT "int" 6.28.1)
+Stack now 0 1
+Entering state 14
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("getchr")
+::astree: IDENT "getchr" 6.28.5
+Next token is token TOK_IDENT (IDENT "getchr" 6.28.5)
+Shifting token TOK_IDENT (IDENT "getchr" 6.28.5)
+Entering state 28
+Reading a token: --accepting rule at line 62 ("(")
+::astree: '(' "(" 6.28.11
+Next token is token '(' ('(' "(" 6.28.11)
+Shifting token '(' ('(' "(" 6.28.11)
+Entering state 31
+Reading a token: --accepting rule at line 63 (")")
+::astree: ')' ")" 6.28.12
+Next token is token ')' (')' ")" 6.28.12)
+Shifting token ')' (')' ")" 6.28.12)
+Entering state 56
+Reducing stack by rule 19 (line 150):
+   $1 = token '(' ('(' "(" 6.28.11)
+   $2 = token ')' (')' ")" 6.28.12)
+::~astree: ')' ")" 6.28.12
+-> $$ = nterm parameters (PARAM "(" 6.28.11)
+Stack now 0 1 14 28
+Entering state 39
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 6.28.13
+Next token is token ';' (';' ";" 6.28.13)
+Shifting token ';' (';' ";" 6.28.13)
+Entering state 58
+Reducing stack by rule 23 (line 177):
+   $1 = token ';' (';' ";" 6.28.13)
+-> $$ = nterm block (BLOCK ";" 6.28.13)
+Stack now 0 1 14 28 39
+Entering state 67
+Reducing stack by rule 16 (line 119):
+   $1 = nterm plaintype (INT "int" 6.28.1)
+   $2 = token TOK_IDENT (IDENT "getchr" 6.28.5)
+   $3 = nterm parameters (PARAM "(" 6.28.11)
+   $4 = nterm block (BLOCK ";" 6.28.13)
+::astree: TYPE_ID "" 6.28.1
+::astree: FUNCT "" 6.28.1
+-> $$ = nterm function (FUNCT "" 6.28.1)
+Stack now 0 1
+Entering state 15
+Reducing stack by rule 2 (line 60):
+   $1 = nterm program (ROOT "ROOT" 0.0.0)
+   $2 = nterm function (FUNCT "" 6.28.1)
+-> $$ = nterm program (ROOT "ROOT" 0.0.0)
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 81 ("string")
+::astree: STRING "string" 6.29.1
+Next token is token TOK_STRING (STRING "string" 6.29.1)
+Shifting token TOK_STRING (STRING "string" 6.29.1)
+Entering state 6
+Reducing stack by rule 14 (line 110):
+   $1 = token TOK_STRING (STRING "string" 6.29.1)
+-> $$ = nterm plaintype (STRING "string" 6.29.1)
+Stack now 0 1
+Entering state 14
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("getstr")
+::astree: IDENT "getstr" 6.29.8
+Next token is token TOK_IDENT (IDENT "getstr" 6.29.8)
+Shifting token TOK_IDENT (IDENT "getstr" 6.29.8)
+Entering state 28
+Reading a token: --accepting rule at line 62 ("(")
+::astree: '(' "(" 6.29.14
+Next token is token '(' ('(' "(" 6.29.14)
+Shifting token '(' ('(' "(" 6.29.14)
+Entering state 31
+Reading a token: --accepting rule at line 63 (")")
+::astree: ')' ")" 6.29.15
+Next token is token ')' (')' ")" 6.29.15)
+Shifting token ')' (')' ")" 6.29.15)
+Entering state 56
+Reducing stack by rule 19 (line 150):
+   $1 = token '(' ('(' "(" 6.29.14)
+   $2 = token ')' (')' ")" 6.29.15)
+::~astree: ')' ")" 6.29.15
+-> $$ = nterm parameters (PARAM "(" 6.29.14)
+Stack now 0 1 14 28
+Entering state 39
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 6.29.16
+Next token is token ';' (';' ";" 6.29.16)
+Shifting token ';' (';' ";" 6.29.16)
+Entering state 58
+Reducing stack by rule 23 (line 177):
+   $1 = token ';' (';' ";" 6.29.16)
+-> $$ = nterm block (BLOCK ";" 6.29.16)
+Stack now 0 1 14 28 39
+Entering state 67
+Reducing stack by rule 16 (line 119):
+   $1 = nterm plaintype (STRING "string" 6.29.1)
+   $2 = token TOK_IDENT (IDENT "getstr" 6.29.8)
+   $3 = nterm parameters (PARAM "(" 6.29.14)
+   $4 = nterm block (BLOCK ";" 6.29.16)
+::astree: TYPE_ID "" 6.29.1
+::astree: FUNCT "" 6.29.1
+-> $$ = nterm function (FUNCT "" 6.29.1)
+Stack now 0 1
+Entering state 15
+Reducing stack by rule 2 (line 60):
+   $1 = nterm program (ROOT "ROOT" 0.0.0)
+   $2 = nterm function (FUNCT "" 6.29.1)
+-> $$ = nterm program (ROOT "ROOT" 0.0.0)
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 81 ("string")
+::astree: STRING "string" 6.30.1
+Next token is token TOK_STRING (STRING "string" 6.30.1)
+Shifting token TOK_STRING (STRING "string" 6.30.1)
+Entering state 6
+Reducing stack by rule 14 (line 110):
+   $1 = token TOK_STRING (STRING "string" 6.30.1)
+-> $$ = nterm plaintype (STRING "string" 6.30.1)
+Stack now 0 1
+Entering state 14
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("getln")
+::astree: IDENT "getln" 6.30.8
+Next token is token TOK_IDENT (IDENT "getln" 6.30.8)
+Shifting token TOK_IDENT (IDENT "getln" 6.30.8)
+Entering state 28
+Reading a token: --accepting rule at line 62 ("(")
+::astree: '(' "(" 6.30.13
+Next token is token '(' ('(' "(" 6.30.13)
+Shifting token '(' ('(' "(" 6.30.13)
+Entering state 31
+Reading a token: --accepting rule at line 63 (")")
+::astree: ')' ")" 6.30.14
+Next token is token ')' (')' ")" 6.30.14)
+Shifting token ')' (')' ")" 6.30.14)
+Entering state 56
+Reducing stack by rule 19 (line 150):
+   $1 = token '(' ('(' "(" 6.30.13)
+   $2 = token ')' (')' ")" 6.30.14)
+::~astree: ')' ")" 6.30.14
+-> $$ = nterm parameters (PARAM "(" 6.30.13)
+Stack now 0 1 14 28
+Entering state 39
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 6.30.15
+Next token is token ';' (';' ";" 6.30.15)
+Shifting token ';' (';' ";" 6.30.15)
+Entering state 58
+Reducing stack by rule 23 (line 177):
+   $1 = token ';' (';' ";" 6.30.15)
+-> $$ = nterm block (BLOCK ";" 6.30.15)
+Stack now 0 1 14 28 39
+Entering state 67
+Reducing stack by rule 16 (line 119):
+   $1 = nterm plaintype (STRING "string" 6.30.1)
+   $2 = token TOK_IDENT (IDENT "getln" 6.30.8)
+   $3 = nterm parameters (PARAM "(" 6.30.13)
+   $4 = nterm block (BLOCK ";" 6.30.15)
+::astree: TYPE_ID "" 6.30.1
+::astree: FUNCT "" 6.30.1
+-> $$ = nterm function (FUNCT "" 6.30.1)
+Stack now 0 1
+Entering state 15
+Reducing stack by rule 2 (line 60):
+   $1 = nterm program (ROOT "ROOT" 0.0.0)
+   $2 = nterm function (FUNCT "" 6.30.1)
+-> $$ = nterm program (ROOT "ROOT" 0.0.0)
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 46 ("# 4 "11-numbers.oc" 2
+")
+--included # 4 "11-numbers.oc"
+--accepting rule at line 48 ("
+")
+--accepting rule at line 80 ("int")
+::astree: INT "int" 7.5.1
+Next token is token TOK_INT (INT "int" 7.5.1)
+Shifting token TOK_INT (INT "int" 7.5.1)
+Entering state 5
+Reducing stack by rule 13 (line 109):
+   $1 = token TOK_INT (INT "int" 7.5.1)
+-> $$ = nterm plaintype (INT "int" 7.5.1)
+Stack now 0 1
+Entering state 14
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("main")
+::astree: IDENT "main" 7.5.5
+Next token is token TOK_IDENT (IDENT "main" 7.5.5)
+Shifting token TOK_IDENT (IDENT "main" 7.5.5)
+Entering state 28
+Reading a token: --accepting rule at line 62 ("(")
+::astree: '(' "(" 7.5.9
+Next token is token '(' ('(' "(" 7.5.9)
+Shifting token '(' ('(' "(" 7.5.9)
+Entering state 31
+Reading a token: --accepting rule at line 63 (")")
+::astree: ')' ")" 7.5.10
+Next token is token ')' (')' ")" 7.5.10)
+Shifting token ')' (')' ")" 7.5.10)
+Entering state 56
+Reducing stack by rule 19 (line 150):
+   $1 = token '(' ('(' "(" 7.5.9)
+   $2 = token ')' (')' ")" 7.5.10)
+::~astree: ')' ")" 7.5.10
+-> $$ = nterm parameters (PARAM "(" 7.5.9)
+Stack now 0 1 14 28
+Entering state 39
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 66 ("{")
+::astree: '{' "{" 7.5.12
+Next token is token '{' ('{' "{" 7.5.12)
+Shifting token '{' ('{' "{" 7.5.12)
+Entering state 59
+Reducing stack by rule 25 (line 188):
+   $1 = token '{' ('{' "{" 7.5.12)
+-> $$ = nterm blockhead (BLOCK "{" 7.5.12)
+Stack now 0 1 14 28 39
+Entering state 61
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("   ")
+--accepting rule at line 80 ("int")
+::astree: INT "int" 7.6.4
+Next token is token TOK_INT (INT "int" 7.6.4)
+Shifting token TOK_INT (INT "int" 7.6.4)
+Entering state 5
+Reducing stack by rule 13 (line 109):
+   $1 = token TOK_INT (INT "int" 7.6.4)
+-> $$ = nterm plaintype (INT "int" 7.6.4)
+Stack now 0 1 14 28 39 61
+Entering state 26
+Reducing stack by rule 10 (line 97):
+   $1 = nterm plaintype (INT "int" 7.6.4)
+-> $$ = nterm type (INT "int" 7.6.4)
+Stack now 0 1 14 28 39 61
+Entering state 12
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("number")
+::astree: IDENT "number" 7.6.8
+Next token is token TOK_IDENT (IDENT "number" 7.6.8)
+Shifting token TOK_IDENT (IDENT "number" 7.6.8)
+Entering state 27
+Reducing stack by rule 34 (line 212):
+   $1 = nterm type (INT "int" 7.6.4)
+   $2 = token TOK_IDENT (IDENT "number" 7.6.8)
+::astree: TYPE_ID "TYPE_ID" 7.6.4
+-> $$ = nterm muldecl (TYPE_ID "TYPE_ID" 7.6.4)
+Stack now 0 1 14 28 39 61
+Entering state 17
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 55 ("=")
+::astree: '=' "=" 7.6.15
+Next token is token '=' ('=' "=" 7.6.15)
+Shifting token '=' ('=' "=" 7.6.15)
+Entering state 29
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 95 ("1")
+::astree: INTCON "1" 7.6.17
+Next token is token TOK_INTCON (INTCON "1" 7.6.17)
+Shifting token TOK_INTCON (INTCON "1" 7.6.17)
+Entering state 44
+Reducing stack by rule 72 (line 357):
+   $1 = token TOK_INTCON (INTCON "1" 7.6.17)
+-> $$ = nterm constant (INTCON "1" 7.6.17)
+Stack now 0 1 14 28 39 61 17 29
+Entering state 55
+Reducing stack by rule 61 (line 292):
+   $1 = nterm constant (INTCON "1" 7.6.17)
+-> $$ = nterm expr (INTCON "1" 7.6.17)
+Stack now 0 1 14 28 39 61 17 29
+Entering state 50
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 7.6.18
+Next token is token ';' (';' ";" 7.6.18)
+Reducing stack by rule 33 (line 206):
+   $1 = nterm muldecl (TYPE_ID "TYPE_ID" 7.6.4)
+   $2 = token '=' ('=' "=" 7.6.15)
+   $3 = nterm expr (INTCON "1" 7.6.17)
+::~astree: '=' "=" 7.6.15
+-> $$ = nterm muldecl (TYPE_ID "TYPE_ID" 7.6.4)
+Stack now 0 1 14 28 39 61
+Entering state 17
+Next token is token ';' (';' ";" 7.6.18)
+Shifting token ';' (';' ";" 7.6.18)
+Entering state 30
+Reducing stack by rule 32 (line 203):
+   $1 = nterm muldecl (TYPE_ID "TYPE_ID" 7.6.4)
+   $2 = token ';' (';' ";" 7.6.18)
+::~astree: ';' ";" 7.6.18
+-> $$ = nterm vardecl (TYPE_ID "TYPE_ID" 7.6.4)
+Stack now 0 1 14 28 39 61
+Entering state 98
+Reducing stack by rule 26 (line 195):
+   $1 = nterm vardecl (TYPE_ID "TYPE_ID" 7.6.4)
+-> $$ = nterm statement (TYPE_ID "TYPE_ID" 7.6.4)
+Stack now 0 1 14 28 39 61
+Entering state 97
+Reducing stack by rule 24 (line 183):
+   $1 = nterm blockhead (BLOCK "{" 7.5.12)
+   $2 = nterm statement (TYPE_ID "TYPE_ID" 7.6.4)
+-> $$ = nterm blockhead (BLOCK "{" 7.5.12)
+Stack now 0 1 14 28 39
+Entering state 61
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("   ")
+--accepting rule at line 80 ("int")
+::astree: INT "int" 7.7.4
+Next token is token TOK_INT (INT "int" 7.7.4)
+Shifting token TOK_INT (INT "int" 7.7.4)
+Entering state 5
+Reducing stack by rule 13 (line 109):
+   $1 = token TOK_INT (INT "int" 7.7.4)
+-> $$ = nterm plaintype (INT "int" 7.7.4)
+Stack now 0 1 14 28 39 61
+Entering state 26
+Reducing stack by rule 10 (line 97):
+   $1 = nterm plaintype (INT "int" 7.7.4)
+-> $$ = nterm type (INT "int" 7.7.4)
+Stack now 0 1 14 28 39 61
+Entering state 12
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("done")
+::astree: IDENT "done" 7.7.8
+Next token is token TOK_IDENT (IDENT "done" 7.7.8)
+Shifting token TOK_IDENT (IDENT "done" 7.7.8)
+Entering state 27
+Reducing stack by rule 34 (line 212):
+   $1 = nterm type (INT "int" 7.7.4)
+   $2 = token TOK_IDENT (IDENT "done" 7.7.8)
+::astree: TYPE_ID "TYPE_ID" 7.7.4
+-> $$ = nterm muldecl (TYPE_ID "TYPE_ID" 7.7.4)
+Stack now 0 1 14 28 39 61
+Entering state 17
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 55 ("=")
+::astree: '=' "=" 7.7.13
+Next token is token '=' ('=' "=" 7.7.13)
+Shifting token '=' ('=' "=" 7.7.13)
+Entering state 29
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 95 ("0")
+::astree: INTCON "0" 7.7.15
+Next token is token TOK_INTCON (INTCON "0" 7.7.15)
+Shifting token TOK_INTCON (INTCON "0" 7.7.15)
+Entering state 44
+Reducing stack by rule 72 (line 357):
+   $1 = token TOK_INTCON (INTCON "0" 7.7.15)
+-> $$ = nterm constant (INTCON "0" 7.7.15)
+Stack now 0 1 14 28 39 61 17 29
+Entering state 55
+Reducing stack by rule 61 (line 292):
+   $1 = nterm constant (INTCON "0" 7.7.15)
+-> $$ = nterm expr (INTCON "0" 7.7.15)
+Stack now 0 1 14 28 39 61 17 29
+Entering state 50
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 7.7.16
+Next token is token ';' (';' ";" 7.7.16)
+Reducing stack by rule 33 (line 206):
+   $1 = nterm muldecl (TYPE_ID "TYPE_ID" 7.7.4)
+   $2 = token '=' ('=' "=" 7.7.13)
+   $3 = nterm expr (INTCON "0" 7.7.15)
+::~astree: '=' "=" 7.7.13
+-> $$ = nterm muldecl (TYPE_ID "TYPE_ID" 7.7.4)
+Stack now 0 1 14 28 39 61
+Entering state 17
+Next token is token ';' (';' ";" 7.7.16)
+Shifting token ';' (';' ";" 7.7.16)
+Entering state 30
+Reducing stack by rule 32 (line 203):
+   $1 = nterm muldecl (TYPE_ID "TYPE_ID" 7.7.4)
+   $2 = token ';' (';' ";" 7.7.16)
+::~astree: ';' ";" 7.7.16
+-> $$ = nterm vardecl (TYPE_ID "TYPE_ID" 7.7.4)
+Stack now 0 1 14 28 39 61
+Entering state 98
+Reducing stack by rule 26 (line 195):
+   $1 = nterm vardecl (TYPE_ID "TYPE_ID" 7.7.4)
+-> $$ = nterm statement (TYPE_ID "TYPE_ID" 7.7.4)
+Stack now 0 1 14 28 39 61
+Entering state 97
+Reducing stack by rule 24 (line 183):
+   $1 = nterm blockhead (BLOCK "{" 7.5.12)
+   $2 = nterm statement (TYPE_ID "TYPE_ID" 7.7.4)
+-> $$ = nterm blockhead (BLOCK "{" 7.5.12)
+Stack now 0 1 14 28 39
+Entering state 61
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("   ")
+--accepting rule at line 84 ("while")
+::astree: WHILE "while" 7.8.4
+Next token is token TOK_WHILE (WHILE "while" 7.8.4)
+Shifting token TOK_WHILE (WHILE "while" 7.8.4)
+Entering state 93
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: '(' "(" 7.8.10
+Next token is token '(' ('(' "(" 7.8.10)
+Shifting token '(' ('(' "(" 7.8.10)
+Entering state 129
+Reading a token: --accepting rule at line 77 ("not")
+::astree: NOT "not" 7.8.11
+Next token is token TOK_NOT (NOT "not" 7.8.11)
+Shifting token TOK_NOT (NOT "not" 7.8.11)
+Entering state 42
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("done")
+::astree: IDENT "done" 7.8.15
+Next token is token TOK_IDENT (IDENT "done" 7.8.15)
+Shifting token TOK_IDENT (IDENT "done" 7.8.15)
+Entering state 43
+Reading a token: --accepting rule at line 63 (")")
+::astree: ')' ")" 7.8.19
+Next token is token ')' (')' ")" 7.8.19)
+Reducing stack by rule 69 (line 343):
+   $1 = token TOK_IDENT (IDENT "done" 7.8.15)
+-> $$ = nterm variable (IDENT "done" 7.8.15)
+Stack now 0 1 14 28 39 61 93 129 42
+Entering state 54
+Reducing stack by rule 60 (line 291):
+   $1 = nterm variable (IDENT "done" 7.8.15)
+-> $$ = nterm expr (IDENT "done" 7.8.15)
+Stack now 0 1 14 28 39 61 93 129 42
+Entering state 69
+Next token is token ')' (')' ")" 7.8.19)
+Reducing stack by rule 55 (line 282):
+   $1 = token TOK_NOT (NOT "not" 7.8.11)
+   $2 = nterm expr (IDENT "done" 7.8.15)
+-> $$ = nterm expr (NOT "not" 7.8.11)
+Stack now 0 1 14 28 39 61 93 129
+Entering state 140
+Next token is token ')' (')' ")" 7.8.19)
+Shifting token ')' (')' ")" 7.8.19)
+Entering state 147
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 66 ("{")
+::astree: '{' "{" 7.8.21
+Next token is token '{' ('{' "{" 7.8.21)
+Shifting token '{' ('{' "{" 7.8.21)
+Entering state 59
+Reducing stack by rule 25 (line 188):
+   $1 = token '{' ('{' "{" 7.8.21)
+-> $$ = nterm blockhead (BLOCK "{" 7.8.21)
+Stack now 0 1 14 28 39 61 93 129 140 147
+Entering state 61
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("      ")
+--accepting rule at line 96 ("putint")
+::astree: IDENT "putint" 7.9.7
+Next token is token TOK_IDENT (IDENT "putint" 7.9.7)
+Shifting token TOK_IDENT (IDENT "putint" 7.9.7)
+Entering state 43
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: '(' "(" 7.9.14
+Next token is token '(' ('(' "(" 7.9.14)
+Shifting token '(' ('(' "(" 7.9.14)
+Entering state 70
+Reading a token: --accepting rule at line 96 ("number")
+::astree: IDENT "number" 7.9.15
+Next token is token TOK_IDENT (IDENT "number" 7.9.15)
+Shifting token TOK_IDENT (IDENT "number" 7.9.15)
+Entering state 43
+Reading a token: --accepting rule at line 63 (")")
+::astree: ')' ")" 7.9.21
+Next token is token ')' (')' ")" 7.9.21)
+Reducing stack by rule 69 (line 343):
+   $1 = token TOK_IDENT (IDENT "number" 7.9.15)
+-> $$ = nterm variable (IDENT "number" 7.9.15)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 43 70
+Entering state 54
+Reducing stack by rule 60 (line 291):
+   $1 = nterm variable (IDENT "number" 7.9.15)
+-> $$ = nterm expr (IDENT "number" 7.9.15)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 43 70
+Entering state 110
+Next token is token ')' (')' ")" 7.9.21)
+Reducing stack by rule 68 (line 335):
+   $1 = token TOK_IDENT (IDENT "putint" 7.9.7)
+   $2 = token '(' ('(' "(" 7.9.14)
+   $3 = nterm expr (IDENT "number" 7.9.15)
+-> $$ = nterm callhead (CALL "(" 7.9.14)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 53
+Next token is token ')' (')' ")" 7.9.21)
+Shifting token ')' (')' ")" 7.9.21)
+Entering state 89
+Reducing stack by rule 65 (line 319):
+   $1 = nterm callhead (CALL "(" 7.9.14)
+   $2 = token ')' (')' ")" 7.9.21)
+::~astree: ')' ")" 7.9.21
+-> $$ = nterm call (CALL "(" 7.9.14)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 52
+Reducing stack by rule 58 (line 285):
+   $1 = nterm call (CALL "(" 7.9.14)
+-> $$ = nterm expr (CALL "(" 7.9.14)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 103
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 7.9.22
+Next token is token ';' (';' ";" 7.9.22)
+Shifting token ';' (';' ";" 7.9.22)
+Entering state 133
+Reducing stack by rule 31 (line 200):
+   $1 = nterm expr (CALL "(" 7.9.14)
+   $2 = token ';' (';' ";" 7.9.22)
+::~astree: ';' ";" 7.9.22
+-> $$ = nterm statement (CALL "(" 7.9.14)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 97
+Reducing stack by rule 24 (line 183):
+   $1 = nterm blockhead (BLOCK "{" 7.8.21)
+   $2 = nterm statement (CALL "(" 7.9.14)
+-> $$ = nterm blockhead (BLOCK "{" 7.8.21)
+Stack now 0 1 14 28 39 61 93 129 140 147
+Entering state 61
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("      ")
+--accepting rule at line 96 ("putchr")
+::astree: IDENT "putchr" 7.10.7
+Next token is token TOK_IDENT (IDENT "putchr" 7.10.7)
+Shifting token TOK_IDENT (IDENT "putchr" 7.10.7)
+Entering state 43
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: '(' "(" 7.10.14
+Next token is token '(' ('(' "(" 7.10.14)
+Shifting token '(' ('(' "(" 7.10.14)
+Entering state 70
+Reading a token: --accepting rule at line 93 ("'\n'")
+::astree: CHARCON "'\n'" 7.10.15
+Next token is token TOK_CHARCON (CHARCON "'\n'" 7.10.15)
+Shifting token TOK_CHARCON (CHARCON "'\n'" 7.10.15)
+Entering state 45
+Reducing stack by rule 73 (line 358):
+   $1 = token TOK_CHARCON (CHARCON "'\n'" 7.10.15)
+-> $$ = nterm constant (CHARCON "'\n'" 7.10.15)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 43 70
+Entering state 55
+Reducing stack by rule 61 (line 292):
+   $1 = nterm constant (CHARCON "'\n'" 7.10.15)
+-> $$ = nterm expr (CHARCON "'\n'" 7.10.15)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 43 70
+Entering state 110
+Reading a token: --accepting rule at line 63 (")")
+::astree: ')' ")" 7.10.19
+Next token is token ')' (')' ")" 7.10.19)
+Reducing stack by rule 68 (line 335):
+   $1 = token TOK_IDENT (IDENT "putchr" 7.10.7)
+   $2 = token '(' ('(' "(" 7.10.14)
+   $3 = nterm expr (CHARCON "'\n'" 7.10.15)
+-> $$ = nterm callhead (CALL "(" 7.10.14)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 53
+Next token is token ')' (')' ")" 7.10.19)
+Shifting token ')' (')' ")" 7.10.19)
+Entering state 89
+Reducing stack by rule 65 (line 319):
+   $1 = nterm callhead (CALL "(" 7.10.14)
+   $2 = token ')' (')' ")" 7.10.19)
+::~astree: ')' ")" 7.10.19
+-> $$ = nterm call (CALL "(" 7.10.14)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 52
+Reducing stack by rule 58 (line 285):
+   $1 = nterm call (CALL "(" 7.10.14)
+-> $$ = nterm expr (CALL "(" 7.10.14)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 103
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 7.10.20
+Next token is token ';' (';' ";" 7.10.20)
+Shifting token ';' (';' ";" 7.10.20)
+Entering state 133
+Reducing stack by rule 31 (line 200):
+   $1 = nterm expr (CALL "(" 7.10.14)
+   $2 = token ';' (';' ";" 7.10.20)
+::~astree: ';' ";" 7.10.20
+-> $$ = nterm statement (CALL "(" 7.10.14)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 97
+Reducing stack by rule 24 (line 183):
+   $1 = nterm blockhead (BLOCK "{" 7.8.21)
+   $2 = nterm statement (CALL "(" 7.10.14)
+-> $$ = nterm blockhead (BLOCK "{" 7.8.21)
+Stack now 0 1 14 28 39 61 93 129 140 147
+Entering state 61
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("      ")
+--accepting rule at line 82 ("if")
+::astree: IF "if" 7.11.7
+Next token is token TOK_IF (IF "if" 7.11.7)
+Shifting token TOK_IF (IF "if" 7.11.7)
+Entering state 92
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 62 ("(")
+::astree: '(' "(" 7.11.10
+Next token is token '(' ('(' "(" 7.11.10)
+Shifting token '(' ('(' "(" 7.11.10)
+Entering state 128
+Reading a token: --accepting rule at line 96 ("number")
+::astree: IDENT "number" 7.11.11
+Next token is token TOK_IDENT (IDENT "number" 7.11.11)
+Shifting token TOK_IDENT (IDENT "number" 7.11.11)
+Entering state 43
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 72 ("<=")
+::astree: LE "<=" 7.11.18
+Next token is token TOK_LE (LE "<=" 7.11.18)
+Reducing stack by rule 69 (line 343):
+   $1 = token TOK_IDENT (IDENT "number" 7.11.11)
+-> $$ = nterm variable (IDENT "number" 7.11.11)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 92 128
+Entering state 54
+Reducing stack by rule 60 (line 291):
+   $1 = nterm variable (IDENT "number" 7.11.11)
+-> $$ = nterm expr (IDENT "number" 7.11.11)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 92 128
+Entering state 139
+Next token is token TOK_LE (LE "<=" 7.11.18)
+Shifting token TOK_LE (LE "<=" 7.11.18)
+Entering state 78
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 95 ("0")
+::astree: INTCON "0" 7.11.21
+Next token is token TOK_INTCON (INTCON "0" 7.11.21)
+Shifting token TOK_INTCON (INTCON "0" 7.11.21)
+Entering state 44
+Reducing stack by rule 72 (line 357):
+   $1 = token TOK_INTCON (INTCON "0" 7.11.21)
+-> $$ = nterm constant (INTCON "0" 7.11.21)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 92 128 139 78
+Entering state 55
+Reducing stack by rule 61 (line 292):
+   $1 = nterm constant (INTCON "0" 7.11.21)
+-> $$ = nterm expr (INTCON "0" 7.11.21)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 92 128 139 78
+Entering state 116
+Reading a token: --accepting rule at line 63 (")")
+::astree: ')' ")" 7.11.22
+Next token is token ')' (')' ")" 7.11.22)
+Reducing stack by rule 45 (line 264):
+   $1 = nterm expr (IDENT "number" 7.11.11)
+   $2 = token TOK_LE (LE "<=" 7.11.18)
+   $3 = nterm expr (INTCON "0" 7.11.21)
+-> $$ = nterm expr (LE "<=" 7.11.18)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 92 128
+Entering state 139
+Next token is token ')' (')' ")" 7.11.22)
+Shifting token ')' (')' ")" 7.11.22)
+Entering state 146
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("done")
+::astree: IDENT "done" 7.11.24
+Next token is token TOK_IDENT (IDENT "done" 7.11.24)
+Shifting token TOK_IDENT (IDENT "done" 7.11.24)
+Entering state 43
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 55 ("=")
+::astree: '=' "=" 7.11.29
+Next token is token '=' ('=' "=" 7.11.29)
+Reducing stack by rule 69 (line 343):
+   $1 = token TOK_IDENT (IDENT "done" 7.11.24)
+-> $$ = nterm variable (IDENT "done" 7.11.24)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 92 128 139 146
+Entering state 54
+Reducing stack by rule 60 (line 291):
+   $1 = nterm variable (IDENT "done" 7.11.24)
+-> $$ = nterm expr (IDENT "done" 7.11.24)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 92 128 139 146
+Entering state 103
+Next token is token '=' ('=' "=" 7.11.29)
+Shifting token '=' ('=' "=" 7.11.29)
+Entering state 81
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 95 ("1")
+::astree: INTCON "1" 7.11.31
+Next token is token TOK_INTCON (INTCON "1" 7.11.31)
+Shifting token TOK_INTCON (INTCON "1" 7.11.31)
+Entering state 44
+Reducing stack by rule 72 (line 357):
+   $1 = token TOK_INTCON (INTCON "1" 7.11.31)
+-> $$ = nterm constant (INTCON "1" 7.11.31)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 92 128 139 146 103 81
+Entering state 55
+Reducing stack by rule 61 (line 292):
+   $1 = nterm constant (INTCON "1" 7.11.31)
+-> $$ = nterm expr (INTCON "1" 7.11.31)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 92 128 139 146 103 81
+Entering state 119
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 7.11.32
+Next token is token ';' (';' ";" 7.11.32)
+Reducing stack by rule 41 (line 260):
+   $1 = nterm expr (IDENT "done" 7.11.24)
+   $2 = token '=' ('=' "=" 7.11.29)
+   $3 = nterm expr (INTCON "1" 7.11.31)
+-> $$ = nterm expr ('=' "=" 7.11.29)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 92 128 139 146
+Entering state 103
+Next token is token ';' (';' ";" 7.11.32)
+Shifting token ';' (';' ";" 7.11.32)
+Entering state 133
+Reducing stack by rule 31 (line 200):
+   $1 = nterm expr ('=' "=" 7.11.29)
+   $2 = token ';' (';' ";" 7.11.32)
+::~astree: ';' ";" 7.11.32
+-> $$ = nterm statement ('=' "=" 7.11.29)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 92 128 139 146
+Entering state 151
+Reducing stack by rule 38 (line 239):
+   $1 = token TOK_IF (IF "if" 7.11.7)
+   $2 = token '(' ('(' "(" 7.11.10)
+   $3 = nterm expr (LE "<=" 7.11.18)
+   $4 = token ')' (')' ")" 7.11.22)
+   $5 = nterm statement ('=' "=" 7.11.29)
+::~astree: '(' "(" 7.11.10
+::~astree: ')' ")" 7.11.22
+-> $$ = nterm if (IF "if" 7.11.7)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 101
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("      ")
+--accepting rule at line 96 ("number")
+::astree: IDENT "number" 7.12.7
+Next token is token TOK_IDENT (IDENT "number" 7.12.7)
+Reducing stack by rule 37 (line 236):
+   $1 = nterm if (IF "if" 7.11.7)
+-> $$ = nterm ifelse (IF "if" 7.11.7)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 100
+Reducing stack by rule 29 (line 198):
+   $1 = nterm ifelse (IF "if" 7.11.7)
+-> $$ = nterm statement (IF "if" 7.11.7)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 97
+Reducing stack by rule 24 (line 183):
+   $1 = nterm blockhead (BLOCK "{" 7.8.21)
+   $2 = nterm statement (IF "if" 7.11.7)
+-> $$ = nterm blockhead (BLOCK "{" 7.8.21)
+Stack now 0 1 14 28 39 61 93 129 140 147
+Entering state 61
+Next token is token TOK_IDENT (IDENT "number" 7.12.7)
+Shifting token TOK_IDENT (IDENT "number" 7.12.7)
+Entering state 43
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 55 ("=")
+::astree: '=' "=" 7.12.14
+Next token is token '=' ('=' "=" 7.12.14)
+Reducing stack by rule 69 (line 343):
+   $1 = token TOK_IDENT (IDENT "number" 7.12.7)
+-> $$ = nterm variable (IDENT "number" 7.12.7)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 54
+Reducing stack by rule 60 (line 291):
+   $1 = nterm variable (IDENT "number" 7.12.7)
+-> $$ = nterm expr (IDENT "number" 7.12.7)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 103
+Next token is token '=' ('=' "=" 7.12.14)
+Shifting token '=' ('=' "=" 7.12.14)
+Entering state 81
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("number")
+::astree: IDENT "number" 7.12.16
+Next token is token TOK_IDENT (IDENT "number" 7.12.16)
+Shifting token TOK_IDENT (IDENT "number" 7.12.16)
+Entering state 43
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 50 ("+")
+::astree: '+' "+" 7.12.23
+Next token is token '+' ('+' "+" 7.12.23)
+Reducing stack by rule 69 (line 343):
+   $1 = token TOK_IDENT (IDENT "number" 7.12.16)
+-> $$ = nterm variable (IDENT "number" 7.12.16)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 103 81
+Entering state 54
+Reducing stack by rule 60 (line 291):
+   $1 = nterm variable (IDENT "number" 7.12.16)
+-> $$ = nterm expr (IDENT "number" 7.12.16)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 103 81
+Entering state 119
+Next token is token '+' ('+' "+" 7.12.23)
+Shifting token '+' ('+' "+" 7.12.23)
+Entering state 82
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 96 ("number")
+::astree: IDENT "number" 7.12.25
+Next token is token TOK_IDENT (IDENT "number" 7.12.25)
+Shifting token TOK_IDENT (IDENT "number" 7.12.25)
+Entering state 43
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 7.12.31
+Next token is token ';' (';' ";" 7.12.31)
+Reducing stack by rule 69 (line 343):
+   $1 = token TOK_IDENT (IDENT "number" 7.12.25)
+-> $$ = nterm variable (IDENT "number" 7.12.25)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 103 81 119 82
+Entering state 54
+Reducing stack by rule 60 (line 291):
+   $1 = nterm variable (IDENT "number" 7.12.25)
+-> $$ = nterm expr (IDENT "number" 7.12.25)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 103 81 119 82
+Entering state 120
+Next token is token ';' (';' ";" 7.12.31)
+Reducing stack by rule 47 (line 266):
+   $1 = nterm expr (IDENT "number" 7.12.16)
+   $2 = token '+' ('+' "+" 7.12.23)
+   $3 = nterm expr (IDENT "number" 7.12.25)
+-> $$ = nterm expr ('+' "+" 7.12.23)
+Stack now 0 1 14 28 39 61 93 129 140 147 61 103 81
+Entering state 119
+Next token is token ';' (';' ";" 7.12.31)
+Reducing stack by rule 41 (line 260):
+   $1 = nterm expr (IDENT "number" 7.12.7)
+   $2 = token '=' ('=' "=" 7.12.14)
+   $3 = nterm expr ('+' "+" 7.12.23)
+-> $$ = nterm expr ('=' "=" 7.12.14)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 103
+Next token is token ';' (';' ";" 7.12.31)
+Shifting token ';' (';' ";" 7.12.31)
+Entering state 133
+Reducing stack by rule 31 (line 200):
+   $1 = nterm expr ('=' "=" 7.12.14)
+   $2 = token ';' (';' ";" 7.12.31)
+::~astree: ';' ";" 7.12.31
+-> $$ = nterm statement ('=' "=" 7.12.14)
+Stack now 0 1 14 28 39 61 93 129 140 147 61
+Entering state 97
+Reducing stack by rule 24 (line 183):
+   $1 = nterm blockhead (BLOCK "{" 7.8.21)
+   $2 = nterm statement ('=' "=" 7.12.14)
+-> $$ = nterm blockhead (BLOCK "{" 7.8.21)
+Stack now 0 1 14 28 39 61 93 129 140 147
+Entering state 61
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("   ")
+--accepting rule at line 67 ("}")
+::astree: '}' "}" 7.13.4
+Next token is token '}' ('}' "}" 7.13.4)
+Shifting token '}' ('}' "}" 7.13.4)
+Entering state 95
+Reducing stack by rule 22 (line 176):
+   $1 = nterm blockhead (BLOCK "{" 7.8.21)
+   $2 = token '}' ('}' "}" 7.13.4)
+::~astree: '}' "}" 7.13.4
+-> $$ = nterm block (BLOCK "{" 7.8.21)
+Stack now 0 1 14 28 39 61 93 129 140 147
+Entering state 96
+Reducing stack by rule 27 (line 196):
+   $1 = nterm block (BLOCK "{" 7.8.21)
+-> $$ = nterm statement (BLOCK "{" 7.8.21)
+Stack now 0 1 14 28 39 61 93 129 140 147
+Entering state 152
+Reducing stack by rule 35 (line 221):
+   $1 = token TOK_WHILE (WHILE "while" 7.8.4)
+   $2 = token '(' ('(' "(" 7.8.10)
+   $3 = nterm expr (NOT "not" 7.8.11)
+   $4 = token ')' (')' ")" 7.8.19)
+   $5 = nterm statement (BLOCK "{" 7.8.21)
+::~astree: '(' "(" 7.8.10
+::~astree: ')' ")" 7.8.19
+-> $$ = nterm while (WHILE "while" 7.8.4)
+Stack now 0 1 14 28 39 61
+Entering state 99
+Reducing stack by rule 28 (line 197):
+   $1 = nterm while (WHILE "while" 7.8.4)
+-> $$ = nterm statement (WHILE "while" 7.8.4)
+Stack now 0 1 14 28 39 61
+Entering state 97
+Reducing stack by rule 24 (line 183):
+   $1 = nterm blockhead (BLOCK "{" 7.5.12)
+   $2 = nterm statement (WHILE "while" 7.8.4)
+-> $$ = nterm blockhead (BLOCK "{" 7.5.12)
+Stack now 0 1 14 28 39
+Entering state 61
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 47 ("   ")
+--accepting rule at line 85 ("return")
+::astree: RETURN "return" 7.14.4
+Next token is token TOK_RETURN (RETURN "return" 7.14.4)
+Shifting token TOK_RETURN (RETURN "return" 7.14.4)
+Entering state 94
+Reading a token: --accepting rule at line 47 (" ")
+--accepting rule at line 95 ("0")
+::astree: INTCON "0" 7.14.11
+Next token is token TOK_INTCON (INTCON "0" 7.14.11)
+Shifting token TOK_INTCON (INTCON "0" 7.14.11)
+Entering state 44
+Reducing stack by rule 72 (line 357):
+   $1 = token TOK_INTCON (INTCON "0" 7.14.11)
+-> $$ = nterm constant (INTCON "0" 7.14.11)
+Stack now 0 1 14 28 39 61 94
+Entering state 55
+Reducing stack by rule 61 (line 292):
+   $1 = nterm constant (INTCON "0" 7.14.11)
+-> $$ = nterm expr (INTCON "0" 7.14.11)
+Stack now 0 1 14 28 39 61 94
+Entering state 131
+Reading a token: --accepting rule at line 57 (";")
+::astree: ';' ";" 7.14.12
+Next token is token ';' (';' ";" 7.14.12)
+Shifting token ';' (';' ";" 7.14.12)
+Entering state 141
+Reducing stack by rule 39 (line 247):
+   $1 = token TOK_RETURN (RETURN "return" 7.14.4)
+   $2 = nterm expr (INTCON "0" 7.14.11)
+   $3 = token ';' (';' ";" 7.14.12)
+::~astree: ';' ";" 7.14.12
+-> $$ = nterm return (RETURN "return" 7.14.4)
+Stack now 0 1 14 28 39 61
+Entering state 102
+Reducing stack by rule 30 (line 199):
+   $1 = nterm return (RETURN "return" 7.14.4)
+-> $$ = nterm statement (RETURN "return" 7.14.4)
+Stack now 0 1 14 28 39 61
+Entering state 97
+Reducing stack by rule 24 (line 183):
+   $1 = nterm blockhead (BLOCK "{" 7.5.12)
+   $2 = nterm statement (RETURN "return" 7.14.4)
+-> $$ = nterm blockhead (BLOCK "{" 7.5.12)
+Stack now 0 1 14 28 39
+Entering state 61
+Reading a token: --accepting rule at line 48 ("
+")
+--accepting rule at line 67 ("}")
+::astree: '}' "}" 7.15.1
+Next token is token '}' ('}' "}" 7.15.1)
+Shifting token '}' ('}' "}" 7.15.1)
+Entering state 95
+Reducing stack by rule 22 (line 176):
+   $1 = nterm blockhead (BLOCK "{" 7.5.12)
+   $2 = token '}' ('}' "}" 7.15.1)
+::~astree: '}' "}" 7.15.1
+-> $$ = nterm block (BLOCK "{" 7.5.12)
+Stack now 0 1 14 28 39
+Entering state 67
+Reducing stack by rule 16 (line 119):
+   $1 = nterm plaintype (INT "int" 7.5.1)
+   $2 = token TOK_IDENT (IDENT "main" 7.5.5)
+   $3 = nterm parameters (PARAM "(" 7.5.9)
+   $4 = nterm block (BLOCK "{" 7.5.12)
+::astree: TYPE_ID "" 7.5.1
+::astree: FUNCT "" 7.5.1
+-> $$ = nterm function (FUNCT "" 7.5.1)
+Stack now 0 1
+Entering state 15
+Reducing stack by rule 2 (line 60):
+   $1 = nterm program (ROOT "ROOT" 0.0.0)
+   $2 = nterm function (FUNCT "" 7.5.1)
+-> $$ = nterm program (ROOT "ROOT" 0.0.0)
+Stack now 0
+Entering state 1
+Reading a token: --accepting rule at line 48 ("
+")
+--(end of buffer or a NUL)
+--EOF (start condition 0)
+Now at end of input.
+Shifting token $end ()
+Entering state 2
+Stack now 0 1 2
+Cleanup: popping token $end ()
+Cleanup: popping nterm program (ROOT "ROOT" 0.0.0)
+::astree: ROOT "ROOT" 0.0.0
+::astree:    FUNCT "" 6.22.15
+::astree:       TYPE_ID "" 6.22.15
+::astree:          VOID "void" 6.22.15
+::astree:          IDENT "fail" 6.22.20
+::astree:       PARAM "(" 6.22.25
+::astree:          TYPE_ID "" 6.22.26
+::astree:             STRING "string" 6.22.26
+::astree:             IDENT "expr" 6.22.33
+::astree:          TYPE_ID "" 6.22.39
+::astree:             STRING "string" 6.22.39
+::astree:             IDENT "file" 6.22.46
+::astree:          TYPE_ID "" 6.22.52
+::astree:             INT "int" 6.22.52
+::astree:             IDENT "line" 6.22.56
+::astree:       BLOCK ";" 6.22.61
+::astree:    FUNCT "" 6.24.1
+::astree:       TYPE_ID "" 6.24.1
+::astree:          VOID "void" 6.24.1
+::astree:          IDENT "putchr" 6.24.6
+::astree:       PARAM "(" 6.24.13
+::astree:          TYPE_ID "" 6.24.14
+::astree:             INT "int" 6.24.14
+::astree:             IDENT "chr" 6.24.18
+::astree:       BLOCK ";" 6.24.22
+::astree:    FUNCT "" 6.25.1
+::astree:       TYPE_ID "" 6.25.1
+::astree:          VOID "void" 6.25.1
+::astree:          IDENT "putint" 6.25.6
+::astree:       PARAM "(" 6.25.13
+::astree:          TYPE_ID "" 6.25.14
+::astree:             INT "int" 6.25.14
+::astree:             IDENT "num" 6.25.18
+::astree:       BLOCK ";" 6.25.22
+::astree:    FUNCT "" 6.26.1
+::astree:       TYPE_ID "" 6.26.1
+::astree:          VOID "void" 6.26.1
+::astree:          IDENT "putstr" 6.26.6
+::astree:       PARAM "(" 6.26.13
+::astree:          TYPE_ID "" 6.26.14
+::astree:             STRING "string" 6.26.14
+::astree:             IDENT "str" 6.26.21
+::astree:       BLOCK ";" 6.26.25
+::astree:    FUNCT "" 6.28.1
+::astree:       TYPE_ID "" 6.28.1
+::astree:          INT "int" 6.28.1
+::astree:          IDENT "getchr" 6.28.5
+::astree:       PARAM "(" 6.28.11
+::astree:       BLOCK ";" 6.28.13
+::astree:    FUNCT "" 6.29.1
+::astree:       TYPE_ID "" 6.29.1
+::astree:          STRING "string" 6.29.1
+::astree:          IDENT "getstr" 6.29.8
+::astree:       PARAM "(" 6.29.14
+::astree:       BLOCK ";" 6.29.16
+::astree:    FUNCT "" 6.30.1
+::astree:       TYPE_ID "" 6.30.1
+::astree:          STRING "string" 6.30.1
+::astree:          IDENT "getln" 6.30.8
+::astree:       PARAM "(" 6.30.13
+::astree:       BLOCK ";" 6.30.15
+::astree:    FUNCT "" 7.5.1
+::astree:       TYPE_ID "" 7.5.1
+::astree:          INT "int" 7.5.1
+::astree:          IDENT "main" 7.5.5
+::astree:       PARAM "(" 7.5.9
+::astree:       BLOCK "{" 7.5.12
+::astree:          TYPE_ID "TYPE_ID" 7.6.4
+::astree:             INT "int" 7.6.4
+::astree:             IDENT "number" 7.6.8
+::astree:             INTCON "1" 7.6.17
+::astree:          TYPE_ID "TYPE_ID" 7.7.4
+::astree:             INT "int" 7.7.4
+::astree:             IDENT "done" 7.7.8
+::astree:             INTCON "0" 7.7.15
+::astree:          WHILE "while" 7.8.4
+::astree:             NOT "not" 7.8.11
+::astree:                IDENT "done" 7.8.15
+::astree:             BLOCK "{" 7.8.21
+::astree:                CALL "(" 7.9.14
+::astree:                   IDENT "putint" 7.9.7
+::astree:                   IDENT "number" 7.9.15
+::astree:                CALL "(" 7.10.14
+::astree:                   IDENT "putchr" 7.10.7
+::astree:                   CHARCON "'\n'" 7.10.15
+::astree:                IF "if" 7.11.7
+::astree:                   LE "<=" 7.11.18
+::astree:                      IDENT "number" 7.11.11
+::astree:                      INTCON "0" 7.11.21
+::astree:                   '=' "=" 7.11.29
+::astree:                      IDENT "done" 7.11.24
+::astree:                      INTCON "1" 7.11.31
+::astree:                '=' "=" 7.12.14
+::astree:                   IDENT "number" 7.12.7
+::astree:                   '+' "+" 7.12.23
+::astree:                      IDENT "number" 7.12.16
+::astree:                      IDENT "number" 7.12.25
+::astree:          RETURN "return" 7.14.4
+::astree:             INTCON "0" 7.14.11
+::astree::cppfile[0]: "/"
+::astree::cppfile[1]: "11-numbers.oc"
+::astree::cppfile[2]: "<built-in>"
+::astree::cppfile[3]: "<command-line>"
+::astree::cppfile[4]: "11-numbers.oc"
+::astree::cppfile[5]: "oclib.h"
+::astree::cppfile[6]: "oclib.h"
+::astree::cppfile[7]: "11-numbers.oc"
+::~astree: ROOT "ROOT" 0.0.0
+::~astree: FUNCT "" 6.22.15
+::~astree: TYPE_ID "" 6.22.15
+::~astree: VOID "void" 6.22.15
+::~astree: IDENT "fail" 6.22.20
+::~astree: PARAM "(" 6.22.25
+::~astree: TYPE_ID "" 6.22.26
+::~astree: STRING "string" 6.22.26
+::~astree: IDENT "expr" 6.22.33
+::~astree: TYPE_ID "" 6.22.39
+::~astree: STRING "string" 6.22.39
+::~astree: IDENT "file" 6.22.46
+::~astree: TYPE_ID "" 6.22.52
+::~astree: INT "int" 6.22.52
+::~astree: IDENT "line" 6.22.56
+::~astree: BLOCK ";" 6.22.61
+::~astree: FUNCT "" 6.24.1
+::~astree: TYPE_ID "" 6.24.1
+::~astree: VOID "void" 6.24.1
+::~astree: IDENT "putchr" 6.24.6
+::~astree: PARAM "(" 6.24.13
+::~astree: TYPE_ID "" 6.24.14
+::~astree: INT "int" 6.24.14
+::~astree: IDENT "chr" 6.24.18
+::~astree: BLOCK ";" 6.24.22
+::~astree: FUNCT "" 6.25.1
+::~astree: TYPE_ID "" 6.25.1
+::~astree: VOID "void" 6.25.1
+::~astree: IDENT "putint" 6.25.6
+::~astree: PARAM "(" 6.25.13
+::~astree: TYPE_ID "" 6.25.14
+::~astree: INT "int" 6.25.14
+::~astree: IDENT "num" 6.25.18
+::~astree: BLOCK ";" 6.25.22
+::~astree: FUNCT "" 6.26.1
+::~astree: TYPE_ID "" 6.26.1
+::~astree: VOID "void" 6.26.1
+::~astree: IDENT "putstr" 6.26.6
+::~astree: PARAM "(" 6.26.13
+::~astree: TYPE_ID "" 6.26.14
+::~astree: STRING "string" 6.26.14
+::~astree: IDENT "str" 6.26.21
+::~astree: BLOCK ";" 6.26.25
+::~astree: FUNCT "" 6.28.1
+::~astree: TYPE_ID "" 6.28.1
+::~astree: INT "int" 6.28.1
+::~astree: IDENT "getchr" 6.28.5
+::~astree: PARAM "(" 6.28.11
+::~astree: BLOCK ";" 6.28.13
+::~astree: FUNCT "" 6.29.1
+::~astree: TYPE_ID "" 6.29.1
+::~astree: STRING "string" 6.29.1
+::~astree: IDENT "getstr" 6.29.8
+::~astree: PARAM "(" 6.29.14
+::~astree: BLOCK ";" 6.29.16
+::~astree: FUNCT "" 6.30.1
+::~astree: TYPE_ID "" 6.30.1
+::~astree: STRING "string" 6.30.1
+::~astree: IDENT "getln" 6.30.8
+::~astree: PARAM "(" 6.30.13
+::~astree: BLOCK ";" 6.30.15
+::~astree: FUNCT "" 7.5.1
+::~astree: TYPE_ID "" 7.5.1
+::~astree: INT "int" 7.5.1
+::~astree: IDENT "main" 7.5.5
+::~astree: PARAM "(" 7.5.9
+::~astree: BLOCK "{" 7.5.12
+::~astree: TYPE_ID "TYPE_ID" 7.6.4
+::~astree: INT "int" 7.6.4
+::~astree: IDENT "number" 7.6.8
+::~astree: INTCON "1" 7.6.17
+::~astree: TYPE_ID "TYPE_ID" 7.7.4
+::~astree: INT "int" 7.7.4
+::~astree: IDENT "done" 7.7.8
+::~astree: INTCON "0" 7.7.15
+::~astree: WHILE "while" 7.8.4
+::~astree: NOT "not" 7.8.11
+::~astree: IDENT "done" 7.8.15
+::~astree: BLOCK "{" 7.8.21
+::~astree: CALL "(" 7.9.14
+::~astree: IDENT "putint" 7.9.7
+::~astree: IDENT "number" 7.9.15
+::~astree: CALL "(" 7.10.14
+::~astree: IDENT "putchr" 7.10.7
+::~astree: CHARCON "'\n'" 7.10.15
+::~astree: IF "if" 7.11.7
+::~astree: LE "<=" 7.11.18
+::~astree: IDENT "number" 7.11.11
+::~astree: INTCON "0" 7.11.21
+::~astree: '=' "=" 7.11.29
+::~astree: IDENT "done" 7.11.24
+::~astree: INTCON "1" 7.11.31
+::~astree: '=' "=" 7.12.14
+::~astree: IDENT "number" 7.12.7
+::~astree: '+' "+" 7.12.23
+::~astree: IDENT "number" 7.12.16
+::~astree: IDENT "number" 7.12.25
+::~astree: RETURN "return" 7.14.4
+::~astree: INTCON "0" 7.14.11
+--cpp_pipe: pclose ("/usr/bin/cpp -nostdinc 11-numbers.oc"): fileno = 5

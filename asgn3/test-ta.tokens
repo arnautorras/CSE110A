@@ -1,0 +1,15 @@
+# 1 "test-ta.oc"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "test-ta.oc"
+  4  1.017  259  TOK_INT        int
+  4  1.021  278  TOK_IDENT      test_func
+  4  1.030   40  '('            (
+  4  1.031   41  ')'            )
+  4  1.032  123  '{'            {
+  4  2.002  259  TOK_INT        int
+  4  2.006  278  TOK_IDENT      x
+  4  2.008   61  '='            =
+  4  2.010  279  TOK_INTCON     0
+  4  2.011   59  ';'            ;
+  4  3.001  125  '}'            }

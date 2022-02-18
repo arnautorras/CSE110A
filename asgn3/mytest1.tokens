@@ -1,0 +1,40 @@
+# 1 "mytest1.oc"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "mytest1.oc"
+  4  1.017  259  TOK_INT        int
+  4  1.021  278  TOK_IDENT      fac
+  4  1.025   40  '('            (
+  4  1.026  259  TOK_INT        int
+  4  1.030  278  TOK_IDENT      n
+  4  1.031   41  ')'            )
+  4  1.033  123  '{'            {
+  4  2.004  259  TOK_INT        int
+  4  2.008  278  TOK_IDENT      f
+  4  2.010   61  '='            =
+  4  2.012  279  TOK_INTCON     1
+  4  2.013   59  ';'            ;
+  4  3.004  263  TOK_WHILE      while
+  4  3.010   40  '('            (
+  4  3.011  278  TOK_IDENT      n
+  4  3.013  275  TOK_GT         >
+  4  3.015  279  TOK_INTCON     1
+  4  3.016   41  ')'            )
+  4  3.018  123  '{'            {
+  4  4.007  278  TOK_IDENT      f
+  4  4.009   61  '='            =
+  4  4.011  278  TOK_IDENT      f
+  4  4.013   42  '*'            *
+  4  4.015  278  TOK_IDENT      n
+  4  4.016   59  ';'            ;
+  4  5.007  278  TOK_IDENT      n
+  4  5.009   61  '='            =
+  4  5.011  278  TOK_IDENT      n
+  4  5.013   45  '-'            -
+  4  5.015  279  TOK_INTCON     1
+  4  5.016   59  ';'            ;
+  4  6.004  125  '}'            }
+  4  7.004  264  TOK_RETURN     return
+  4  7.011  278  TOK_IDENT      f
+  4  7.012   59  ';'            ;
+  4  8.001  125  '}'            }

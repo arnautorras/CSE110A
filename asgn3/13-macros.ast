@@ -1,0 +1,108 @@
+ROOT "ROOT" 0.0.0
+|	FUNCT "" 6.22.15
+|	|	TYPE_ID "" 6.22.15
+|	|	|	VOID "void" 6.22.15
+|	|	|	IDENT "fail" 6.22.20
+|	|	PARAM "(" 6.22.25
+|	|	|	TYPE_ID "" 6.22.26
+|	|	|	|	STRING "string" 6.22.26
+|	|	|	|	IDENT "expr" 6.22.33
+|	|	|	TYPE_ID "" 6.22.39
+|	|	|	|	STRING "string" 6.22.39
+|	|	|	|	IDENT "file" 6.22.46
+|	|	|	TYPE_ID "" 6.22.52
+|	|	|	|	INT "int" 6.22.52
+|	|	|	|	IDENT "line" 6.22.56
+|	|	BLOCK ";" 6.22.61
+|	FUNCT "" 6.24.1
+|	|	TYPE_ID "" 6.24.1
+|	|	|	VOID "void" 6.24.1
+|	|	|	IDENT "putchr" 6.24.6
+|	|	PARAM "(" 6.24.13
+|	|	|	TYPE_ID "" 6.24.14
+|	|	|	|	INT "int" 6.24.14
+|	|	|	|	IDENT "chr" 6.24.18
+|	|	BLOCK ";" 6.24.22
+|	FUNCT "" 6.25.1
+|	|	TYPE_ID "" 6.25.1
+|	|	|	VOID "void" 6.25.1
+|	|	|	IDENT "putint" 6.25.6
+|	|	PARAM "(" 6.25.13
+|	|	|	TYPE_ID "" 6.25.14
+|	|	|	|	INT "int" 6.25.14
+|	|	|	|	IDENT "num" 6.25.18
+|	|	BLOCK ";" 6.25.22
+|	FUNCT "" 6.26.1
+|	|	TYPE_ID "" 6.26.1
+|	|	|	VOID "void" 6.26.1
+|	|	|	IDENT "putstr" 6.26.6
+|	|	PARAM "(" 6.26.13
+|	|	|	TYPE_ID "" 6.26.14
+|	|	|	|	STRING "string" 6.26.14
+|	|	|	|	IDENT "str" 6.26.21
+|	|	BLOCK ";" 6.26.25
+|	FUNCT "" 6.28.1
+|	|	TYPE_ID "" 6.28.1
+|	|	|	INT "int" 6.28.1
+|	|	|	IDENT "getchr" 6.28.5
+|	|	PARAM "(" 6.28.11
+|	|	BLOCK ";" 6.28.13
+|	FUNCT "" 6.29.1
+|	|	TYPE_ID "" 6.29.1
+|	|	|	STRING "string" 6.29.1
+|	|	|	IDENT "getstr" 6.29.8
+|	|	PARAM "(" 6.29.14
+|	|	BLOCK ";" 6.29.16
+|	FUNCT "" 6.30.1
+|	|	TYPE_ID "" 6.30.1
+|	|	|	STRING "string" 6.30.1
+|	|	|	IDENT "getln" 6.30.8
+|	|	PARAM "(" 6.30.13
+|	|	BLOCK ";" 6.30.15
+|	FUNCT "" 7.5.1
+|	|	TYPE_ID "" 7.5.1
+|	|	|	INT "int" 7.5.1
+|	|	|	IDENT "main" 7.5.5
+|	|	PARAM "(" 7.5.10
+|	|	|	TYPE_ID "" 7.5.11
+|	|	|	|	INT "int" 7.5.11
+|	|	|	|	IDENT "argc" 7.5.15
+|	|	|	TYPE_ID "" 7.5.21
+|	|	|	|	ARRAY "array" 7.5.21
+|	|	|	|	|	STRING "string" 7.5.27
+|	|	|	|	IDENT "argv" 7.5.35
+|	|	BLOCK "{" 7.5.41
+|	|	|	CALL "(" 7.6.11
+|	|	|	|	IDENT "putstr" 7.6.4
+|	|	|	|	'[' "[" 7.6.16
+|	|	|	|	|	IDENT "argv" 7.6.12
+|	|	|	|	|	INTCON "0" 7.6.17
+|	|	|	CALL "(" 7.7.11
+|	|	|	|	IDENT "putstr" 7.7.4
+|	|	|	|	STRINGCON "": "" 7.7.12
+|	|	|	CALL "(" 7.8.11
+|	|	|	|	IDENT "putstr" 7.8.4
+|	|	|	|	STRINGCON ""13-macros.oc"" 7.8.12
+|	|	|	CALL "(" 7.9.11
+|	|	|	|	IDENT "putchr" 7.9.4
+|	|	|	|	CHARCON "'['" 7.9.12
+|	|	|	CALL "(" 7.10.11
+|	|	|	|	IDENT "putint" 7.10.4
+|	|	|	|	INTCON "10" 7.10.12
+|	|	|	CALL "(" 7.11.11
+|	|	|	|	IDENT "putstr" 7.11.4
+|	|	|	|	STRINGCON ""] compiled "" 7.11.12
+|	|	|	CALL "(" 7.12.11
+|	|	|	|	IDENT "putstr" 7.12.4
+|	|	|	|	STRINGCON ""Feb 17 2022"" 7.12.12
+|	|	|	CALL "(" 7.13.11
+|	|	|	|	IDENT "putstr" 7.13.4
+|	|	|	|	STRINGCON "" "" 7.13.12
+|	|	|	CALL "(" 7.14.11
+|	|	|	|	IDENT "putstr" 7.14.4
+|	|	|	|	STRINGCON ""16:08:40"" 7.14.12
+|	|	|	CALL "(" 7.15.11
+|	|	|	|	IDENT "putstr" 7.15.4
+|	|	|	|	STRINGCON ""\n"" 7.15.12
+|	|	|	RETURN "return" 7.16.4
+|	|	|	|	INTCON "0" 7.16.11

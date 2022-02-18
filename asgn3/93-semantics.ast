@@ -1,0 +1,10 @@
+ROOT "ROOT" 0.0.0
+|	IDENT "null" 4.4.11
+|	IDENT "null" 4.5.11
+|	'{' "{" 4.7.12
+|	INT "int" 4.9.1
+|	IDENT "null" 4.11.13
+|	IDENT "b" 4.12.16
+|	IDENT "b" 4.13.15
+|	STRINGCON ""foobar"" 4.14.11
+|	$end "}" 4.15.1

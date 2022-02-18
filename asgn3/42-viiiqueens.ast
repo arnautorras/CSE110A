@@ -1,0 +1,222 @@
+ROOT "ROOT" 0.0.0
+|	FUNCT "" 6.22.15
+|	|	TYPE_ID "" 6.22.15
+|	|	|	VOID "void" 6.22.15
+|	|	|	IDENT "fail" 6.22.20
+|	|	PARAM "(" 6.22.25
+|	|	|	TYPE_ID "" 6.22.26
+|	|	|	|	STRING "string" 6.22.26
+|	|	|	|	IDENT "expr" 6.22.33
+|	|	|	TYPE_ID "" 6.22.39
+|	|	|	|	STRING "string" 6.22.39
+|	|	|	|	IDENT "file" 6.22.46
+|	|	|	TYPE_ID "" 6.22.52
+|	|	|	|	INT "int" 6.22.52
+|	|	|	|	IDENT "line" 6.22.56
+|	|	BLOCK ";" 6.22.61
+|	FUNCT "" 6.24.1
+|	|	TYPE_ID "" 6.24.1
+|	|	|	VOID "void" 6.24.1
+|	|	|	IDENT "putchr" 6.24.6
+|	|	PARAM "(" 6.24.13
+|	|	|	TYPE_ID "" 6.24.14
+|	|	|	|	INT "int" 6.24.14
+|	|	|	|	IDENT "chr" 6.24.18
+|	|	BLOCK ";" 6.24.22
+|	FUNCT "" 6.25.1
+|	|	TYPE_ID "" 6.25.1
+|	|	|	VOID "void" 6.25.1
+|	|	|	IDENT "putint" 6.25.6
+|	|	PARAM "(" 6.25.13
+|	|	|	TYPE_ID "" 6.25.14
+|	|	|	|	INT "int" 6.25.14
+|	|	|	|	IDENT "num" 6.25.18
+|	|	BLOCK ";" 6.25.22
+|	FUNCT "" 6.26.1
+|	|	TYPE_ID "" 6.26.1
+|	|	|	VOID "void" 6.26.1
+|	|	|	IDENT "putstr" 6.26.6
+|	|	PARAM "(" 6.26.13
+|	|	|	TYPE_ID "" 6.26.14
+|	|	|	|	STRING "string" 6.26.14
+|	|	|	|	IDENT "str" 6.26.21
+|	|	BLOCK ";" 6.26.25
+|	FUNCT "" 6.28.1
+|	|	TYPE_ID "" 6.28.1
+|	|	|	INT "int" 6.28.1
+|	|	|	IDENT "getchr" 6.28.5
+|	|	PARAM "(" 6.28.11
+|	|	BLOCK ";" 6.28.13
+|	FUNCT "" 6.29.1
+|	|	TYPE_ID "" 6.29.1
+|	|	|	STRING "string" 6.29.1
+|	|	|	IDENT "getstr" 6.29.8
+|	|	PARAM "(" 6.29.14
+|	|	BLOCK ";" 6.29.16
+|	FUNCT "" 6.30.1
+|	|	TYPE_ID "" 6.30.1
+|	|	|	STRING "string" 6.30.1
+|	|	|	IDENT "getln" 6.30.8
+|	|	PARAM "(" 6.30.13
+|	|	BLOCK ";" 6.30.15
+|	TYPE_ID "TYPE_ID" 7.6.1
+|	|	ARRAY "array" 7.6.1
+|	|	|	INT "int" 7.6.7
+|	|	IDENT "board" 7.6.12
+|	|	NULLPTR "nullptr" 7.6.20
+|	FUNCT "" 7.8.1
+|	|	TYPE_ID "" 7.8.1
+|	|	|	INT "int" 7.8.1
+|	|	|	IDENT "is_safe" 7.8.5
+|	|	PARAM "(" 7.8.13
+|	|	|	TYPE_ID "" 7.8.14
+|	|	|	|	INT "int" 7.8.14
+|	|	|	|	IDENT "newcol" 7.8.18
+|	|	BLOCK "{" 7.8.26
+|	|	|	TYPE_ID "TYPE_ID" 7.9.4
+|	|	|	|	INT "int" 7.9.4
+|	|	|	|	IDENT "col" 7.9.8
+|	|	|	|	INTCON "0" 7.9.14
+|	|	|	TYPE_ID "TYPE_ID" 7.10.4
+|	|	|	|	INT "int" 7.10.4
+|	|	|	|	IDENT "diagonal" 7.10.8
+|	|	|	|	INTCON "0" 7.10.19
+|	|	|	WHILE "while" 7.11.4
+|	|	|	|	LT "<" 7.11.15
+|	|	|	|	|	IDENT "col" 7.11.11
+|	|	|	|	|	IDENT "newcol" 7.11.17
+|	|	|	|	BLOCK "{" 7.11.25
+|	|	|	|	|	IF "if" 7.12.7
+|	|	|	|	|	|	EQ "==" 7.12.22
+|	|	|	|	|	|	|	'[' "[" 7.12.16
+|	|	|	|	|	|	|	|	IDENT "board" 7.12.11
+|	|	|	|	|	|	|	|	IDENT "col" 7.12.17
+|	|	|	|	|	|	|	'[' "[" 7.12.30
+|	|	|	|	|	|	|	|	IDENT "board" 7.12.25
+|	|	|	|	|	|	|	|	IDENT "newcol" 7.12.31
+|	|	|	|	|	|	RETURN "return" 7.12.40
+|	|	|	|	|	|	|	INTCON "0" 7.12.47
+|	|	|	|	|	'=' "=" 7.13.16
+|	|	|	|	|	|	IDENT "diagonal" 7.13.7
+|	|	|	|	|	|	'-' "-" 7.13.29
+|	|	|	|	|	|	|	'[' "[" 7.13.23
+|	|	|	|	|	|	|	|	IDENT "board" 7.13.18
+|	|	|	|	|	|	|	|	IDENT "col" 7.13.24
+|	|	|	|	|	|	|	'[' "[" 7.13.36
+|	|	|	|	|	|	|	|	IDENT "board" 7.13.31
+|	|	|	|	|	|	|	|	IDENT "newcol" 7.13.37
+|	|	|	|	|	IF "if" 7.14.7
+|	|	|	|	|	|	EQ "==" 7.14.20
+|	|	|	|	|	|	|	IDENT "diagonal" 7.14.11
+|	|	|	|	|	|	|	'-' "-" 7.14.27
+|	|	|	|	|	|	|	|	IDENT "col" 7.14.23
+|	|	|	|	|	|	|	|	IDENT "newcol" 7.14.29
+|	|	|	|	|	|	RETURN "return" 7.14.37
+|	|	|	|	|	|	|	INTCON "0" 7.14.44
+|	|	|	|	|	IF "if" 7.15.7
+|	|	|	|	|	|	EQ "==" 7.15.20
+|	|	|	|	|	|	|	IDENT "diagonal" 7.15.11
+|	|	|	|	|	|	|	'-' "-" 7.15.30
+|	|	|	|	|	|	|	|	IDENT "newcol" 7.15.23
+|	|	|	|	|	|	|	|	IDENT "col" 7.15.32
+|	|	|	|	|	|	RETURN "return" 7.15.37
+|	|	|	|	|	|	|	INTCON "0" 7.15.44
+|	|	|	|	|	'=' "=" 7.16.11
+|	|	|	|	|	|	IDENT "col" 7.16.7
+|	|	|	|	|	|	'+' "+" 7.16.17
+|	|	|	|	|	|	|	IDENT "col" 7.16.13
+|	|	|	|	|	|	|	INTCON "1" 7.16.19
+|	|	|	RETURN "return" 7.18.4
+|	|	|	|	INTCON "1" 7.18.11
+|	FUNCT "" 7.21.1
+|	|	TYPE_ID "" 7.21.1
+|	|	|	VOID "void" 7.21.1
+|	|	|	IDENT "printqueens" 7.21.6
+|	|	PARAM "(" 7.21.17
+|	|	BLOCK "{" 7.21.20
+|	|	|	TYPE_ID "TYPE_ID" 7.22.4
+|	|	|	|	INT "int" 7.22.4
+|	|	|	|	IDENT "col" 7.22.8
+|	|	|	|	INTCON "0" 7.22.14
+|	|	|	WHILE "while" 7.23.4
+|	|	|	|	LT "<" 7.23.15
+|	|	|	|	|	IDENT "col" 7.23.11
+|	|	|	|	|	INTCON "8" 7.23.17
+|	|	|	|	BLOCK "{" 7.23.20
+|	|	|	|	|	CALL "(" 7.24.14
+|	|	|	|	|	|	IDENT "putchr" 7.24.7
+|	|	|	|	|	|	'+' "+" 7.24.26
+|	|	|	|	|	|	|	'[' "[" 7.24.20
+|	|	|	|	|	|	|	|	IDENT "board" 7.24.15
+|	|	|	|	|	|	|	|	IDENT "col" 7.24.21
+|	|	|	|	|	|	|	CHARCON "'1'" 7.24.28
+|	|	|	|	|	'=' "=" 7.25.11
+|	|	|	|	|	|	IDENT "col" 7.25.7
+|	|	|	|	|	|	'+' "+" 7.25.17
+|	|	|	|	|	|	|	IDENT "col" 7.25.13
+|	|	|	|	|	|	|	INTCON "1" 7.25.19
+|	|	|	CALL "(" 7.27.11
+|	|	|	|	IDENT "putchr" 7.27.4
+|	|	|	|	CHARCON "'\n'" 7.27.12
+|	FUNCT "" 7.30.1
+|	|	TYPE_ID "" 7.30.1
+|	|	|	VOID "void" 7.30.1
+|	|	|	IDENT "queens" 7.30.6
+|	|	PARAM "(" 7.30.13
+|	|	|	TYPE_ID "" 7.30.14
+|	|	|	|	INT "int" 7.30.14
+|	|	|	|	IDENT "newcol" 7.30.18
+|	|	BLOCK "{" 7.30.26
+|	|	|	TYPE_ID "TYPE_ID" 7.31.4
+|	|	|	|	INT "int" 7.31.4
+|	|	|	|	IDENT "row" 7.31.8
+|	|	|	|	INTCON "0" 7.31.14
+|	|	|	IF "if" 7.32.4
+|	|	|	|	EQ "==" 7.32.15
+|	|	|	|	|	IDENT "newcol" 7.32.8
+|	|	|	|	|	INTCON "8" 7.32.18
+|	|	|	|	CALL "(" 7.32.32
+|	|	|	|	|	IDENT "printqueens" 7.32.21
+|	|	|	|	ELSE "else" 7.33.4
+|	|	|	|	|	BLOCK "{" 7.33.9
+|	|	|	|	|	|	WHILE "while" 7.34.7
+|	|	|	|	|	|	|	LT "<" 7.34.18
+|	|	|	|	|	|	|	|	IDENT "row" 7.34.14
+|	|	|	|	|	|	|	|	INTCON "8" 7.34.20
+|	|	|	|	|	|	|	BLOCK "{" 7.34.23
+|	|	|	|	|	|	|	|	'=' "=" 7.35.24
+|	|	|	|	|	|	|	|	|	'[' "[" 7.35.15
+|	|	|	|	|	|	|	|	|	|	IDENT "board" 7.35.10
+|	|	|	|	|	|	|	|	|	|	IDENT "newcol" 7.35.16
+|	|	|	|	|	|	|	|	|	IDENT "row" 7.35.26
+|	|	|	|	|	|	|	|	IF "if" 7.36.10
+|	|	|	|	|	|	|	|	|	CALL "(" 7.36.22
+|	|	|	|	|	|	|	|	|	|	IDENT "is_safe" 7.36.14
+|	|	|	|	|	|	|	|	|	|	IDENT "newcol" 7.36.23
+|	|	|	|	|	|	|	|	|	CALL "(" 7.36.39
+|	|	|	|	|	|	|	|	|	|	IDENT "queens" 7.36.32
+|	|	|	|	|	|	|	|	|	|	'+' "+" 7.36.47
+|	|	|	|	|	|	|	|	|	|	|	IDENT "newcol" 7.36.40
+|	|	|	|	|	|	|	|	|	|	|	INTCON "1" 7.36.49
+|	|	|	|	|	|	|	|	'=' "=" 7.37.14
+|	|	|	|	|	|	|	|	|	IDENT "row" 7.37.10
+|	|	|	|	|	|	|	|	|	'+' "+" 7.37.20
+|	|	|	|	|	|	|	|	|	|	IDENT "row" 7.37.16
+|	|	|	|	|	|	|	|	|	|	INTCON "1" 7.37.22
+|	FUNCT "" 7.42.1
+|	|	TYPE_ID "" 7.42.1
+|	|	|	INT "int" 7.42.1
+|	|	|	IDENT "main" 7.42.5
+|	|	PARAM "(" 7.42.9
+|	|	BLOCK "{" 7.42.12
+|	|	|	'=' "=" 7.43.10
+|	|	|	|	IDENT "board" 7.43.4
+|	|	|	|	ALLOC "alloc" 7.43.12
+|	|	|	|	|	ARRAY "array" 7.43.18
+|	|	|	|	|	|	INT "int" 7.43.24
+|	|	|	|	|	INTCON "8" 7.43.31
+|	|	|	CALL "(" 7.44.11
+|	|	|	|	IDENT "queens" 7.44.4
+|	|	|	|	INTCON "0" 7.44.12
+|	|	|	RETURN "return" 7.45.4
+|	|	|	|	INTCON "0" 7.45.11

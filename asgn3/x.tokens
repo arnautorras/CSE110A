@@ -1,0 +1,16 @@
+# 1 "x.oc"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "x.oc"
+  4  2.001  278  TOK_IDENT      p
+  4  2.002  268  TOK_ARROW      ->
+  4  2.004  278  TOK_IDENT      f
+  4  4.001  265  TOK_STRUCT     struct
+  4  4.008  278  TOK_IDENT      nullptr_t
+  4  4.018  278  TOK_IDENT      p
+  4  4.019   59  ';'            ;
+  4  6.001  265  TOK_STRUCT     struct
+  4  6.008  278  TOK_IDENT      foo
+  4  6.011   42  '*'            *
+  4  6.013  278  TOK_IDENT      p
+  4  6.014   59  ';'            ;

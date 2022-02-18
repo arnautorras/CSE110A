@@ -1,0 +1,15 @@
+# 1 "01-test.oc"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "01-test.oc"
+  4  3.001  259  TOK_INT        int
+  4  3.005  278  TOK_IDENT      func
+  4  3.010   40  '('            (
+  4  3.011  259  TOK_INT        int
+  4  3.015  278  TOK_IDENT      n
+  4  3.016   41  ')'            )
+  4  3.018  123  '{'            {
+  4  4.004  264  TOK_RETURN     return
+  4  4.011  279  TOK_INTCON     0
+  4  4.012   59  ';'            ;
+  4  5.001  125  '}'            }

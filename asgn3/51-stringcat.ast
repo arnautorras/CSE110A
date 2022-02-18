@@ -1,0 +1,233 @@
+ROOT "ROOT" 0.0.0
+|	FUNCT "" 6.22.15
+|	|	TYPE_ID "" 6.22.15
+|	|	|	VOID "void" 6.22.15
+|	|	|	IDENT "fail" 6.22.20
+|	|	PARAM "(" 6.22.25
+|	|	|	TYPE_ID "" 6.22.26
+|	|	|	|	STRING "string" 6.22.26
+|	|	|	|	IDENT "expr" 6.22.33
+|	|	|	TYPE_ID "" 6.22.39
+|	|	|	|	STRING "string" 6.22.39
+|	|	|	|	IDENT "file" 6.22.46
+|	|	|	TYPE_ID "" 6.22.52
+|	|	|	|	INT "int" 6.22.52
+|	|	|	|	IDENT "line" 6.22.56
+|	|	BLOCK ";" 6.22.61
+|	FUNCT "" 6.24.1
+|	|	TYPE_ID "" 6.24.1
+|	|	|	VOID "void" 6.24.1
+|	|	|	IDENT "putchr" 6.24.6
+|	|	PARAM "(" 6.24.13
+|	|	|	TYPE_ID "" 6.24.14
+|	|	|	|	INT "int" 6.24.14
+|	|	|	|	IDENT "chr" 6.24.18
+|	|	BLOCK ";" 6.24.22
+|	FUNCT "" 6.25.1
+|	|	TYPE_ID "" 6.25.1
+|	|	|	VOID "void" 6.25.1
+|	|	|	IDENT "putint" 6.25.6
+|	|	PARAM "(" 6.25.13
+|	|	|	TYPE_ID "" 6.25.14
+|	|	|	|	INT "int" 6.25.14
+|	|	|	|	IDENT "num" 6.25.18
+|	|	BLOCK ";" 6.25.22
+|	FUNCT "" 6.26.1
+|	|	TYPE_ID "" 6.26.1
+|	|	|	VOID "void" 6.26.1
+|	|	|	IDENT "putstr" 6.26.6
+|	|	PARAM "(" 6.26.13
+|	|	|	TYPE_ID "" 6.26.14
+|	|	|	|	STRING "string" 6.26.14
+|	|	|	|	IDENT "str" 6.26.21
+|	|	BLOCK ";" 6.26.25
+|	FUNCT "" 6.28.1
+|	|	TYPE_ID "" 6.28.1
+|	|	|	INT "int" 6.28.1
+|	|	|	IDENT "getchr" 6.28.5
+|	|	PARAM "(" 6.28.11
+|	|	BLOCK ";" 6.28.13
+|	FUNCT "" 6.29.1
+|	|	TYPE_ID "" 6.29.1
+|	|	|	STRING "string" 6.29.1
+|	|	|	IDENT "getstr" 6.29.8
+|	|	PARAM "(" 6.29.14
+|	|	BLOCK ";" 6.29.16
+|	FUNCT "" 6.30.1
+|	|	TYPE_ID "" 6.30.1
+|	|	|	STRING "string" 6.30.1
+|	|	|	IDENT "getln" 6.30.8
+|	|	PARAM "(" 6.30.13
+|	|	BLOCK ";" 6.30.15
+|	FUNCT "" 7.8.1
+|	|	TYPE_ID "" 7.8.1
+|	|	|	INT "int" 7.8.1
+|	|	|	IDENT "strlen" 7.8.5
+|	|	PARAM "(" 7.8.12
+|	|	|	TYPE_ID "" 7.8.13
+|	|	|	|	STRING "string" 7.8.13
+|	|	|	|	IDENT "str" 7.8.20
+|	|	BLOCK "{" 7.8.25
+|	|	|	TYPE_ID "TYPE_ID" 7.9.4
+|	|	|	|	INT "int" 7.9.4
+|	|	|	|	IDENT "len" 7.9.8
+|	|	|	|	INTCON "0" 7.9.14
+|	|	|	WHILE "while" 7.10.4
+|	|	|	|	NE "!=" 7.10.20
+|	|	|	|	|	'[' "[" 7.10.14
+|	|	|	|	|	|	IDENT "str" 7.10.11
+|	|	|	|	|	|	IDENT "len" 7.10.15
+|	|	|	|	|	CHARCON "'\0'" 7.10.23
+|	|	|	|	'=' "=" 7.10.33
+|	|	|	|	|	IDENT "len" 7.10.29
+|	|	|	|	|	'+' "+" 7.10.39
+|	|	|	|	|	|	IDENT "len" 7.10.35
+|	|	|	|	|	|	INTCON "1" 7.10.41
+|	|	|	RETURN "return" 7.11.4
+|	|	|	|	IDENT "len" 7.11.11
+|	FUNCT "" 7.14.1
+|	|	TYPE_ID "" 7.14.1
+|	|	|	VOID "void" 7.14.1
+|	|	|	IDENT "strcat" 7.14.6
+|	|	PARAM "(" 7.14.13
+|	|	|	TYPE_ID "" 7.14.14
+|	|	|	|	STRING "string" 7.14.14
+|	|	|	|	IDENT "dest" 7.14.21
+|	|	|	TYPE_ID "" 7.14.27
+|	|	|	|	STRING "string" 7.14.27
+|	|	|	|	IDENT "src" 7.14.34
+|	|	BLOCK "{" 7.14.39
+|	|	|	TYPE_ID "TYPE_ID" 7.15.4
+|	|	|	|	INT "int" 7.15.4
+|	|	|	|	IDENT "pos" 7.15.8
+|	|	|	|	CALL "(" 7.15.21
+|	|	|	|	|	IDENT "strlen" 7.15.14
+|	|	|	|	|	IDENT "dest" 7.15.22
+|	|	|	TYPE_ID "TYPE_ID" 7.16.4
+|	|	|	|	INT "int" 7.16.4
+|	|	|	|	IDENT "srcix" 7.16.8
+|	|	|	|	INTCON "0" 7.16.16
+|	|	|	WHILE "while" 7.17.4
+|	|	|	|	NE "!=" 7.17.22
+|	|	|	|	|	'[' "[" 7.17.14
+|	|	|	|	|	|	IDENT "src" 7.17.11
+|	|	|	|	|	|	IDENT "srcix" 7.17.15
+|	|	|	|	|	CHARCON "'\0'" 7.17.25
+|	|	|	|	BLOCK "{" 7.17.31
+|	|	|	|	|	'=' "=" 7.18.17
+|	|	|	|	|	|	'[' "[" 7.18.11
+|	|	|	|	|	|	|	IDENT "dest" 7.18.7
+|	|	|	|	|	|	|	IDENT "pos" 7.18.12
+|	|	|	|	|	|	'[' "[" 7.18.22
+|	|	|	|	|	|	|	IDENT "src" 7.18.19
+|	|	|	|	|	|	|	IDENT "srcix" 7.18.23
+|	|	|	|	|	'=' "=" 7.19.11
+|	|	|	|	|	|	IDENT "pos" 7.19.7
+|	|	|	|	|	|	'+' "+" 7.19.17
+|	|	|	|	|	|	|	IDENT "pos" 7.19.13
+|	|	|	|	|	|	|	INTCON "1" 7.19.19
+|	|	|	|	|	'=' "=" 7.20.13
+|	|	|	|	|	|	IDENT "srcix" 7.20.7
+|	|	|	|	|	|	'+' "+" 7.20.21
+|	|	|	|	|	|	|	IDENT "srcix" 7.20.15
+|	|	|	|	|	|	|	INTCON "1" 7.20.23
+|	|	|	'=' "=" 7.22.14
+|	|	|	|	'[' "[" 7.22.8
+|	|	|	|	|	IDENT "dest" 7.22.4
+|	|	|	|	|	IDENT "pos" 7.22.9
+|	|	|	|	CHARCON "'\0'" 7.22.16
+|	FUNCT "" 7.25.1
+|	|	TYPE_ID "" 7.25.1
+|	|	|	INT "int" 7.25.1
+|	|	|	IDENT "main" 7.25.5
+|	|	PARAM "(" 7.25.10
+|	|	|	TYPE_ID "" 7.25.11
+|	|	|	|	INT "int" 7.25.11
+|	|	|	|	IDENT "argc" 7.25.15
+|	|	|	TYPE_ID "" 7.25.21
+|	|	|	|	ARRAY "array" 7.25.21
+|	|	|	|	|	STRING "string" 7.25.27
+|	|	|	|	IDENT "argv" 7.25.35
+|	|	BLOCK "{" 7.25.41
+|	|	|	TYPE_ID "TYPE_ID" 7.26.4
+|	|	|	|	INT "int" 7.26.4
+|	|	|	|	IDENT "length" 7.26.8
+|	|	|	|	INTCON "0" 7.26.17
+|	|	|	TYPE_ID "TYPE_ID" 7.27.4
+|	|	|	|	INT "int" 7.27.4
+|	|	|	|	IDENT "argi" 7.27.8
+|	|	|	|	INTCON "1" 7.27.15
+|	|	|	WHILE "while" 7.28.4
+|	|	|	|	LT "<" 7.28.16
+|	|	|	|	|	IDENT "argi" 7.28.11
+|	|	|	|	|	IDENT "argc" 7.28.18
+|	|	|	|	BLOCK "{" 7.28.24
+|	|	|	|	|	'=' "=" 7.29.14
+|	|	|	|	|	|	IDENT "length" 7.29.7
+|	|	|	|	|	|	'+' "+" 7.29.45
+|	|	|	|	|	|	|	'+' "+" 7.29.23
+|	|	|	|	|	|	|	|	IDENT "length" 7.29.16
+|	|	|	|	|	|	|	|	CALL "(" 7.29.32
+|	|	|	|	|	|	|	|	|	IDENT "strlen" 7.29.25
+|	|	|	|	|	|	|	|	|	'[' "[" 7.29.37
+|	|	|	|	|	|	|	|	|	|	IDENT "argv" 7.29.33
+|	|	|	|	|	|	|	|	|	|	IDENT "argi" 7.29.38
+|	|	|	|	|	|	|	INTCON "2" 7.29.47
+|	|	|	|	|	'=' "=" 7.30.12
+|	|	|	|	|	|	IDENT "argi" 7.30.7
+|	|	|	|	|	|	'+' "+" 7.30.19
+|	|	|	|	|	|	|	IDENT "argi" 7.30.14
+|	|	|	|	|	|	|	INTCON "1" 7.30.21
+|	|	|	CALL "(" 7.32.11
+|	|	|	|	IDENT "putstr" 7.32.4
+|	|	|	|	STRINGCON ""concat length = "" 7.32.12
+|	|	|	CALL "(" 7.33.11
+|	|	|	|	IDENT "putint" 7.33.4
+|	|	|	|	IDENT "length" 7.33.12
+|	|	|	CALL "(" 7.34.11
+|	|	|	|	IDENT "putchr" 7.34.4
+|	|	|	|	CHARCON "'\n'" 7.34.12
+|	|	|	TYPE_ID "TYPE_ID" 7.35.4
+|	|	|	|	STRING "string" 7.35.4
+|	|	|	|	IDENT "concat" 7.35.11
+|	|	|	|	ALLOC "alloc" 7.35.20
+|	|	|	|	|	STRING "string" 7.35.26
+|	|	|	|	|	IDENT "length" 7.35.35
+|	|	|	'=' "=" 7.36.9
+|	|	|	|	IDENT "argi" 7.36.4
+|	|	|	|	INTCON "1" 7.36.11
+|	|	|	CALL "(" 7.37.11
+|	|	|	|	IDENT "putchr" 7.37.4
+|	|	|	|	CHARCON "'['" 7.37.12
+|	|	|	WHILE "while" 7.38.4
+|	|	|	|	LT "<" 7.38.16
+|	|	|	|	|	IDENT "argi" 7.38.11
+|	|	|	|	|	IDENT "argc" 7.38.18
+|	|	|	|	BLOCK "{" 7.38.24
+|	|	|	|	|	CALL "(" 7.39.14
+|	|	|	|	|	|	IDENT "strcat" 7.39.7
+|	|	|	|	|	|	IDENT "concat" 7.39.15
+|	|	|	|	|	|	STRINGCON ""("" 7.39.23
+|	|	|	|	|	CALL "(" 7.40.14
+|	|	|	|	|	|	IDENT "strcat" 7.40.7
+|	|	|	|	|	|	IDENT "concat" 7.40.15
+|	|	|	|	|	|	'[' "[" 7.40.27
+|	|	|	|	|	|	|	IDENT "argv" 7.40.23
+|	|	|	|	|	|	|	IDENT "argi" 7.40.28
+|	|	|	|	|	CALL "(" 7.41.14
+|	|	|	|	|	|	IDENT "strcat" 7.41.7
+|	|	|	|	|	|	IDENT "concat" 7.41.15
+|	|	|	|	|	|	STRINGCON "")"" 7.41.23
+|	|	|	|	|	'=' "=" 7.42.12
+|	|	|	|	|	|	IDENT "argi" 7.42.7
+|	|	|	|	|	|	'+' "+" 7.42.19
+|	|	|	|	|	|	|	IDENT "argi" 7.42.14
+|	|	|	|	|	|	|	INTCON "1" 7.42.21
+|	|	|	CALL "(" 7.44.11
+|	|	|	|	IDENT "putstr" 7.44.4
+|	|	|	|	IDENT "concat" 7.44.12
+|	|	|	CALL "(" 7.45.11
+|	|	|	|	IDENT "putstr" 7.45.4
+|	|	|	|	STRINGCON ""]\n"" 7.45.12
+|	|	|	RETURN "return" 7.46.4
+|	|	|	|	INTCON "0" 7.46.11

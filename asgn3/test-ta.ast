@@ -1,0 +1,11 @@
+ROOT "ROOT" 0.0.0
+|	FUNCT "" 4.1.17
+|	|	TYPE_ID "" 4.1.17
+|	|	|	INT "int" 4.1.17
+|	|	|	IDENT "test_func" 4.1.21
+|	|	PARAM "(" 4.1.30
+|	|	BLOCK "{" 4.1.32
+|	|	|	TYPE_ID "TYPE_ID" 4.2.2
+|	|	|	|	INT "int" 4.2.2
+|	|	|	|	IDENT "x" 4.2.6
+|	|	|	|	INTCON "0" 4.2.10

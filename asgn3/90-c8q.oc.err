@@ -1,0 +1,12 @@
+oc: 4.1.16: : syntax error, unexpected TOK_IDENT
+oc: 4.2.2: : invalid source character (|)
+oc: 4.2.19: : invalid source character (?)
+oc: 4.2.20: : invalid source character (!)
+oc: 4.2.33: : invalid source character (:)
+oc: 4.3.14: : invalid source character (&)
+oc: 4.3.16: : invalid source character (|)
+oc: 4.3.18: : invalid source character (&)
+oc: 4.3.20: : invalid source character (|)
+oc: 4.3.21: : invalid source character (|)
+oc: 4.3.29: : invalid source character (|)
+oc: 4.3.33: : invalid source character (|)

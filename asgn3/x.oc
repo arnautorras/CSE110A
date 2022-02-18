@@ -1,0 +1,8 @@
+
+p->f
+
+struct nullptr_t p;
+
+struct foo* p;
+
+

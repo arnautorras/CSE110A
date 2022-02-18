@@ -1,0 +1,4 @@
+oc: 4.4.4: : syntax error, unexpected '[', expecting TOK_IDENT
+oc: 4.11.4: : syntax error, unexpected TOK_VOID
+oc: 4.12.10: : syntax error, unexpected '=', expecting '('
+oc: 4.13.10: : syntax error, unexpected '=', expecting '('

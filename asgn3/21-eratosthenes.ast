@@ -1,0 +1,159 @@
+ROOT "ROOT" 0.0.0
+|	FUNCT "" 6.22.15
+|	|	TYPE_ID "" 6.22.15
+|	|	|	VOID "void" 6.22.15
+|	|	|	IDENT "fail" 6.22.20
+|	|	PARAM "(" 6.22.25
+|	|	|	TYPE_ID "" 6.22.26
+|	|	|	|	STRING "string" 6.22.26
+|	|	|	|	IDENT "expr" 6.22.33
+|	|	|	TYPE_ID "" 6.22.39
+|	|	|	|	STRING "string" 6.22.39
+|	|	|	|	IDENT "file" 6.22.46
+|	|	|	TYPE_ID "" 6.22.52
+|	|	|	|	INT "int" 6.22.52
+|	|	|	|	IDENT "line" 6.22.56
+|	|	BLOCK ";" 6.22.61
+|	FUNCT "" 6.24.1
+|	|	TYPE_ID "" 6.24.1
+|	|	|	VOID "void" 6.24.1
+|	|	|	IDENT "putchr" 6.24.6
+|	|	PARAM "(" 6.24.13
+|	|	|	TYPE_ID "" 6.24.14
+|	|	|	|	INT "int" 6.24.14
+|	|	|	|	IDENT "chr" 6.24.18
+|	|	BLOCK ";" 6.24.22
+|	FUNCT "" 6.25.1
+|	|	TYPE_ID "" 6.25.1
+|	|	|	VOID "void" 6.25.1
+|	|	|	IDENT "putint" 6.25.6
+|	|	PARAM "(" 6.25.13
+|	|	|	TYPE_ID "" 6.25.14
+|	|	|	|	INT "int" 6.25.14
+|	|	|	|	IDENT "num" 6.25.18
+|	|	BLOCK ";" 6.25.22
+|	FUNCT "" 6.26.1
+|	|	TYPE_ID "" 6.26.1
+|	|	|	VOID "void" 6.26.1
+|	|	|	IDENT "putstr" 6.26.6
+|	|	PARAM "(" 6.26.13
+|	|	|	TYPE_ID "" 6.26.14
+|	|	|	|	STRING "string" 6.26.14
+|	|	|	|	IDENT "str" 6.26.21
+|	|	BLOCK ";" 6.26.25
+|	FUNCT "" 6.28.1
+|	|	TYPE_ID "" 6.28.1
+|	|	|	INT "int" 6.28.1
+|	|	|	IDENT "getchr" 6.28.5
+|	|	PARAM "(" 6.28.11
+|	|	BLOCK ";" 6.28.13
+|	FUNCT "" 6.29.1
+|	|	TYPE_ID "" 6.29.1
+|	|	|	STRING "string" 6.29.1
+|	|	|	IDENT "getstr" 6.29.8
+|	|	PARAM "(" 6.29.14
+|	|	BLOCK ";" 6.29.16
+|	FUNCT "" 6.30.1
+|	|	TYPE_ID "" 6.30.1
+|	|	|	STRING "string" 6.30.1
+|	|	|	IDENT "getln" 6.30.8
+|	|	PARAM "(" 6.30.13
+|	|	BLOCK ";" 6.30.15
+|	FUNCT "" 7.8.1
+|	|	TYPE_ID "" 7.8.1
+|	|	|	INT "int" 7.8.1
+|	|	|	IDENT "main" 7.8.5
+|	|	PARAM "(" 7.8.9
+|	|	BLOCK "{" 7.8.12
+|	|	|	TYPE_ID "TYPE_ID" 7.9.4
+|	|	|	|	INT "int" 7.9.4
+|	|	|	|	IDENT "prime" 7.9.8
+|	|	|	|	INTCON "2" 7.9.16
+|	|	|	TYPE_ID "TYPE_ID" 7.10.4
+|	|	|	|	INT "int" 7.10.4
+|	|	|	|	IDENT "index" 7.10.8
+|	|	|	|	INTCON "2" 7.10.16
+|	|	|	TYPE_ID "TYPE_ID" 7.11.4
+|	|	|	|	ARRAY "array" 7.11.4
+|	|	|	|	|	INT "int" 7.11.10
+|	|	|	|	IDENT "sieve" 7.11.15
+|	|	|	|	ALLOC "alloc" 7.11.23
+|	|	|	|	|	ARRAY "array" 7.11.29
+|	|	|	|	|	|	INT "int" 7.11.35
+|	|	|	|	|	INTCON "100" 7.11.41
+|	|	|	WHILE "while" 7.13.4
+|	|	|	|	LT "<" 7.13.17
+|	|	|	|	|	IDENT "index" 7.13.11
+|	|	|	|	|	INTCON "100" 7.13.19
+|	|	|	|	BLOCK "{" 7.13.24
+|	|	|	|	|	'=' "=" 7.14.20
+|	|	|	|	|	|	'[' "[" 7.14.12
+|	|	|	|	|	|	|	IDENT "sieve" 7.14.7
+|	|	|	|	|	|	|	IDENT "index" 7.14.13
+|	|	|	|	|	|	INTCON "1" 7.14.22
+|	|	|	|	|	'=' "=" 7.15.13
+|	|	|	|	|	|	IDENT "index" 7.15.7
+|	|	|	|	|	|	'+' "+" 7.15.21
+|	|	|	|	|	|	|	IDENT "index" 7.15.15
+|	|	|	|	|	|	|	INTCON "1" 7.15.23
+|	|	|	WHILE "while" 7.18.4
+|	|	|	|	LT "<" 7.18.17
+|	|	|	|	|	IDENT "prime" 7.18.11
+|	|	|	|	|	INTCON "100" 7.18.19
+|	|	|	|	BLOCK "{" 7.18.24
+|	|	|	|	|	IF "if" 7.19.7
+|	|	|	|	|	|	'[' "[" 7.19.16
+|	|	|	|	|	|	|	IDENT "sieve" 7.19.11
+|	|	|	|	|	|	|	IDENT "prime" 7.19.17
+|	|	|	|	|	|	BLOCK "{" 7.19.25
+|	|	|	|	|	|	|	'=' "=" 7.20.16
+|	|	|	|	|	|	|	|	IDENT "index" 7.20.10
+|	|	|	|	|	|	|	|	'*' "*" 7.20.24
+|	|	|	|	|	|	|	|	|	IDENT "prime" 7.20.18
+|	|	|	|	|	|	|	|	|	INTCON "2" 7.20.26
+|	|	|	|	|	|	|	WHILE "while" 7.21.10
+|	|	|	|	|	|	|	|	LT "<" 7.21.23
+|	|	|	|	|	|	|	|	|	IDENT "index" 7.21.17
+|	|	|	|	|	|	|	|	|	INTCON "100" 7.21.25
+|	|	|	|	|	|	|	|	BLOCK "{" 7.21.30
+|	|	|	|	|	|	|	|	|	'=' "=" 7.22.26
+|	|	|	|	|	|	|	|	|	|	'[' "[" 7.22.18
+|	|	|	|	|	|	|	|	|	|	|	IDENT "sieve" 7.22.13
+|	|	|	|	|	|	|	|	|	|	|	IDENT "index" 7.22.19
+|	|	|	|	|	|	|	|	|	|	INTCON "0" 7.22.28
+|	|	|	|	|	|	|	|	|	'=' "=" 7.23.19
+|	|	|	|	|	|	|	|	|	|	IDENT "index" 7.23.13
+|	|	|	|	|	|	|	|	|	|	'+' "+" 7.23.27
+|	|	|	|	|	|	|	|	|	|	|	IDENT "index" 7.23.21
+|	|	|	|	|	|	|	|	|	|	|	IDENT "prime" 7.23.29
+|	|	|	|	|	'=' "=" 7.26.13
+|	|	|	|	|	|	IDENT "prime" 7.26.7
+|	|	|	|	|	|	'+' "+" 7.26.21
+|	|	|	|	|	|	|	IDENT "prime" 7.26.15
+|	|	|	|	|	|	|	INTCON "1" 7.26.23
+|	|	|	'=' "=" 7.29.10
+|	|	|	|	IDENT "index" 7.29.4
+|	|	|	|	INTCON "2" 7.29.12
+|	|	|	WHILE "while" 7.30.4
+|	|	|	|	LT "<" 7.30.17
+|	|	|	|	|	IDENT "index" 7.30.11
+|	|	|	|	|	INTCON "100" 7.30.19
+|	|	|	|	BLOCK "{" 7.30.24
+|	|	|	|	|	IF "if" 7.31.7
+|	|	|	|	|	|	'[' "[" 7.31.16
+|	|	|	|	|	|	|	IDENT "sieve" 7.31.11
+|	|	|	|	|	|	|	IDENT "index" 7.31.17
+|	|	|	|	|	|	BLOCK "{" 7.31.25
+|	|	|	|	|	|	|	CALL "(" 7.32.17
+|	|	|	|	|	|	|	|	IDENT "putint" 7.32.10
+|	|	|	|	|	|	|	|	IDENT "index" 7.32.18
+|	|	|	|	|	|	|	CALL "(" 7.33.17
+|	|	|	|	|	|	|	|	IDENT "putchr" 7.33.10
+|	|	|	|	|	|	|	|	CHARCON "'\n'" 7.33.18
+|	|	|	|	|	'=' "=" 7.35.13
+|	|	|	|	|	|	IDENT "index" 7.35.7
+|	|	|	|	|	|	'+' "+" 7.35.21
+|	|	|	|	|	|	|	IDENT "index" 7.35.15
+|	|	|	|	|	|	|	INTCON "1" 7.35.23
+|	|	|	RETURN "return" 7.38.4
+|	|	|	|	INTCON "0" 7.38.11

@@ -1,0 +1,8 @@
+ROOT "ROOT" 0.0.0
+|	'/' "/" 4.5.18
+|	IDENT "abc" 4.6.16
+|	IDENT "a" 4.7.14
+|	IDENT "abcd" 4.8.9
+|	IDENT "abc" 4.9.9
+|	$end "}" 4.12.1
+|	$end "}" 4.12.1

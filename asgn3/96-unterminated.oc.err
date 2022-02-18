@@ -1,0 +1,26 @@
+96-unterminated.oc:6:15: warning: missing terminating " character [enabled by default]
+    string s = "abc;
+               ^
+96-unterminated.oc:7:13: warning: missing terminating ' character [enabled by default]
+    char c = 'a;
+             ^
+96-unterminated.oc:8:8: warning: missing terminating " character [enabled by default]
+    s = "abcd\";
+        ^
+96-unterminated.oc:9:8: warning: missing terminating " character [enabled by default]
+    s = "abc|\
+        ^
+oc: 4.5.15: : invalid source character (")
+oc: 4.5.16: : invalid source character (\)
+oc: 4.5.17: : syntax error, unexpected '*'
+oc: 4.5.19: : invalid source character (")
+oc: 4.6.13: : syntax error, unexpected '=', expecting '('
+oc: 4.6.15: : invalid source character (")
+oc: 4.7.13: : invalid source character (')
+oc: 4.8.8: : invalid source character (")
+oc: 4.8.13: : invalid source character (\)
+oc: 4.8.14: : invalid source character (")
+oc: 4.9.8: : invalid source character (")
+oc: 4.9.12: : invalid source character (|)
+oc: 4.11.8: : invalid token (23foobar)
+oc: 4.11.16: : syntax error, unexpected ';', expecting '('

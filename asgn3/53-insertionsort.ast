@@ -1,0 +1,355 @@
+ROOT "ROOT" 0.0.0
+|	FUNCT "" 6.22.15
+|	|	TYPE_ID "" 6.22.15
+|	|	|	VOID "void" 6.22.15
+|	|	|	IDENT "fail" 6.22.20
+|	|	PARAM "(" 6.22.25
+|	|	|	TYPE_ID "" 6.22.26
+|	|	|	|	STRING "string" 6.22.26
+|	|	|	|	IDENT "expr" 6.22.33
+|	|	|	TYPE_ID "" 6.22.39
+|	|	|	|	STRING "string" 6.22.39
+|	|	|	|	IDENT "file" 6.22.46
+|	|	|	TYPE_ID "" 6.22.52
+|	|	|	|	INT "int" 6.22.52
+|	|	|	|	IDENT "line" 6.22.56
+|	|	BLOCK ";" 6.22.61
+|	FUNCT "" 6.24.1
+|	|	TYPE_ID "" 6.24.1
+|	|	|	VOID "void" 6.24.1
+|	|	|	IDENT "putchr" 6.24.6
+|	|	PARAM "(" 6.24.13
+|	|	|	TYPE_ID "" 6.24.14
+|	|	|	|	INT "int" 6.24.14
+|	|	|	|	IDENT "chr" 6.24.18
+|	|	BLOCK ";" 6.24.22
+|	FUNCT "" 6.25.1
+|	|	TYPE_ID "" 6.25.1
+|	|	|	VOID "void" 6.25.1
+|	|	|	IDENT "putint" 6.25.6
+|	|	PARAM "(" 6.25.13
+|	|	|	TYPE_ID "" 6.25.14
+|	|	|	|	INT "int" 6.25.14
+|	|	|	|	IDENT "num" 6.25.18
+|	|	BLOCK ";" 6.25.22
+|	FUNCT "" 6.26.1
+|	|	TYPE_ID "" 6.26.1
+|	|	|	VOID "void" 6.26.1
+|	|	|	IDENT "putstr" 6.26.6
+|	|	PARAM "(" 6.26.13
+|	|	|	TYPE_ID "" 6.26.14
+|	|	|	|	STRING "string" 6.26.14
+|	|	|	|	IDENT "str" 6.26.21
+|	|	BLOCK ";" 6.26.25
+|	FUNCT "" 6.28.1
+|	|	TYPE_ID "" 6.28.1
+|	|	|	INT "int" 6.28.1
+|	|	|	IDENT "getchr" 6.28.5
+|	|	PARAM "(" 6.28.11
+|	|	BLOCK ";" 6.28.13
+|	FUNCT "" 6.29.1
+|	|	TYPE_ID "" 6.29.1
+|	|	|	STRING "string" 6.29.1
+|	|	|	IDENT "getstr" 6.29.8
+|	|	PARAM "(" 6.29.14
+|	|	BLOCK ";" 6.29.16
+|	FUNCT "" 6.30.1
+|	|	TYPE_ID "" 6.30.1
+|	|	|	STRING "string" 6.30.1
+|	|	|	IDENT "getln" 6.30.8
+|	|	PARAM "(" 6.30.13
+|	|	BLOCK ";" 6.30.15
+|	FUNCT "" 7.8.1
+|	|	TYPE_ID "" 7.8.1
+|	|	|	INT "int" 7.8.1
+|	|	|	IDENT "strcmp" 7.8.5
+|	|	PARAM "(" 7.8.12
+|	|	|	TYPE_ID "" 7.8.13
+|	|	|	|	STRING "string" 7.8.13
+|	|	|	|	IDENT "s1" 7.8.20
+|	|	|	TYPE_ID "" 7.8.24
+|	|	|	|	STRING "string" 7.8.24
+|	|	|	|	IDENT "s2" 7.8.31
+|	|	BLOCK "{" 7.8.35
+|	|	|	TYPE_ID "TYPE_ID" 7.9.4
+|	|	|	|	INT "int" 7.9.4
+|	|	|	|	IDENT "index" 7.9.8
+|	|	|	|	INTCON "0" 7.9.16
+|	|	|	TYPE_ID "TYPE_ID" 7.10.4
+|	|	|	|	INT "int" 7.10.4
+|	|	|	|	IDENT "contin" 7.10.8
+|	|	|	|	INTCON "1" 7.10.17
+|	|	|	TYPE_ID "TYPE_ID" 7.11.4
+|	|	|	|	INT "int" 7.11.4
+|	|	|	|	IDENT "s1c" 7.11.8
+|	|	|	|	INTCON "0" 7.11.14
+|	|	|	TYPE_ID "TYPE_ID" 7.12.4
+|	|	|	|	INT "int" 7.12.4
+|	|	|	|	IDENT "s2c" 7.12.8
+|	|	|	|	INTCON "0" 7.12.14
+|	|	|	TYPE_ID "TYPE_ID" 7.13.4
+|	|	|	|	INT "int" 7.13.4
+|	|	|	|	IDENT "cmp" 7.13.8
+|	|	|	|	INTCON "0" 7.13.14
+|	|	|	WHILE "while" 7.14.4
+|	|	|	|	IDENT "contin" 7.14.11
+|	|	|	|	BLOCK "{" 7.14.19
+|	|	|	|	|	'=' "=" 7.15.11
+|	|	|	|	|	|	IDENT "s1c" 7.15.7
+|	|	|	|	|	|	'[' "[" 7.15.15
+|	|	|	|	|	|	|	IDENT "s1" 7.15.13
+|	|	|	|	|	|	|	IDENT "index" 7.15.16
+|	|	|	|	|	'=' "=" 7.16.11
+|	|	|	|	|	|	IDENT "s2c" 7.16.7
+|	|	|	|	|	|	'[' "[" 7.16.15
+|	|	|	|	|	|	|	IDENT "s2" 7.16.13
+|	|	|	|	|	|	|	IDENT "index" 7.16.16
+|	|	|	|	|	'=' "=" 7.17.11
+|	|	|	|	|	|	IDENT "cmp" 7.17.7
+|	|	|	|	|	|	'-' "-" 7.17.17
+|	|	|	|	|	|	|	IDENT "s1c" 7.17.13
+|	|	|	|	|	|	|	IDENT "s2c" 7.17.19
+|	|	|	|	|	IF "if" 7.18.7
+|	|	|	|	|	|	NE "!=" 7.18.15
+|	|	|	|	|	|	|	IDENT "cmp" 7.18.11
+|	|	|	|	|	|	|	INTCON "0" 7.18.18
+|	|	|	|	|	|	RETURN "return" 7.18.21
+|	|	|	|	|	|	|	IDENT "cmp" 7.18.28
+|	|	|	|	|	IF "if" 7.19.7
+|	|	|	|	|	|	EQ "==" 7.19.15
+|	|	|	|	|	|	|	IDENT "s1c" 7.19.11
+|	|	|	|	|	|	|	CHARCON "'\0'" 7.19.18
+|	|	|	|	|	|	'=' "=" 7.19.31
+|	|	|	|	|	|	|	IDENT "contin" 7.19.24
+|	|	|	|	|	|	|	INTCON "0" 7.19.33
+|	|	|	|	|	IF "if" 7.20.7
+|	|	|	|	|	|	EQ "==" 7.20.15
+|	|	|	|	|	|	|	IDENT "s2c" 7.20.11
+|	|	|	|	|	|	|	CHARCON "'\0'" 7.20.18
+|	|	|	|	|	|	'=' "=" 7.20.31
+|	|	|	|	|	|	|	IDENT "contin" 7.20.24
+|	|	|	|	|	|	|	INTCON "0" 7.20.33
+|	|	|	|	|	'=' "=" 7.21.13
+|	|	|	|	|	|	IDENT "index" 7.21.7
+|	|	|	|	|	|	'+' "+" 7.21.21
+|	|	|	|	|	|	|	IDENT "index" 7.21.15
+|	|	|	|	|	|	|	INTCON "1" 7.21.23
+|	|	|	RETURN "return" 7.23.4
+|	|	|	|	INTCON "0" 7.23.11
+|	FUNCT "" 7.26.1
+|	|	TYPE_ID "" 7.26.1
+|	|	|	VOID "void" 7.26.1
+|	|	|	IDENT "insertion_sort" 7.26.6
+|	|	PARAM "(" 7.26.21
+|	|	|	TYPE_ID "" 7.26.22
+|	|	|	|	INT "int" 7.26.22
+|	|	|	|	IDENT "size" 7.26.26
+|	|	|	TYPE_ID "" 7.26.32
+|	|	|	|	ARRAY "array" 7.26.32
+|	|	|	|	|	STRING "string" 7.26.38
+|	|	|	|	IDENT "words" 7.26.46
+|	|	BLOCK "{" 7.26.53
+|	|	|	TYPE_ID "TYPE_ID" 7.27.4
+|	|	|	|	INT "int" 7.27.4
+|	|	|	|	IDENT "sorted" 7.27.8
+|	|	|	|	INTCON "1" 7.27.17
+|	|	|	TYPE_ID "TYPE_ID" 7.28.4
+|	|	|	|	INT "int" 7.28.4
+|	|	|	|	IDENT "slot" 7.28.8
+|	|	|	|	INTCON "0" 7.28.15
+|	|	|	TYPE_ID "TYPE_ID" 7.29.4
+|	|	|	|	STRING "string" 7.29.4
+|	|	|	|	IDENT "element" 7.29.11
+|	|	|	|	NULLPTR "nullptr" 7.29.21
+|	|	|	TYPE_ID "TYPE_ID" 7.30.4
+|	|	|	|	INT "int" 7.30.4
+|	|	|	|	IDENT "contin" 7.30.8
+|	|	|	|	INTCON "0" 7.30.17
+|	|	|	WHILE "while" 7.31.4
+|	|	|	|	LT "<" 7.31.18
+|	|	|	|	|	IDENT "sorted" 7.31.11
+|	|	|	|	|	IDENT "size" 7.31.20
+|	|	|	|	BLOCK "{" 7.31.26
+|	|	|	|	|	'=' "=" 7.32.12
+|	|	|	|	|	|	IDENT "slot" 7.32.7
+|	|	|	|	|	|	IDENT "sorted" 7.32.14
+|	|	|	|	|	'=' "=" 7.33.15
+|	|	|	|	|	|	IDENT "element" 7.33.7
+|	|	|	|	|	|	'[' "[" 7.33.22
+|	|	|	|	|	|	|	IDENT "words" 7.33.17
+|	|	|	|	|	|	|	IDENT "slot" 7.33.23
+|	|	|	|	|	'=' "=" 7.34.14
+|	|	|	|	|	|	IDENT "contin" 7.34.7
+|	|	|	|	|	|	INTCON "1" 7.34.16
+|	|	|	|	|	WHILE "while" 7.35.7
+|	|	|	|	|	|	IDENT "contin" 7.35.14
+|	|	|	|	|	|	BLOCK "{" 7.35.22
+|	|	|	|	|	|	|	IF "if" 7.36.10
+|	|	|	|	|	|	|	|	EQ "==" 7.36.19
+|	|	|	|	|	|	|	|	|	IDENT "slot" 7.36.14
+|	|	|	|	|	|	|	|	|	INTCON "0" 7.36.22
+|	|	|	|	|	|	|	|	BLOCK "{" 7.36.25
+|	|	|	|	|	|	|	|	|	'=' "=" 7.37.20
+|	|	|	|	|	|	|	|	|	|	IDENT "contin" 7.37.13
+|	|	|	|	|	|	|	|	|	|	INTCON "0" 7.37.22
+|	|	|	|	|	|	|	|	ELSE "else" 7.38.11
+|	|	|	|	|	|	|	|	|	IF "if" 7.38.16
+|	|	|	|	|	|	|	|	|	|	LE "<=" 7.38.54
+|	|	|	|	|	|	|	|	|	|	|	CALL "(" 7.38.27
+|	|	|	|	|	|	|	|	|	|	|	|	IDENT "strcmp" 7.38.20
+|	|	|	|	|	|	|	|	|	|	|	|	'[' "[" 7.38.33
+|	|	|	|	|	|	|	|	|	|	|	|	|	IDENT "words" 7.38.28
+|	|	|	|	|	|	|	|	|	|	|	|	|	'-' "-" 7.38.39
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	IDENT "slot" 7.38.34
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	INTCON "1" 7.38.41
+|	|	|	|	|	|	|	|	|	|	|	|	IDENT "element" 7.38.45
+|	|	|	|	|	|	|	|	|	|	|	INTCON "0" 7.38.57
+|	|	|	|	|	|	|	|	|	|	BLOCK "{" 7.38.60
+|	|	|	|	|	|	|	|	|	|	|	'=' "=" 7.39.20
+|	|	|	|	|	|	|	|	|	|	|	|	IDENT "contin" 7.39.13
+|	|	|	|	|	|	|	|	|	|	|	|	INTCON "0" 7.39.22
+|	|	|	|	|	|	|	|	|	|	ELSE "else" 7.40.11
+|	|	|	|	|	|	|	|	|	|	|	BLOCK "{" 7.40.16
+|	|	|	|	|	|	|	|	|	|	|	|	'=' "=" 7.41.25
+|	|	|	|	|	|	|	|	|	|	|	|	|	'[' "[" 7.41.18
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	IDENT "words" 7.41.13
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	IDENT "slot" 7.41.19
+|	|	|	|	|	|	|	|	|	|	|	|	|	'[' "[" 7.41.32
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	IDENT "words" 7.41.27
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	'-' "-" 7.41.38
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	IDENT "slot" 7.41.33
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	INTCON "1" 7.41.40
+|	|	|	|	|	|	|	|	|	|	|	|	'=' "=" 7.42.18
+|	|	|	|	|	|	|	|	|	|	|	|	|	IDENT "slot" 7.42.13
+|	|	|	|	|	|	|	|	|	|	|	|	|	'-' "-" 7.42.25
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	IDENT "slot" 7.42.20
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	INTCON "1" 7.42.27
+|	|	|	|	|	'=' "=" 7.45.19
+|	|	|	|	|	|	'[' "[" 7.45.12
+|	|	|	|	|	|	|	IDENT "words" 7.45.7
+|	|	|	|	|	|	|	IDENT "slot" 7.45.13
+|	|	|	|	|	|	IDENT "element" 7.45.21
+|	|	|	|	|	'=' "=" 7.46.14
+|	|	|	|	|	|	IDENT "sorted" 7.46.7
+|	|	|	|	|	|	'+' "+" 7.46.23
+|	|	|	|	|	|	|	IDENT "sorted" 7.46.16
+|	|	|	|	|	|	|	INTCON "1" 7.46.25
+|	FUNCT "" 7.51.1
+|	|	TYPE_ID "" 7.51.1
+|	|	|	VOID "void" 7.51.1
+|	|	|	IDENT "print_array" 7.51.6
+|	|	PARAM "(" 7.51.18
+|	|	|	TYPE_ID "" 7.51.19
+|	|	|	|	INT "int" 7.51.19
+|	|	|	|	IDENT "size" 7.51.23
+|	|	|	TYPE_ID "" 7.51.29
+|	|	|	|	ARRAY "array" 7.51.29
+|	|	|	|	|	STRING "string" 7.51.35
+|	|	|	|	IDENT "words" 7.51.43
+|	|	BLOCK "{" 7.51.50
+|	|	|	TYPE_ID "TYPE_ID" 7.52.4
+|	|	|	|	INT "int" 7.52.4
+|	|	|	|	IDENT "index" 7.52.8
+|	|	|	|	INTCON "0" 7.52.16
+|	|	|	WHILE "while" 7.53.4
+|	|	|	|	LT "<" 7.53.17
+|	|	|	|	|	IDENT "index" 7.53.11
+|	|	|	|	|	IDENT "size" 7.53.19
+|	|	|	|	BLOCK "{" 7.53.25
+|	|	|	|	|	CALL "(" 7.54.14
+|	|	|	|	|	|	IDENT "putstr" 7.54.7
+|	|	|	|	|	|	'[' "[" 7.54.20
+|	|	|	|	|	|	|	IDENT "words" 7.54.15
+|	|	|	|	|	|	|	IDENT "index" 7.54.21
+|	|	|	|	|	CALL "(" 7.55.14
+|	|	|	|	|	|	IDENT "putchr" 7.55.7
+|	|	|	|	|	|	CHARCON "'\n'" 7.55.15
+|	|	|	|	|	'=' "=" 7.56.13
+|	|	|	|	|	|	IDENT "index" 7.56.7
+|	|	|	|	|	|	'+' "+" 7.56.21
+|	|	|	|	|	|	|	IDENT "index" 7.56.15
+|	|	|	|	|	|	|	INTCON "1" 7.56.23
+|	FUNCT "" 7.60.1
+|	|	TYPE_ID "" 7.60.1
+|	|	|	INT "int" 7.60.1
+|	|	|	IDENT "read_words" 7.60.5
+|	|	PARAM "(" 7.60.16
+|	|	|	TYPE_ID "" 7.60.17
+|	|	|	|	INT "int" 7.60.17
+|	|	|	|	IDENT "size" 7.60.21
+|	|	|	TYPE_ID "" 7.60.27
+|	|	|	|	ARRAY "array" 7.60.27
+|	|	|	|	|	STRING "string" 7.60.33
+|	|	|	|	IDENT "words" 7.60.41
+|	|	BLOCK "{" 7.60.48
+|	|	|	TYPE_ID "TYPE_ID" 7.61.4
+|	|	|	|	INT "int" 7.61.4
+|	|	|	|	IDENT "count" 7.61.8
+|	|	|	|	INTCON "0" 7.61.16
+|	|	|	TYPE_ID "TYPE_ID" 7.62.4
+|	|	|	|	STRING "string" 7.62.4
+|	|	|	|	IDENT "word" 7.62.11
+|	|	|	|	NULLPTR "nullptr" 7.62.18
+|	|	|	WHILE "while" 7.63.4
+|	|	|	|	INTCON "1" 7.63.11
+|	|	|	|	BLOCK "{" 7.63.14
+|	|	|	|	|	IF "if" 7.64.7
+|	|	|	|	|	|	EQ "==" 7.64.17
+|	|	|	|	|	|	|	IDENT "count" 7.64.11
+|	|	|	|	|	|	|	IDENT "size" 7.64.20
+|	|	|	|	|	|	RETURN "return" 7.64.26
+|	|	|	|	|	|	|	IDENT "count" 7.64.33
+|	|	|	|	|	'=' "=" 7.65.12
+|	|	|	|	|	|	IDENT "word" 7.65.7
+|	|	|	|	|	|	CALL "(" 7.65.20
+|	|	|	|	|	|	|	IDENT "getstr" 7.65.14
+|	|	|	|	|	IF "if" 7.66.7
+|	|	|	|	|	|	EQ "==" 7.66.16
+|	|	|	|	|	|	|	IDENT "word" 7.66.11
+|	|	|	|	|	|	|	NULLPTR "nullptr" 7.66.19
+|	|	|	|	|	|	RETURN "return" 7.66.28
+|	|	|	|	|	|	|	IDENT "count" 7.66.35
+|	|	|	|	|	'=' "=" 7.67.20
+|	|	|	|	|	|	'[' "[" 7.67.12
+|	|	|	|	|	|	|	IDENT "words" 7.67.7
+|	|	|	|	|	|	|	IDENT "count" 7.67.13
+|	|	|	|	|	|	IDENT "word" 7.67.22
+|	|	|	|	|	'=' "=" 7.68.13
+|	|	|	|	|	|	IDENT "count" 7.68.7
+|	|	|	|	|	|	'+' "+" 7.68.21
+|	|	|	|	|	|	|	IDENT "count" 7.68.15
+|	|	|	|	|	|	|	INTCON "1" 7.68.23
+|	FUNCT "" 7.72.1
+|	|	TYPE_ID "" 7.72.1
+|	|	|	INT "int" 7.72.1
+|	|	|	IDENT "main" 7.72.5
+|	|	PARAM "(" 7.72.9
+|	|	BLOCK "{" 7.72.12
+|	|	|	TYPE_ID "TYPE_ID" 7.73.4
+|	|	|	|	INT "int" 7.73.4
+|	|	|	|	IDENT "count" 7.73.8
+|	|	|	|	INTCON "100" 7.73.16
+|	|	|	TYPE_ID "TYPE_ID" 7.74.4
+|	|	|	|	ARRAY "array" 7.74.4
+|	|	|	|	|	STRING "string" 7.74.10
+|	|	|	|	IDENT "words" 7.74.18
+|	|	|	|	ALLOC "alloc" 7.74.26
+|	|	|	|	|	ARRAY "array" 7.74.32
+|	|	|	|	|	|	STRING "string" 7.74.38
+|	|	|	|	|	IDENT "count" 7.74.47
+|	|	|	'=' "=" 7.75.10
+|	|	|	|	IDENT "count" 7.75.4
+|	|	|	|	CALL "(" 7.75.23
+|	|	|	|	|	IDENT "read_words" 7.75.12
+|	|	|	|	|	IDENT "count" 7.75.24
+|	|	|	|	|	IDENT "words" 7.75.31
+|	|	|	CALL "(" 7.76.19
+|	|	|	|	IDENT "insertion_sort" 7.76.4
+|	|	|	|	IDENT "count" 7.76.20
+|	|	|	|	IDENT "words" 7.76.27
+|	|	|	CALL "(" 7.77.16
+|	|	|	|	IDENT "print_array" 7.77.4
+|	|	|	|	IDENT "count" 7.77.17
+|	|	|	|	IDENT "words" 7.77.24
+|	|	|	RETURN "return" 7.78.4
+|	|	|	|	INTCON "0" 7.78.11

@@ -1,0 +1,12 @@
+ROOT "ROOT" 0.0.0
+|	FUNCT "" 4.3.1
+|	|	TYPE_ID "" 4.3.1
+|	|	|	INT "int" 4.3.1
+|	|	|	IDENT "func" 4.3.5
+|	|	PARAM "(" 4.3.10
+|	|	|	TYPE_ID "" 4.3.11
+|	|	|	|	INT "int" 4.3.11
+|	|	|	|	IDENT "n" 4.3.15
+|	|	BLOCK "{" 4.3.18
+|	|	|	RETURN "return" 4.4.4
+|	|	|	|	INTCON "0" 4.4.11
