@@ -1,5 +1,17 @@
 
+struct foo {
+   int a;
+};
 
-int func (int n) {
-   return 0;
+int func1 (int n) {
+   return n+1;
 }
+
+void func2 (int n) {
+   ptr<struct foo> b = alloc<struct foo>();
+   b->a = func1(1);
+   return b->a;
+}
+
+
+

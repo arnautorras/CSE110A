@@ -46,8 +46,6 @@ void lex_util::include() {
    int scan_rc = sscanf (yytext, "# %zu \"%[^\"]\"",
                          &linenr, filename.get());
 
-   // To-do : Add to tokens file
-
    if (scan_rc != 2) {
       lex_error() << "invalid directive, ignored: " << yytext << endl;
    }else {
@@ -124,6 +122,15 @@ void lex_util::close_ast_file(){
    ast_file.close();
 }
 
+void lex_util::open_symbols_file(const char* symbols_filename){
+   symbols_file.open (symbols_filename, ofstream::out | ofstream::trunc);
+}
+
+void lex_util::close_symbols_file(){
+   symbols_file.close();
+}
+
+
 parse_util::parse_util (const char* oc_filename,
                         bool parse_debug, bool lex_debug):
                         oc_file (oc_filename, lex_debug) {
@@ -141,3 +148,7 @@ void parse_util::parse() {
    }
 }
 
+void parse_util::add_all_symbols() {
+   astree_root->add_symbols(astree_root->symbols->local_table);
+
+}

@@ -8,7 +8,7 @@ GPPOPTS   = -std=gnu++2a -g -O0 -fdiagnostics-color=never
 GPP       = g++ ${GPPOPTS} ${WARNINGS}
 MKDEPS    = g++ -std=gnu++2a -MM
 
-MODULES   = astree auxlib cpp_pipe debug lyutils
+MODULES   = astree auxlib cpp_pipe debug lyutils symbols
 HDRSRC    = ${MODULES:=.h}
 CPPSRC    = ${MODULES:=.cpp} main.cpp
 FLEXSRC   = scanner.l

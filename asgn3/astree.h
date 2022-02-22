@@ -1,5 +1,3 @@
-// $Id: astree.h,v 1.2 2021-12-20 13:07:53-08 - - $
-
 #ifndef ASTREE_H
 #define ASTREE_H
 
@@ -7,28 +5,28 @@
 #include <string>
 #include <unordered_set>
 #include <vector>
+
 using namespace std;
 
 #include "auxlib.h"
+#include "symbols.h"
 
 using astree_ptr = struct astree*;
-
-struct location {
-   size_t filenr = 0;
-   size_t linenr = 0;
-   size_t offset = 0;
-};
 
 ostream& operator<< (ostream&, const location&);
 
 class astree {
    private:
+      attr match_symbol_to_attribute();
+
       astree (int symbol, const location&, const char* lexinfo);
       static unordered_set<string> lextable;
+      static int next_block;
 
    public:
       int symbol;                  // token code
       location loc;                // source location
+      symbols_ptr symbols;
       const string* lexinfo;       // pointer to lexical information
       vector<astree_ptr> children; // children of this n-way node
       static vector<string> filenames;
@@ -52,9 +50,15 @@ class astree {
       void define_as (int symbol);
       void dump_tree (int depth = 0);
       void print_tree (ostream& out, int depth = 0);
+      void print_symbols (ostream& out);
+
+
+      void add_symbols(symbol_table* curr_symtable, int g_block_nr = 0);
+
 };
 
 ostream& operator<< (ostream&, const astree&);
+// ostream& operator<< (ostream&, const symbols&);
 
 #endif
 

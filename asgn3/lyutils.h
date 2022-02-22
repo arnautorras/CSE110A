@@ -29,8 +29,11 @@ class lex_util {
       size_t last_yyleng {0};
       ofstream token_file;
       int index_filename_vector {0};
+
    public:
-      ofstream ast_file; 
+      ofstream ast_file;
+      ofstream symbols_file;
+
       ~lex_util();
       void advance();
       void newline();
@@ -43,6 +46,8 @@ class lex_util {
       void close_token_file();
       void open_ast_file(const char* filename);
       void close_ast_file();
+      void open_symbols_file(const char* filename);
+      void close_symbols_file();
       ostream& lex_error();
 };
 
@@ -57,6 +62,8 @@ class parse_util {
                   bool parse_debug, bool lex_debug);
       ~parse_util() { delete astree_root; }
       void parse();
+      void add_all_symbols();
+
       astree_ptr root() { return astree_root; }
 };
 
